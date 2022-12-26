@@ -17,5 +17,20 @@ namespace KHOD.GUI
         {
             InitializeComponent();
         }
+
+        private void dateNavigator1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dateTimeOffsetEdit1_EditValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelControl1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
