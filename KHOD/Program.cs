@@ -16,7 +16,7 @@ namespace KHOD
 		{
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
-			Application.Run(new GUI.frmNhanVien());
+			Application.Run(new GUI.frmNhanVien_Themmoi());
 		}
 	}
 }

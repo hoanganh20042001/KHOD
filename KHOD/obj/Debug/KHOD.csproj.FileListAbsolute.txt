@@ -262,3 +262,5 @@ D:\Desktop\HTTT\KHOD\bin\Debug\Microsoft.ReportViewer.WinForms.dll
 D:\Desktop\HTTT\KHOD\bin\Debug\EntityFramework.xml
 D:\Desktop\HTTT\KHOD\bin\Debug\EntityFramework.SqlServer.xml
 D:\Desktop\HTTT\KHOD\obj\Debug\KHOD.csproj.CopyComplete
+D:\Desktop\HTTT\KHOD\obj\Debug\KHOD.csproj.AssemblyReference.cache
+D:\Desktop\HTTT\KHOD\obj\Debug\KHOD.GUI.frmNhanVien_Themmoi.resources

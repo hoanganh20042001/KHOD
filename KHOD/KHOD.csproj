@@ -204,6 +204,12 @@
     <Compile Include="GUI\frmNewMain.Designer.cs">
       <DependentUpon>frmNewMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\frmNhanVien_Themmoi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmNhanVien_Themmoi.Designer.cs">
+      <DependentUpon>frmNhanVien_Themmoi.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\frmPhucHoi.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -274,6 +280,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmNhanVien.resx">
       <DependentUpon>frmNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmNhanVien_Themmoi.resx">
+      <DependentUpon>frmNhanVien_Themmoi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmPhucHoi.resx">
       <DependentUpon>frmPhucHoi.cs</DependentUpon>
