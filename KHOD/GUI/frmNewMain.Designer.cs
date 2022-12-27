@@ -77,7 +77,7 @@ namespace KHOD.GUI
             this.fluentDesignFormContainer1.Location = new System.Drawing.Point(419, 31);
             this.fluentDesignFormContainer1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.fluentDesignFormContainer1.Name = "fluentDesignFormContainer1";
-            this.fluentDesignFormContainer1.Size = new System.Drawing.Size(773, 727);
+            this.fluentDesignFormContainer1.Size = new System.Drawing.Size(773, 925);
             this.fluentDesignFormContainer1.TabIndex = 0;
             // 
             // panelMain
@@ -86,7 +86,7 @@ namespace KHOD.GUI
             this.panelMain.Location = new System.Drawing.Point(0, 0);
             this.panelMain.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelMain.Name = "panelMain";
-            this.panelMain.Size = new System.Drawing.Size(773, 727);
+            this.panelMain.Size = new System.Drawing.Size(773, 925);
             this.panelMain.TabIndex = 1;
             // 
             // accordionControl1
@@ -110,7 +110,7 @@ namespace KHOD.GUI
             this.accordionControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.accordionControl1.Name = "accordionControl1";
             this.accordionControl1.ScrollBarMode = DevExpress.XtraBars.Navigation.ScrollBarMode.Touch;
-            this.accordionControl1.Size = new System.Drawing.Size(419, 727);
+            this.accordionControl1.Size = new System.Drawing.Size(419, 925);
             this.accordionControl1.TabIndex = 1;
             this.accordionControl1.ViewType = DevExpress.XtraBars.Navigation.AccordionControlViewType.HamburgerMenu;
             // 
@@ -321,7 +321,7 @@ namespace KHOD.GUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1192, 758);
+            this.ClientSize = new System.Drawing.Size(1192, 956);
             this.ControlContainer = this.fluentDesignFormContainer1;
             this.Controls.Add(this.fluentDesignFormContainer1);
             this.Controls.Add(this.accordionControl1);
