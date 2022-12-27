@@ -73,7 +73,35 @@ namespace KHOD.GUI
 
 		private void guna2Button4_Click(object sender, EventArgs e)
 		{
-			
+			command = connection.CreateCommand();
+			int value;
+			if (comboBox1.Text == "Ngừng hoạt động")
+			{
+				value = 0;
+			}
+			else
+			{
+				value = 1;
+			}
+			DateTime dat = guna2DateTimePicker1.Value.Date;
+			string datS = dat.ToString("yyyy-MM-dd");
+			DateTime dat2 = guna2DateTimePicker2.Value.Date;
+			string datS2 = dat.ToString("yyyy-MM-dd");
+			command.CommandText = "update NHAN_VIEN set TenNV = '"+guna2TextBox2.Text+"', Ngaysinh = '"+datS+ "', DiaChi = '"+ guna2TextBox3.Text
+				+"',SDT = '"+ Decimal.Parse(guna2TextBox4.Text) + "', GhiChu = '"+ guna2TextBox11.Text + "', ChucVu = '"+ guna2TextBox6.Text + "', QuanHam = '"+ guna2TextBox5.Text
+				+ "',TaiKhoan = '"+ guna2TextBox13.Text + "',MatKhau = '"+ guna2TextBox12.Text + "',NgayCN= '"+ datS2 + "',MaBP= '"+ Convert.ToInt32(guna2TextBox8.Text)
+				+ "',MaPQ= '"+ Convert.ToInt32(guna2TextBox9.Text) + "',TrangThai= '"+ Convert.ToInt32(value) + "'";
+			command.ExecuteNonQuery();
+			loaddata();
+		}
+
+		private void guna2Button3_Click(object sender, EventArgs e)
+		{
+
+			command = connection.CreateCommand();
+			command.CommandText = "Delete from NHAN_VIEN where MaNV = '"+ guna2TextBox1.Text + "'";
+			command.ExecuteNonQuery();
+			loaddata();
 		}
 	}
 }

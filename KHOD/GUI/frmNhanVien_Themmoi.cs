@@ -46,9 +46,11 @@ namespace KHOD.GUI
 			command = connection.CreateCommand();
 			DateTime dat = guna2DateTimePicker1.Value.Date;
 			string datS = dat.ToString("yyyy-MM-dd");
+			DateTime dat2 = guna2DateTimePicker2.Value.Date;
+			string datS2 = dat.ToString("yyyy-MM-dd");
 			command.CommandText = "insert into NHAN_VIEN (TenNV, NgaySinh, DiaChi,SDT, GhiChu, ChucVu, QuanHam,TaiKhoan,MatKhau,NgayCN,MaBP,MaPQ,TrangThai) values ('"+ guna2TextBox2.Text 
 				+ "', '"+ datS+ "', '" + guna2TextBox3.Text + "','" + Decimal.Parse(guna2TextBox4.Text) + "','" + guna2TextBox11.Text + "','" + guna2TextBox6.Text + "','" 
-				+ guna2TextBox5.Text + "','" + guna2TextBox13.Text + "','" + guna2TextBox12.Text + "','" + datS + "','" + Convert.ToInt32(guna2TextBox8.Text) + "','" 
+				+ guna2TextBox5.Text + "','" + guna2TextBox13.Text + "','" + guna2TextBox12.Text + "','" + datS2 + "','" + Convert.ToInt32(guna2TextBox8.Text) + "','" 
 				+ Convert.ToInt32(guna2TextBox9.Text) + "','" + Convert.ToInt32(value) + "')";
 			command.ExecuteNonQuery();
 			this.Close();
