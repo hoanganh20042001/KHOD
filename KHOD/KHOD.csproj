@@ -100,6 +100,11 @@
     <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bang\DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DAO\BO_PHAN.cs" />
     <Compile Include="DAO\DAT_NL.cs" />
     <Compile Include="DAO\DON_DAT_NL.cs" />
@@ -118,10 +123,12 @@
     <Compile Include="DAO\PHAN_QUYEN.cs" />
     <Compile Include="DAO\PHIEU_NHAP_KHO.cs" />
     <Compile Include="DAO\PHIEU_XUAT_KHO.cs" />
+    <Compile Include="DAO\sysdiagram.cs" />
     <Compile Include="DAO\THANH_PHAN.cs" />
     <Compile Include="DAO\THONG_TIN.cs" />
     <Compile Include="DAO\XUAT_KHO.cs" />
-    <Compile Include="Func\report.cs" />
+    <Compile Include="Func\ThanhPhanF.cs" />
+    <Compile Include="Func\ThucDonF.cs" />
     <Compile Include="GUI\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -182,6 +189,12 @@
     <Compile Include="GUI\frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\frmNewMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmNewMain.Designer.cs">
+      <DependentUpon>frmNewMain.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\frmPhucHoi.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -212,25 +225,19 @@
     <Compile Include="GUI\Print.Designer.cs">
       <DependentUpon>Print.cs</DependentUpon>
     </Compile>
+    <Compile Include="Program.cs" />
     <Compile Include="report\MA.cs" />
     <Compile Include="report\re.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>re.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="report\rep.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="report\rep.Designer.cs">
       <DependentUpon>rep.cs</DependentUpon>
-    </Compile>
-    <Compile Include="report\XtraReport1.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="report\XtraReport1.Designer.cs">
-      <DependentUpon>XtraReport1.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="GUI\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -252,6 +259,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmNewMain.resx">
+      <DependentUpon>frmNewMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmPhucHoi.resx">
       <DependentUpon>frmPhucHoi.cs</DependentUpon>
@@ -282,11 +292,19 @@
     <EmbeddedResource Include="report\rep.resx">
       <DependentUpon>rep.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="report\XtraReport1.resx">
-      <DependentUpon>XtraReport1.cs</DependentUpon>
-    </EmbeddedResource>
     <None Include=".editorconfig" />
     <None Include="App.config" />
+    <None Include="Bang\DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Bang\DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Bang\DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -318,6 +336,7 @@
   <ItemGroup>
     <Content Include="Icons.res" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.

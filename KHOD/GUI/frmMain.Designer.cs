@@ -236,6 +236,7 @@ namespace KHOD
 			this.accordionControlElement9.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
             this.accordionControlElement14,
             this.accordionControlElement15});
+			this.accordionControlElement9.Expanded = true;
 			this.accordionControlElement9.HeaderTemplate.AddRange(new DevExpress.XtraBars.Navigation.HeaderElementInfo[] {
             new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.Text),
             new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.Image),
@@ -266,6 +267,7 @@ namespace KHOD
             this.accordionControlElement11,
             this.accordionControlElement12,
             this.accordionControlElement13});
+			this.accordionControlElement10.Expanded = true;
 			this.accordionControlElement10.Name = "accordionControlElement10";
 			this.accordionControlElement10.Text = "NGƯỜI DÙNG";
 			this.accordionControlElement10.Click += new System.EventHandler(this.accordionControlElement10_Click);

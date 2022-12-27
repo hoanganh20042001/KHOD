@@ -48,7 +48,6 @@ E:\WEB\KHOD\KHOD\bin\Debug\de\DevExpress.Pdf.v21.2.Core.resources.dll
 E:\WEB\KHOD\KHOD\bin\Debug\es\DevExpress.Pdf.v21.2.Core.resources.dll
 E:\WEB\KHOD\KHOD\bin\Debug\ja\DevExpress.Pdf.v21.2.Core.resources.dll
 E:\WEB\KHOD\KHOD\bin\Debug\ru\DevExpress.Pdf.v21.2.Core.resources.dll
-E:\WEB\KHOD\KHOD\obj\Debug\KHOD.csproj.AssemblyReference.cache
 E:\WEB\KHOD\KHOD\obj\Debug\KHOD.Form1.resources
 E:\WEB\KHOD\KHOD\obj\Debug\KHOD.Properties.Resources.resources
 E:\WEB\KHOD\KHOD\obj\Debug\KHOD.csproj.GenerateResource.cache
@@ -230,3 +229,5 @@ E:\WEB\KHOD\KHOD\bin\Debug\ja\DevExpress.Diagram.v21.2.Core.resources.dll
 E:\WEB\KHOD\KHOD\bin\Debug\ru\DevExpress.Diagram.v21.2.Core.resources.dll
 E:\WEB\KHOD\KHOD\obj\Debug\KHOD.report.rep.resources
 E:\WEB\KHOD\KHOD\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+E:\WEB\KHOD\KHOD\obj\Debug\KHOD.GUI.frmNewMain.resources
+E:\WEB\KHOD\KHOD\obj\Debug\KHOD.csproj.AssemblyReference.cache
