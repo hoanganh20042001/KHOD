@@ -67,3 +67,15 @@ E:\WEB\KHOD\KHOD\bin\Debug\ru\DevExpress.XtraWizard.v21.2.resources.dll
 E:\WEB\KHOD\KHOD\obj\Debug\KHOD.GUI.frmChangePass.resources
 E:\WEB\KHOD\KHOD\obj\Debug\KHOD.GUI.frmLogin.resources
 E:\WEB\KHOD\KHOD\obj\Debug\KHOD.GUI.frmThucDon.resources
+D:\Desktop\KHOD\KHOD\obj\Debug\KHOD.csproj.AssemblyReference.cache
+D:\Desktop\KHOD\KHOD\obj\Debug\KHOD.Form1.resources
+D:\Desktop\KHOD\KHOD\obj\Debug\KHOD.GUI.frmChangePass.resources
+D:\Desktop\KHOD\KHOD\obj\Debug\KHOD.GUI.frmLogin.resources
+D:\Desktop\KHOD\KHOD\obj\Debug\KHOD.GUI.frmThucDon.resources
+D:\Desktop\KHOD\KHOD\obj\Debug\KHOD.Properties.Resources.resources
+D:\Desktop\KHOD\KHOD\obj\Debug\KHOD.csproj.GenerateResource.cache
+D:\Desktop\KHOD\KHOD\obj\Debug\KHOD.exe.licenses
+D:\Desktop\KHOD\KHOD\obj\Debug\KHOD.csproj.CoreCompileInputs.cache
+D:\Desktop\KHOD\KHOD\obj\Debug\KHOD.exe
+D:\Desktop\KHOD\KHOD\obj\Debug\KHOD.pdb
+D:\Desktop\KHOD\KHOD\obj\Debug\KHOD.GUI.frmNhanvien.resources
