@@ -15,8 +15,7 @@ namespace KHOD.DAO
 
         public DateTime? ThoiGian { get; set; }
 
-        [StringLength(100)]
-        public string HoatDong { get; set; }
+        public DateTime? ThoiGianThoat { get; set; }
 
         public virtual NHAN_VIEN NHAN_VIEN { get; set; }
     }

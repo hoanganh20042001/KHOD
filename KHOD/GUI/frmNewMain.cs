@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using DevExpress.XtraBars;
-
+using KHOD.Func;
 namespace KHOD.GUI
 {
 	public partial class frmNewMain : DevExpress.XtraBars.FluentDesignSystem.FluentDesignForm
@@ -24,7 +24,22 @@ namespace KHOD.GUI
 
 		private void frmNewMain_Load(object sender, EventArgs e)
 		{
+			KhoF kho = new KhoF();
+			kho.TuDong();
+			frmThucDon form = new frmThucDon();
 
+			//frmChangePass.TopLevel = false;
+
+
+			panelMain.Controls.Clear();
+			//panelMain.Dock = DockStyle.Fill;
+
+			form.TopLevel = false;
+			form.Dock = DockStyle.Fill;
+			panelMain.Controls.Add(form);
+
+			form.Show();
+			form.BringToFront();
 		}
 
 		private void accordionControlElement8_Click(object sender, EventArgs e)
@@ -67,6 +82,43 @@ namespace KHOD.GUI
 		{
 
 			frmKiemTra form = new frmKiemTra();
+
+			//frmChangePass.TopLevel = false;
+
+
+			panelMain.Controls.Clear();
+			//panelMain.Dock = DockStyle.Fill;
+
+			form.TopLevel = false;
+			form.Dock = DockStyle.Fill;
+			panelMain.Controls.Add(form);
+
+			form.Show();
+			form.BringToFront();
+		}
+
+		private void accordionControlElement11_Click(object sender, EventArgs e)
+		{
+			frmThongKe form = new frmThongKe();
+
+			//frmChangePass.TopLevel = false;
+
+
+			panelMain.Controls.Clear();
+			//panelMain.Dock = DockStyle.Fill;
+
+			form.TopLevel = false;
+			form.Dock = DockStyle.Fill;
+			panelMain.Controls.Add(form);
+
+			form.Show();
+			form.BringToFront();
+		}
+
+		private void accordionControlElement12_Click(object sender, EventArgs e)
+		{
+			frmDatNL form = new frmDatNL();
+
 
 			//frmChangePass.TopLevel = false;
 

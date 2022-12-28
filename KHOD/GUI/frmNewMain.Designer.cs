@@ -40,6 +40,7 @@ namespace KHOD.GUI
 			this.accordionControlElement2 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
 			this.accordionControlElement10 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
 			this.accordionControlElement11 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+			this.accordionControlElement24 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
 			this.accordionControlSeparator2 = new DevExpress.XtraBars.Navigation.AccordionControlSeparator();
 			this.accordionControlElement3 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
 			this.accordionControlElement12 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
@@ -144,7 +145,8 @@ namespace KHOD.GUI
 			// 
 			this.accordionControlElement2.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
             this.accordionControlElement10,
-            this.accordionControlElement11});
+            this.accordionControlElement11,
+            this.accordionControlElement24});
 			this.accordionControlElement2.Expanded = true;
 			this.accordionControlElement2.Name = "accordionControlElement2";
 			this.accordionControlElement2.Text = "QUẢN LÝ KHO";
@@ -161,6 +163,13 @@ namespace KHOD.GUI
 			this.accordionControlElement11.Name = "accordionControlElement11";
 			this.accordionControlElement11.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
 			this.accordionControlElement11.Text = "Thống kê nguyên liệu";
+			this.accordionControlElement11.Click += new System.EventHandler(this.accordionControlElement11_Click);
+			// 
+			// accordionControlElement24
+			// 
+			this.accordionControlElement24.Name = "accordionControlElement24";
+			this.accordionControlElement24.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+			this.accordionControlElement24.Text = "Element24";
 			// 
 			// accordionControlSeparator2
 			// 
@@ -178,9 +187,15 @@ namespace KHOD.GUI
 			// 
 			// accordionControlElement12
 			// 
+			this.accordionControlElement12.HeaderTemplate.AddRange(new DevExpress.XtraBars.Navigation.HeaderElementInfo[] {
+            new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.Text),
+            new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.Image),
+            new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.HeaderControl),
+            new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.ContextButtons)});
 			this.accordionControlElement12.Name = "accordionControlElement12";
 			this.accordionControlElement12.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
 			this.accordionControlElement12.Text = "Đặt nguyên liệu";
+			this.accordionControlElement12.Click += new System.EventHandler(this.accordionControlElement12_Click);
 			// 
 			// accordionControlElement22
 			// 
@@ -374,5 +389,6 @@ namespace KHOD.GUI
 		private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement18;
 		private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement19;
 		private DevExpress.XtraEditors.PanelControl panelMain;
+		private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement24;
 	}
 }

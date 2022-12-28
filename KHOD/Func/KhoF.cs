@@ -20,35 +20,36 @@ namespace KHOD.Func
 		public List<KhoF> ListAll()
 		{
 			List<KhoF> kho = new List<KhoF>();
-			var kq = from nl in db.NGUYEN_LIEU
-					 join tp in db.THANH_PHAN on nl.MaTP equals tp.MaTP where SoLuong>0
-					 select new {
-						 MaNL=nl.MaNL,
-						 NguyenLieu = tp.tenTP,
-						 NSX = nl.NgaySanXuat,
-						 HSD = nl.HanSuDung,
-						 Gia = nl.DonGia,
-						 SoLuong = nl.SoLuong,
-						 TrangThai = nl.TrangThai
-					 };
-			foreach(var item in kq)
-			{
-				KhoF k = new KhoF();
-				k.MaNL = item.MaNL;
-				k.NguyenLieu = item.NguyenLieu;
-				k.NSX = item.NSX;
-				k.HSD = item.HSD;
-				k.Gia = item.Gia;
-				k.SoLuong = item.SoLuong;
-				k.TrangThai = item.TrangThai;
-				kho.Add(k);
-			}
+			kho = db.Database.SqlQuery<KhoF>("select manl,tp.tentp nguyenlieu, ngaysanxuat nsx, hansudung hsd,Dongia Gia,soluong,trangthai from thanh_phan tp join nguyen_lieu nl on tp.matp=nl.matp where soluong>0 ").ToList();
+			//var kq = from nl in db.NGUYEN_LIEU
+			//		 join tp in db.THANH_PHAN on nl.MaTP equals tp.MaTP where SoLuong>0
+			//		 select new {
+			//			 MaNL=nl.MaNL,
+			//			 NguyenLieu = tp.tenTP,
+			//			 NSX = nl.NgaySanXuat,
+			//			 HSD = nl.HanSuDung,
+			//			 Gia = nl.DonGia,
+			//			 SoLuong = nl.SoLuong,
+			//			 TrangThai = nl.TrangThai
+			//		 };
+			//foreach(var item in kq)
+			//{
+			//	KhoF k = new KhoF();
+			//	k.MaNL = item.MaNL;
+			//	k.NguyenLieu = item.NguyenLieu;
+			//	k.NSX = item.NSX;
+			//	k.HSD = item.HSD;
+			//	k.Gia = item.Gia;
+			//	k.SoLuong = item.SoLuong;
+			//	k.TrangThai = item.TrangThai;
+			//	kho.Add(k);
+			//}
 			return kho;
 		}
 		
 		public void TuDong()
 		{
-			if (DateTime.Now.Hour == 7 || DateTime.Now.Hour == 16)
+			if (DateTime.Now.Hour <= 7 || (14 <= DateTime.Now.Hour && DateTime.Now.Hour <= 15))
 			{
 				foreach(var item in ListAll())
 				{
@@ -59,7 +60,7 @@ namespace KHOD.Func
 			}
 			
 		}
-		public bool KiemTra(int manl,int soLuongLoaiBo,string LyDo,int MaNV)
+		public void KiemTra(int manl,int soLuongLoaiBo,string LyDo,int MaNV)
 		{
 			var result = db.NGUYEN_LIEU.Find(manl);
 			KIEM_TRA kiemtra = new KIEM_TRA();
@@ -73,13 +74,17 @@ namespace KHOD.Func
 				lb.SoLuong = soLuongLoaiBo;
 				db.DS_LOAI_BO_NL.Add(lb);
 				
-				
+				kiemtra.MaLB = lb.MaLB;
+
 			}
 			DateTime T = DateTime.Now;
+			kiemtra.ThoiGian = T;
+			kiemtra.MaNV = MaNV;
 			db.KIEM_TRA.Add(kiemtra);
+			
 			result.TrangThai = true;
 			db.SaveChanges();
-			return true;
+			
 		}
 		public void XuatKho()
 		{
@@ -93,10 +98,10 @@ namespace KHOD.Func
 			//	ThanhPhan=thanhp.Key,
 			//	SoLuong=nl.So
 			KhoiLuong kho = new KhoiLuong();
-		    foreach(var item in List)
+		    foreach(var item in List)// lay ra nguyen lieu CAN MUA
 			{
-				KhoiLuong khoiluong = kho.getNL(item.ThanhPhan);
-				
+				KhoiLuong khoiluong = kho.getNL(item.maTP);//lay ra nguyen lieu trong kho
+				DateTime hsd=
 			}
 
 		}

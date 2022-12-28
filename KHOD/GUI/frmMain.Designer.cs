@@ -76,7 +76,7 @@ namespace KHOD
 			this.fluentDesignFormContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.fluentDesignFormContainer1.Location = new System.Drawing.Point(293, 39);
 			this.fluentDesignFormContainer1.Name = "fluentDesignFormContainer1";
-			this.fluentDesignFormContainer1.Size = new System.Drawing.Size(398, 434);
+			this.fluentDesignFormContainer1.Size = new System.Drawing.Size(810, 466);
 			this.fluentDesignFormContainer1.TabIndex = 0;
 			// 
 			// panelMain
@@ -84,7 +84,7 @@ namespace KHOD
 			this.panelMain.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.panelMain.Location = new System.Drawing.Point(0, 0);
 			this.panelMain.Name = "panelMain";
-			this.panelMain.Size = new System.Drawing.Size(398, 434);
+			this.panelMain.Size = new System.Drawing.Size(810, 466);
 			this.panelMain.TabIndex = 0;
 			// 
 			// accordionControl1
@@ -101,7 +101,7 @@ namespace KHOD
 			this.accordionControl1.Location = new System.Drawing.Point(0, 39);
 			this.accordionControl1.Name = "accordionControl1";
 			this.accordionControl1.ScrollBarMode = DevExpress.XtraBars.Navigation.ScrollBarMode.Touch;
-			this.accordionControl1.Size = new System.Drawing.Size(293, 434);
+			this.accordionControl1.Size = new System.Drawing.Size(293, 466);
 			this.accordionControl1.TabIndex = 1;
 			this.accordionControl1.ViewType = DevExpress.XtraBars.Navigation.AccordionControlViewType.HamburgerMenu;
 			// 
@@ -304,7 +304,7 @@ namespace KHOD
 			this.fluentDesignFormControl1.Name = "fluentDesignFormControl1";
 			this.fluentDesignFormControl1.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemTextEdit1});
-			this.fluentDesignFormControl1.Size = new System.Drawing.Size(691, 39);
+			this.fluentDesignFormControl1.Size = new System.Drawing.Size(1103, 39);
 			this.fluentDesignFormControl1.TabIndex = 2;
 			this.fluentDesignFormControl1.TabStop = false;
 			// 
@@ -342,7 +342,7 @@ namespace KHOD
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(691, 473);
+			this.ClientSize = new System.Drawing.Size(1103, 505);
 			this.ControlContainer = this.fluentDesignFormContainer1;
 			this.Controls.Add(this.fluentDesignFormContainer1);
 			this.Controls.Add(this.accordionControl1);

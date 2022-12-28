@@ -76,6 +76,9 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
+    <Reference Include="Guna.UI2, Version=2.0.3.9, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.3.9\lib\net472\Guna.UI2.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.ReportViewer.WinForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.ReportViewer.WinForms.v12.12.0.0.1\lib\Microsoft.ReportViewer.WinForms.dll</HintPath>
     </Reference>
@@ -84,8 +87,11 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -113,6 +119,7 @@
     <Compile Include="DAO\HOA_DON.cs" />
     <Compile Include="DAO\KIEM_TRA.cs" />
     <Compile Include="DAO\LICH_SU_DN.cs" />
+    <Compile Include="DAO\LoaiNL.cs" />
     <Compile Include="DAO\MON_AN.cs" />
     <Compile Include="DAO\MyDB.cs" />
     <Compile Include="DAO\NGUYEN_LIEU.cs" />
@@ -125,10 +132,6 @@
     <Compile Include="DAO\THANH_PHAN.cs" />
     <Compile Include="DAO\THONG_TIN.cs" />
     <Compile Include="DAO\XUAT_KHO.cs" />
-    <Compile Include="Func\KhoF.cs" />
-    <Compile Include="Func\KhoiLuong.cs" />
-    <Compile Include="Func\ThanhPhanF.cs" />
-    <Compile Include="Func\ThucDonF.cs" />
     <Compile Include="GUI\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -229,6 +232,9 @@
     </Compile>
     <EmbeddedResource Include="GUI\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmDatNL.resx">
+      <DependentUpon>frmDatNL.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmKiemTra.resx">
       <DependentUpon>frmKiemTra.cs</DependentUpon>

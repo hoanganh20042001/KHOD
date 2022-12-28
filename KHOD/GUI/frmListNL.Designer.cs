@@ -39,6 +39,7 @@ namespace KHOD.GUI
 			this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
 			this.dataGridView1 = new System.Windows.Forms.DataGridView();
 			this.Ngay = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.button1 = new System.Windows.Forms.Button();
 			this.sidePanel1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
 			this.panelControl2.SuspendLayout();
@@ -51,6 +52,7 @@ namespace KHOD.GUI
 			// 
 			this.sidePanel1.Appearance.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
 			this.sidePanel1.Appearance.Options.UseBackColor = true;
+			this.sidePanel1.Controls.Add(this.button1);
 			this.sidePanel1.Controls.Add(this.date2);
 			this.sidePanel1.Controls.Add(this.date1);
 			this.sidePanel1.Controls.Add(this.labelControl3);
@@ -59,7 +61,7 @@ namespace KHOD.GUI
 			this.sidePanel1.Dock = System.Windows.Forms.DockStyle.Top;
 			this.sidePanel1.Location = new System.Drawing.Point(0, 0);
 			this.sidePanel1.Name = "sidePanel1";
-			this.sidePanel1.Size = new System.Drawing.Size(959, 107);
+			this.sidePanel1.Size = new System.Drawing.Size(1779, 107);
 			this.sidePanel1.TabIndex = 4;
 			this.sidePanel1.Text = "sidePanel1";
 			// 
@@ -72,7 +74,7 @@ namespace KHOD.GUI
 			// 
 			// date1
 			// 
-			this.date1.Location = new System.Drawing.Point(139, 36);
+			this.date1.Location = new System.Drawing.Point(142, 36);
 			this.date1.Name = "date1";
 			this.date1.Size = new System.Drawing.Size(200, 23);
 			this.date1.TabIndex = 7;
@@ -96,9 +98,9 @@ namespace KHOD.GUI
 			this.labelControl2.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
 			this.labelControl2.Location = new System.Drawing.Point(1222, 76);
 			this.labelControl2.Name = "labelControl2";
-			this.labelControl2.Size = new System.Drawing.Size(217, 31);
+			this.labelControl2.Size = new System.Drawing.Size(242, 31);
 			this.labelControl2.TabIndex = 4;
-			this.labelControl2.Text = "Danh sách thực đơn";
+			this.labelControl2.Text = "Danh sách nguyên liệu";
 			// 
 			// labelControl1
 			// 
@@ -118,7 +120,7 @@ namespace KHOD.GUI
 			this.panelControl2.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.panelControl2.Location = new System.Drawing.Point(0, 107);
 			this.panelControl2.Name = "panelControl2";
-			this.panelControl2.Size = new System.Drawing.Size(959, 422);
+			this.panelControl2.Size = new System.Drawing.Size(1779, 544);
 			this.panelControl2.TabIndex = 6;
 			// 
 			// panelControl1
@@ -129,7 +131,7 @@ namespace KHOD.GUI
 			this.panelControl1.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.panelControl1.Location = new System.Drawing.Point(2, 2);
 			this.panelControl1.Name = "panelControl1";
-			this.panelControl1.Size = new System.Drawing.Size(955, 418);
+			this.panelControl1.Size = new System.Drawing.Size(1775, 540);
 			this.panelControl1.TabIndex = 6;
 			// 
 			// dataGridView1
@@ -141,11 +143,11 @@ namespace KHOD.GUI
             this.Ngay});
 			this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Right;
 			this.dataGridView1.GridColor = System.Drawing.SystemColors.Control;
-			this.dataGridView1.Location = new System.Drawing.Point(-387, 2);
+			this.dataGridView1.Location = new System.Drawing.Point(1024, 2);
 			this.dataGridView1.Name = "dataGridView1";
 			this.dataGridView1.RowHeadersWidth = 51;
 			this.dataGridView1.RowTemplate.Height = 24;
-			this.dataGridView1.Size = new System.Drawing.Size(1340, 414);
+			this.dataGridView1.Size = new System.Drawing.Size(749, 536);
 			this.dataGridView1.TabIndex = 0;
 			this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
 			// 
@@ -157,13 +159,24 @@ namespace KHOD.GUI
 			this.Ngay.Name = "Ngay";
 			this.Ngay.Width = 125;
 			// 
+			// button1
+			// 
+			this.button1.Location = new System.Drawing.Point(881, 30);
+			this.button1.Name = "button1";
+			this.button1.Size = new System.Drawing.Size(75, 52);
+			this.button1.TabIndex = 9;
+			this.button1.Text = "button1";
+			this.button1.UseVisualStyleBackColor = true;
+			this.button1.Visible = false;
+			// 
 			// frmListNL
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(959, 529);
+			this.ClientSize = new System.Drawing.Size(1779, 651);
 			this.Controls.Add(this.panelControl2);
 			this.Controls.Add(this.sidePanel1);
+			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
 			this.Name = "frmListNL";
 			this.Text = "frmListTD";
 			this.Load += new System.EventHandler(this.frmListNL_Load);
@@ -190,5 +203,6 @@ namespace KHOD.GUI
 		private DevExpress.XtraEditors.PanelControl panelControl1;
 		public System.Windows.Forms.DataGridView dataGridView1;
 		private System.Windows.Forms.DataGridViewTextBoxColumn Ngay;
+		private System.Windows.Forms.Button button1;
 	}
 }

@@ -20,6 +20,7 @@ namespace KHOD.DAO
 		public virtual DbSet<HOA_DON> HOA_DON { get; set; }
 		public virtual DbSet<KIEM_TRA> KIEM_TRA { get; set; }
 		public virtual DbSet<LICH_SU_DN> LICH_SU_DN { get; set; }
+		public virtual DbSet<LoaiNL> LoaiNLs { get; set; }
 		public virtual DbSet<MON_AN> MON_AN { get; set; }
 		public virtual DbSet<NGUYEN_LIEU> NGUYEN_LIEU { get; set; }
 		public virtual DbSet<NHA_CUNG_CAP> NHA_CUNG_CAP { get; set; }
@@ -72,7 +73,6 @@ namespace KHOD.DAO
 
 			modelBuilder.Entity<NHAN_VIEN>()
 				.Property(e => e.MatKhau)
-				.IsFixedLength()
 				.IsUnicode(false);
 
 			modelBuilder.Entity<THANH_PHAN>()

@@ -230,3 +230,5 @@ E:\WEB\KHOD\KHOD\bin\Debug\Microsoft.ReportViewer.WinForms.dll
 E:\WEB\KHOD\KHOD\obj\Debug\KHOD.GUI.frmNewMain.resources
 E:\WEB\KHOD\KHOD\obj\Debug\KHOD.csproj.AssemblyReference.cache
 E:\WEB\KHOD\KHOD\obj\Debug\KHOD.GUI.frmKiemTra.resources
+E:\WEB\KHOD\KHOD\bin\Debug\Guna.UI2.dll
+E:\WEB\KHOD\KHOD\obj\Debug\KHOD.GUI.frmDatNL.resources

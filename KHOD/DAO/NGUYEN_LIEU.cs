@@ -18,8 +18,6 @@ namespace KHOD.DAO
         [Key]
         public int MaNL { get; set; }
 
-        public double DonGia { get; set; }
-
         [StringLength(100)]
         public string GhiChu { get; set; }
 

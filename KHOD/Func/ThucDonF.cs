@@ -57,8 +57,37 @@ namespace KHOD.Func
 		}
 		public List<ThucDonF> List(DateTime d1, DateTime d2)
 		{
+			d1 = d1.Date;
+			d2 = d2.Date;
 			List<ThucDonF> newList = new List<ThucDonF>();
 			if (d2 < d1) return newList;
+			else if (d1 == d2)
+			{
+				var MaTT = db.Database.SqlQuery<int>("select matt from Thong_tin where ngay=@d1 ", new SqlParameter("@d1", d1)).ToList();
+				int STT = 0;
+				foreach (var item in MaTT)
+				{
+					STT = STT + 1;
+					ThucDonF TT = new ThucDonF();
+					TT.Ngay = db.Database.SqlQuery<DateTime>("select Ngay from Thong_tin where matt=@matt", new SqlParameter("@matt", item)).SingleOrDefault();
+					TT.Buoi = db.Database.SqlQuery<string>("select buoi from Thong_tin where matt=@matt", new SqlParameter("@matt", item)).SingleOrDefault();
+
+					TT.QuanSo = db.Database.SqlQuery<int>("select quanso from Thong_tin where matt=@matt", new SqlParameter("@matt", item)).SingleOrDefault();
+					var listMA = db.Database.SqlQuery<string>("select tenma from DS_MA join Mon_an on ds_ma.mama=mon_an.mama where matt=@matt", new SqlParameter("@matt", item)).ToList();
+					foreach (var i in listMA)
+					{
+						if (TT.MonAn == null)
+						{
+							TT.MonAn = i;
+						}
+						else
+							TT.MonAn = TT.MonAn + " , " + i;
+					}
+					newList.Add(TT);
+
+				}
+				return newList;
+			}
 			else
 			{
 				var MaTT = db.Database.SqlQuery<int>("select matt from Thong_tin where ngay>=@d1 and ngay<=@d2", new SqlParameter("@d1",d1), new SqlParameter("@d2", d2)).ToList();

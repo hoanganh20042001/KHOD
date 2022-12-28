@@ -11,6 +11,7 @@ namespace KHOD.DAO
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public DON_DAT_NL()
         {
+            DAT_NL = new HashSet<DAT_NL>();
             HOA_DON = new HashSet<HOA_DON>();
         }
 
@@ -24,9 +25,8 @@ namespace KHOD.DAO
 
         public int? MaNCC { get; set; }
 
-        public int? MaDat { get; set; }
-
-        public virtual DAT_NL DAT_NL { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<DAT_NL> DAT_NL { get; set; }
 
         public virtual NHA_CUNG_CAP NHA_CUNG_CAP { get; set; }
 
