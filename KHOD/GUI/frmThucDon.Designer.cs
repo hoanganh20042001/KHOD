@@ -265,7 +265,6 @@ namespace KHOD.GUI
             this.ClientSize = new System.Drawing.Size(1532, 574);
             this.Controls.Add(this.panelControl1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.MinimizeBox = false;
             this.Name = "frmThucDon";
             this.Text = "Thực đơn";
             this.Load += new System.EventHandler(this.frmThucDon_Load);

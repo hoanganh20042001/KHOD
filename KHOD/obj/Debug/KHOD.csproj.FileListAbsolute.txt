@@ -412,7 +412,6 @@ D:\Desktop\HTTT\KHOD\bin\Debug\ja\DevExpress.XtraPivotGrid.v22.1.resources.dll
 D:\Desktop\HTTT\KHOD\bin\Debug\de\DevExpress.Diagram.v22.1.Core.resources.dll
 D:\Desktop\HTTT\KHOD\bin\Debug\es\DevExpress.Diagram.v22.1.Core.resources.dll
 D:\Desktop\HTTT\KHOD\bin\Debug\ja\DevExpress.Diagram.v22.1.Core.resources.dll
-D:\Desktop\HTTT\KHOD\obj\Debug\KHOD.csproj.AssemblyReference.cache
 D:\Desktop\HTTT\KHOD\obj\Debug\KHOD.GUI.Form1.resources
 D:\Desktop\HTTT\KHOD\obj\Debug\KHOD.GUI.frmBaoCao1.resources
 D:\Desktop\HTTT\KHOD\obj\Debug\KHOD.GUI.frmBaoCao2.resources

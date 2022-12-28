@@ -114,7 +114,6 @@ namespace KHOD.GUI
             this.txtMK.Name = "txtMK";
             this.txtMK.Size = new System.Drawing.Size(282, 30);
             this.txtMK.TabIndex = 4;
-            this.txtMK.TextChanged += new System.EventHandler(this.txtMK_TextChanged);
             // 
             // txtDN
             // 

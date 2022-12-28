@@ -453,6 +453,7 @@ namespace KHOD.GUI
             this.Controls.Add(this.guna2HtmlLabel4);
             this.Controls.Add(this.guna2HtmlLabel3);
             this.Controls.Add(this.guna2HtmlLabel2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmNhanVien_Themmoi";
             this.Text = "Thêm nhân viên";
             this.Load += new System.EventHandler(this.frmNhanVien_Themmoi_Load);

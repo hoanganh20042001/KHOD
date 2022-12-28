@@ -29,9 +29,9 @@ namespace KHOD.GUI
 		/// </summary>
 		private void InitializeComponent()
 		{
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
             this.MaNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -78,35 +78,39 @@ namespace KHOD.GUI
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
             this.groupBox2.SuspendLayout();
-            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox1.Controls.Add(this.guna2DataGridView1);
-            this.groupBox1.Location = new System.Drawing.Point(3, 3);
+            this.groupBox1.Location = new System.Drawing.Point(0, 0);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1510, 363);
+            this.groupBox1.Size = new System.Drawing.Size(1362, 360);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Danh sách";
             // 
             // guna2DataGridView1
             // 
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle13.BackColor = System.Drawing.Color.White;
+            this.guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle13;
+            this.guna2DataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle14;
             this.guna2DataGridView1.ColumnHeadersHeight = 30;
             this.guna2DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.guna2DataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -123,20 +127,19 @@ namespace KHOD.GUI
             this.MaBP,
             this.MaPQ,
             this.TrangThai});
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle6;
-            this.guna2DataGridView1.Dock = System.Windows.Forms.DockStyle.Top;
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle15.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle15;
             this.guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.Location = new System.Drawing.Point(3, 16);
+            this.guna2DataGridView1.Location = new System.Drawing.Point(6, 19);
             this.guna2DataGridView1.Name = "guna2DataGridView1";
             this.guna2DataGridView1.RowHeadersVisible = false;
-            this.guna2DataGridView1.Size = new System.Drawing.Size(1504, 341);
+            this.guna2DataGridView1.Size = new System.Drawing.Size(1350, 338);
             this.guna2DataGridView1.TabIndex = 0;
             this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -324,9 +327,9 @@ namespace KHOD.GUI
             this.groupBox2.Controls.Add(this.guna2HtmlLabel2);
             this.groupBox2.Controls.Add(this.guna2HtmlLabel1);
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.groupBox2.Location = new System.Drawing.Point(0, 372);
+            this.groupBox2.Location = new System.Drawing.Point(0, 358);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(1534, 234);
+            this.groupBox2.Size = new System.Drawing.Size(1386, 244);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Chi tiết";
@@ -348,7 +351,7 @@ namespace KHOD.GUI
             this.comboBox1.Items.AddRange(new object[] {
             "Hoạt động",
             "Ngừng hoạt động"});
-            this.comboBox1.Location = new System.Drawing.Point(1020, 145);
+            this.comboBox1.Location = new System.Drawing.Point(797, 145);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(203, 21);
             this.comboBox1.TabIndex = 32;
@@ -358,11 +361,11 @@ namespace KHOD.GUI
             this.guna2DateTimePicker2.Checked = true;
             this.guna2DateTimePicker2.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2DateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.guna2DateTimePicker2.Location = new System.Drawing.Point(576, 92);
+            this.guna2DateTimePicker2.Location = new System.Drawing.Point(455, 92);
             this.guna2DateTimePicker2.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.guna2DateTimePicker2.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.guna2DateTimePicker2.Name = "guna2DateTimePicker2";
-            this.guna2DateTimePicker2.Size = new System.Drawing.Size(215, 36);
+            this.guna2DateTimePicker2.Size = new System.Drawing.Size(237, 36);
             this.guna2DateTimePicker2.TabIndex = 31;
             this.guna2DateTimePicker2.Value = new System.DateTime(2022, 12, 27, 9, 38, 32, 241);
             // 
@@ -375,7 +378,7 @@ namespace KHOD.GUI
             this.guna2DateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.guna2DateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
-            this.guna2DateTimePicker1.Size = new System.Drawing.Size(215, 36);
+            this.guna2DateTimePicker1.Size = new System.Drawing.Size(235, 36);
             this.guna2DateTimePicker1.TabIndex = 30;
             this.guna2DateTimePicker1.Value = new System.DateTime(2022, 12, 27, 9, 38, 32, 241);
             // 
@@ -390,12 +393,12 @@ namespace KHOD.GUI
             this.guna2TextBox11.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox11.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2TextBox11.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox11.Location = new System.Drawing.Point(1020, 100);
+            this.guna2TextBox11.Location = new System.Drawing.Point(797, 100);
             this.guna2TextBox11.Name = "guna2TextBox11";
             this.guna2TextBox11.PasswordChar = '\0';
             this.guna2TextBox11.PlaceholderText = "";
             this.guna2TextBox11.SelectedText = "";
-            this.guna2TextBox11.Size = new System.Drawing.Size(334, 24);
+            this.guna2TextBox11.Size = new System.Drawing.Size(203, 24);
             this.guna2TextBox11.TabIndex = 29;
             // 
             // guna2TextBox12
@@ -409,12 +412,12 @@ namespace KHOD.GUI
             this.guna2TextBox12.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox12.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2TextBox12.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox12.Location = new System.Drawing.Point(1020, 58);
+            this.guna2TextBox12.Location = new System.Drawing.Point(797, 58);
             this.guna2TextBox12.Name = "guna2TextBox12";
             this.guna2TextBox12.PasswordChar = '\0';
             this.guna2TextBox12.PlaceholderText = "";
             this.guna2TextBox12.SelectedText = "";
-            this.guna2TextBox12.Size = new System.Drawing.Size(334, 24);
+            this.guna2TextBox12.Size = new System.Drawing.Size(203, 24);
             this.guna2TextBox12.TabIndex = 28;
             // 
             // guna2TextBox13
@@ -428,12 +431,12 @@ namespace KHOD.GUI
             this.guna2TextBox13.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox13.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2TextBox13.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox13.Location = new System.Drawing.Point(1020, 19);
+            this.guna2TextBox13.Location = new System.Drawing.Point(797, 19);
             this.guna2TextBox13.Name = "guna2TextBox13";
             this.guna2TextBox13.PasswordChar = '\0';
             this.guna2TextBox13.PlaceholderText = "";
             this.guna2TextBox13.SelectedText = "";
-            this.guna2TextBox13.Size = new System.Drawing.Size(334, 24);
+            this.guna2TextBox13.Size = new System.Drawing.Size(203, 24);
             this.guna2TextBox13.TabIndex = 27;
             // 
             // guna2TextBox9
@@ -447,13 +450,14 @@ namespace KHOD.GUI
             this.guna2TextBox9.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox9.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2TextBox9.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox9.Location = new System.Drawing.Point(576, 198);
+            this.guna2TextBox9.Location = new System.Drawing.Point(455, 198);
             this.guna2TextBox9.Name = "guna2TextBox9";
             this.guna2TextBox9.PasswordChar = '\0';
             this.guna2TextBox9.PlaceholderText = "";
             this.guna2TextBox9.SelectedText = "";
-            this.guna2TextBox9.Size = new System.Drawing.Size(334, 24);
+            this.guna2TextBox9.Size = new System.Drawing.Size(237, 24);
             this.guna2TextBox9.TabIndex = 26;
+            this.guna2TextBox9.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.guna2TextBox9_KeyPress);
             // 
             // guna2TextBox8
             // 
@@ -466,13 +470,14 @@ namespace KHOD.GUI
             this.guna2TextBox8.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox8.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2TextBox8.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox8.Location = new System.Drawing.Point(576, 142);
+            this.guna2TextBox8.Location = new System.Drawing.Point(455, 142);
             this.guna2TextBox8.Name = "guna2TextBox8";
             this.guna2TextBox8.PasswordChar = '\0';
             this.guna2TextBox8.PlaceholderText = "";
             this.guna2TextBox8.SelectedText = "";
-            this.guna2TextBox8.Size = new System.Drawing.Size(334, 24);
+            this.guna2TextBox8.Size = new System.Drawing.Size(237, 24);
             this.guna2TextBox8.TabIndex = 25;
+            this.guna2TextBox8.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.guna2TextBox8_KeyPress);
             // 
             // guna2TextBox6
             // 
@@ -485,12 +490,12 @@ namespace KHOD.GUI
             this.guna2TextBox6.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox6.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2TextBox6.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox6.Location = new System.Drawing.Point(576, 58);
+            this.guna2TextBox6.Location = new System.Drawing.Point(455, 58);
             this.guna2TextBox6.Name = "guna2TextBox6";
             this.guna2TextBox6.PasswordChar = '\0';
             this.guna2TextBox6.PlaceholderText = "";
             this.guna2TextBox6.SelectedText = "";
-            this.guna2TextBox6.Size = new System.Drawing.Size(334, 24);
+            this.guna2TextBox6.Size = new System.Drawing.Size(237, 24);
             this.guna2TextBox6.TabIndex = 23;
             // 
             // guna2TextBox5
@@ -504,12 +509,12 @@ namespace KHOD.GUI
             this.guna2TextBox5.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox5.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2TextBox5.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox5.Location = new System.Drawing.Point(576, 19);
+            this.guna2TextBox5.Location = new System.Drawing.Point(455, 19);
             this.guna2TextBox5.Name = "guna2TextBox5";
             this.guna2TextBox5.PasswordChar = '\0';
             this.guna2TextBox5.PlaceholderText = "";
             this.guna2TextBox5.SelectedText = "";
-            this.guna2TextBox5.Size = new System.Drawing.Size(334, 24);
+            this.guna2TextBox5.Size = new System.Drawing.Size(237, 24);
             this.guna2TextBox5.TabIndex = 22;
             // 
             // guna2TextBox4
@@ -524,12 +529,14 @@ namespace KHOD.GUI
             this.guna2TextBox4.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2TextBox4.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox4.Location = new System.Drawing.Point(80, 189);
+            this.guna2TextBox4.MaxLength = 10;
             this.guna2TextBox4.Name = "guna2TextBox4";
             this.guna2TextBox4.PasswordChar = '\0';
             this.guna2TextBox4.PlaceholderText = "";
             this.guna2TextBox4.SelectedText = "";
-            this.guna2TextBox4.Size = new System.Drawing.Size(334, 24);
+            this.guna2TextBox4.Size = new System.Drawing.Size(235, 24);
             this.guna2TextBox4.TabIndex = 21;
+            this.guna2TextBox4.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.guna2TextBox4_KeyPress);
             // 
             // guna2TextBox3
             // 
@@ -547,7 +554,7 @@ namespace KHOD.GUI
             this.guna2TextBox3.PasswordChar = '\0';
             this.guna2TextBox3.PlaceholderText = "";
             this.guna2TextBox3.SelectedText = "";
-            this.guna2TextBox3.Size = new System.Drawing.Size(334, 24);
+            this.guna2TextBox3.Size = new System.Drawing.Size(235, 24);
             this.guna2TextBox3.TabIndex = 20;
             // 
             // guna2TextBox2
@@ -566,7 +573,7 @@ namespace KHOD.GUI
             this.guna2TextBox2.PasswordChar = '\0';
             this.guna2TextBox2.PlaceholderText = "";
             this.guna2TextBox2.SelectedText = "";
-            this.guna2TextBox2.Size = new System.Drawing.Size(334, 24);
+            this.guna2TextBox2.Size = new System.Drawing.Size(235, 24);
             this.guna2TextBox2.TabIndex = 19;
             // 
             // guna2Button4
@@ -577,9 +584,9 @@ namespace KHOD.GUI
             this.guna2Button4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.guna2Button4.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button4.ForeColor = System.Drawing.Color.White;
-            this.guna2Button4.Location = new System.Drawing.Point(1020, 198);
+            this.guna2Button4.Location = new System.Drawing.Point(735, 189);
             this.guna2Button4.Name = "guna2Button4";
-            this.guna2Button4.Size = new System.Drawing.Size(96, 36);
+            this.guna2Button4.Size = new System.Drawing.Size(83, 36);
             this.guna2Button4.TabIndex = 17;
             this.guna2Button4.Text = "Cập nhật";
             this.guna2Button4.Click += new System.EventHandler(this.guna2Button4_Click);
@@ -593,9 +600,9 @@ namespace KHOD.GUI
             this.guna2Button3.FillColor = System.Drawing.Color.Red;
             this.guna2Button3.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button3.ForeColor = System.Drawing.Color.White;
-            this.guna2Button3.Location = new System.Drawing.Point(1258, 198);
+            this.guna2Button3.Location = new System.Drawing.Point(917, 189);
             this.guna2Button3.Name = "guna2Button3";
-            this.guna2Button3.Size = new System.Drawing.Size(96, 36);
+            this.guna2Button3.Size = new System.Drawing.Size(83, 36);
             this.guna2Button3.TabIndex = 16;
             this.guna2Button3.Text = "Xóa";
             this.guna2Button3.Click += new System.EventHandler(this.guna2Button3_Click);
@@ -639,7 +646,7 @@ namespace KHOD.GUI
             // guna2HtmlLabel10
             // 
             this.guna2HtmlLabel10.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel10.Location = new System.Drawing.Point(492, 28);
+            this.guna2HtmlLabel10.Location = new System.Drawing.Point(370, 28);
             this.guna2HtmlLabel10.Name = "guna2HtmlLabel10";
             this.guna2HtmlLabel10.Size = new System.Drawing.Size(52, 15);
             this.guna2HtmlLabel10.TabIndex = 9;
@@ -648,7 +655,7 @@ namespace KHOD.GUI
             // guna2HtmlLabel9
             // 
             this.guna2HtmlLabel9.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel9.Location = new System.Drawing.Point(492, 67);
+            this.guna2HtmlLabel9.Location = new System.Drawing.Point(370, 67);
             this.guna2HtmlLabel9.Name = "guna2HtmlLabel9";
             this.guna2HtmlLabel9.Size = new System.Drawing.Size(43, 15);
             this.guna2HtmlLabel9.TabIndex = 8;
@@ -657,7 +664,7 @@ namespace KHOD.GUI
             // guna2HtmlLabel8
             // 
             this.guna2HtmlLabel8.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel8.Location = new System.Drawing.Point(492, 109);
+            this.guna2HtmlLabel8.Location = new System.Drawing.Point(370, 109);
             this.guna2HtmlLabel8.Name = "guna2HtmlLabel8";
             this.guna2HtmlLabel8.Size = new System.Drawing.Size(46, 15);
             this.guna2HtmlLabel8.TabIndex = 7;
@@ -666,7 +673,7 @@ namespace KHOD.GUI
             // guna2HtmlLabel7
             // 
             this.guna2HtmlLabel7.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel7.Location = new System.Drawing.Point(492, 151);
+            this.guna2HtmlLabel7.Location = new System.Drawing.Point(370, 151);
             this.guna2HtmlLabel7.Name = "guna2HtmlLabel7";
             this.guna2HtmlLabel7.Size = new System.Drawing.Size(60, 15);
             this.guna2HtmlLabel7.TabIndex = 6;
@@ -675,7 +682,7 @@ namespace KHOD.GUI
             // guna2HtmlLabel6
             // 
             this.guna2HtmlLabel6.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel6.Location = new System.Drawing.Point(492, 198);
+            this.guna2HtmlLabel6.Location = new System.Drawing.Point(370, 198);
             this.guna2HtmlLabel6.Name = "guna2HtmlLabel6";
             this.guna2HtmlLabel6.Size = new System.Drawing.Size(77, 15);
             this.guna2HtmlLabel6.TabIndex = 5;
@@ -684,7 +691,7 @@ namespace KHOD.GUI
             // guna2HtmlLabel5
             // 
             this.guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel5.Location = new System.Drawing.Point(963, 28);
+            this.guna2HtmlLabel5.Location = new System.Drawing.Point(730, 28);
             this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
             this.guna2HtmlLabel5.Size = new System.Drawing.Size(51, 15);
             this.guna2HtmlLabel5.TabIndex = 4;
@@ -693,7 +700,7 @@ namespace KHOD.GUI
             // guna2HtmlLabel4
             // 
             this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel4.Location = new System.Drawing.Point(963, 67);
+            this.guna2HtmlLabel4.Location = new System.Drawing.Point(730, 67);
             this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
             this.guna2HtmlLabel4.Size = new System.Drawing.Size(48, 15);
             this.guna2HtmlLabel4.TabIndex = 3;
@@ -702,7 +709,7 @@ namespace KHOD.GUI
             // guna2HtmlLabel3
             // 
             this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(963, 109);
+            this.guna2HtmlLabel3.Location = new System.Drawing.Point(730, 109);
             this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
             this.guna2HtmlLabel3.Size = new System.Drawing.Size(40, 15);
             this.guna2HtmlLabel3.TabIndex = 2;
@@ -711,7 +718,7 @@ namespace KHOD.GUI
             // guna2HtmlLabel2
             // 
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(963, 151);
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(730, 151);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
             this.guna2HtmlLabel2.Size = new System.Drawing.Size(51, 15);
             this.guna2HtmlLabel2.TabIndex = 1;
@@ -726,23 +733,13 @@ namespace KHOD.GUI
             this.guna2HtmlLabel1.TabIndex = 0;
             this.guna2HtmlLabel1.Text = "Mã nhân viên";
             // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.groupBox1);
-            this.panel1.Controls.Add(this.groupBox2);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1534, 606);
-            this.panel1.TabIndex = 2;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-            // 
             // frmNhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1534, 606);
-            this.Controls.Add(this.panel1);
+            this.ClientSize = new System.Drawing.Size(1386, 602);
+            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.groupBox2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmNhanVien";
             this.Text = "Form2";
@@ -751,7 +748,6 @@ namespace KHOD.GUI
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
 		}
@@ -804,6 +800,5 @@ namespace KHOD.GUI
 		private System.Windows.Forms.DataGridViewTextBoxColumn MaPQ;
 		private System.Windows.Forms.DataGridViewCheckBoxColumn TrangThai;
 		private Guna.UI2.WinForms.Guna2HtmlLabel guna2TextBox1;
-		private System.Windows.Forms.Panel panel1;
 	}
 }

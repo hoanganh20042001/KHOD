@@ -70,6 +70,9 @@ namespace KHOD.GUI
 			loaddata();
 			this.Hide();
 			frmThongTinNguoiDung frm = new frmThongTinNguoiDung();
+			frm.TopLevel = false;
+			panel1.Controls.Add(frm);
+			frm.BringToFront();
 			frm.Show();
 		}
 

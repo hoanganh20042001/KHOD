@@ -75,10 +75,10 @@ namespace KHOD.GUI
             // 
             this.fluentDesignFormContainer1.Controls.Add(this.panelMain);
             this.fluentDesignFormContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.fluentDesignFormContainer1.Location = new System.Drawing.Point(419, 31);
+            this.fluentDesignFormContainer1.Location = new System.Drawing.Point(279, 31);
             this.fluentDesignFormContainer1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.fluentDesignFormContainer1.Name = "fluentDesignFormContainer1";
-            this.fluentDesignFormContainer1.Size = new System.Drawing.Size(773, 925);
+            this.fluentDesignFormContainer1.Size = new System.Drawing.Size(913, 925);
             this.fluentDesignFormContainer1.TabIndex = 0;
             // 
             // panelMain
@@ -87,7 +87,7 @@ namespace KHOD.GUI
             this.panelMain.Location = new System.Drawing.Point(0, 0);
             this.panelMain.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelMain.Name = "panelMain";
-            this.panelMain.Size = new System.Drawing.Size(773, 925);
+            this.panelMain.Size = new System.Drawing.Size(913, 925);
             this.panelMain.TabIndex = 1;
             // 
             // accordionControl1
@@ -111,7 +111,7 @@ namespace KHOD.GUI
             this.accordionControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.accordionControl1.Name = "accordionControl1";
             this.accordionControl1.ScrollBarMode = DevExpress.XtraBars.Navigation.ScrollBarMode.Touch;
-            this.accordionControl1.Size = new System.Drawing.Size(419, 925);
+            this.accordionControl1.Size = new System.Drawing.Size(279, 925);
             this.accordionControl1.TabIndex = 1;
             this.accordionControl1.ViewType = DevExpress.XtraBars.Navigation.AccordionControlViewType.HamburgerMenu;
             // 
@@ -334,7 +334,7 @@ namespace KHOD.GUI
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frmNewMain";
             this.NavigationControl = this.accordionControl1;
-            this.Text = "frmNewMain";
+            this.Text = "       ";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmNewMain_Load);
             this.fluentDesignFormContainer1.ResumeLayout(false);

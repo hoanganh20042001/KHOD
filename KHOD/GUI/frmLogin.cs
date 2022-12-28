@@ -37,11 +37,6 @@ namespace KHOD.GUI
 			txtMK.PasswordChar = '*';
         }
 
-        private void txtMK_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
 		private void frmLogin_Load(object sender, EventArgs e)
 		{
 			connection = new SqlConnection(str);
@@ -60,7 +55,7 @@ namespace KHOD.GUI
 			}
 			else
 			{
-				MessageBox.Show("Tài khoản và mật khẩu không đúng !");
+				MessageBox.Show("Kiểm tra lại các trường đã nhập hoặc tài khoản của bạn đã bị khóa!");
 			}
 		}
 
@@ -74,9 +69,10 @@ namespace KHOD.GUI
 		private string getID(string username, string pass)
 		{
 			string id = "";
+		
 			try
 			{
-				command.CommandText = "SELECT * FROM NHAN_VIEN WHERE TaiKhoan ='" + username + "' and MatKhau='" + pass + "'";
+				command.CommandText = "SELECT * FROM NHAN_VIEN WHERE TaiKhoan ='" + username + "' and MatKhau='" + pass + "' and TrangThai = '"+1+"'";
 				SqlDataAdapter da = new SqlDataAdapter(command);
 				DataTable dt = new DataTable();
 				da.Fill(dt);

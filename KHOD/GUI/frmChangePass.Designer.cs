@@ -37,22 +37,17 @@ namespace KHOD.GUI
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
-            this.txtTTCT = new System.Windows.Forms.TextBox();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.labelMain = new DevExpress.XtraEditors.LabelControl();
             this.behaviorManager1 = new DevExpress.Utils.Behaviors.BehaviorManager(this.components);
-            this.txtNhapLaiMK = new DevExpress.XtraEditors.TextEdit();
-            this.txtMKMoi = new DevExpress.XtraEditors.TextEdit();
-            this.txtMKCu = new DevExpress.XtraEditors.TextEdit();
-            this.txtUser = new DevExpress.XtraEditors.TextEdit();
+            this.txtTTCT = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtMKCu = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtNhapLaiMK = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtMKMoi = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtUser = new Guna.UI2.WinForms.Guna2HtmlLabel();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtNhapLaiMK.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtMKMoi.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtMKCu.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtUser.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // panelControl1
@@ -60,19 +55,18 @@ namespace KHOD.GUI
             this.panelControl1.Appearance.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.panelControl1.Appearance.Options.UseBackColor = true;
             this.panelControl1.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.panelControl1.Controls.Add(this.txtUser);
+            this.panelControl1.Controls.Add(this.txtMKMoi);
+            this.panelControl1.Controls.Add(this.txtNhapLaiMK);
+            this.panelControl1.Controls.Add(this.txtMKCu);
+            this.panelControl1.Controls.Add(this.txtTTCT);
             this.panelControl1.Controls.Add(this.btnThayDoi);
             this.panelControl1.Controls.Add(this.btnThoat);
-            this.panelControl1.Controls.Add(this.txtNhapLaiMK);
-            this.panelControl1.Controls.Add(this.txtMKMoi);
-            this.panelControl1.Controls.Add(this.txtMKCu);
             this.panelControl1.Controls.Add(this.labelControl5);
             this.panelControl1.Controls.Add(this.labelControl4);
             this.panelControl1.Controls.Add(this.labelControl3);
-            this.panelControl1.Controls.Add(this.txtTTCT);
             this.panelControl1.Controls.Add(this.labelControl2);
-            this.panelControl1.Controls.Add(this.txtUser);
             this.panelControl1.Controls.Add(this.labelControl1);
-            this.panelControl1.Controls.Add(this.labelMain);
             this.panelControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelControl1.Location = new System.Drawing.Point(0, 0);
             this.panelControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -88,13 +82,14 @@ namespace KHOD.GUI
             this.btnThayDoi.Appearance.Options.UseForeColor = true;
             this.btnThayDoi.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnThayDoi.ImageOptions.SvgImage")));
             this.btnThayDoi.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnThayDoi.Location = new System.Drawing.Point(383, 350);
+            this.btnThayDoi.Location = new System.Drawing.Point(319, 380);
             this.btnThayDoi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnThayDoi.Name = "btnThayDoi";
             this.btnThayDoi.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.btnThayDoi.Size = new System.Drawing.Size(130, 37);
             this.btnThayDoi.TabIndex = 13;
             this.btnThayDoi.Text = "Thay đổi";
+            this.btnThayDoi.Click += new System.EventHandler(this.btnThayDoi_Click);
             // 
             // btnThoat
             // 
@@ -103,12 +98,13 @@ namespace KHOD.GUI
             this.btnThoat.Appearance.Options.UseFont = true;
             this.btnThoat.Appearance.Options.UseForeColor = true;
             this.btnThoat.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnThoat.ImageOptions.SvgImage")));
-            this.btnThoat.Location = new System.Drawing.Point(210, 350);
+            this.btnThoat.Location = new System.Drawing.Point(146, 380);
             this.btnThoat.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(115, 37);
             this.btnThoat.TabIndex = 12;
             this.btnThoat.Text = "Thoát";
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // labelControl5
             // 
@@ -117,7 +113,7 @@ namespace KHOD.GUI
             this.labelControl5.Appearance.Options.UseBackColor = true;
             this.labelControl5.Appearance.Options.UseFont = true;
             this.labelControl5.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.labelControl5.Location = new System.Drawing.Point(32, 300);
+            this.labelControl5.Location = new System.Drawing.Point(32, 324);
             this.labelControl5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.labelControl5.Name = "labelControl5";
             this.labelControl5.Size = new System.Drawing.Size(173, 28);
@@ -131,7 +127,7 @@ namespace KHOD.GUI
             this.labelControl4.Appearance.Options.UseBackColor = true;
             this.labelControl4.Appearance.Options.UseFont = true;
             this.labelControl4.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.labelControl4.Location = new System.Drawing.Point(32, 258);
+            this.labelControl4.Location = new System.Drawing.Point(32, 271);
             this.labelControl4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.labelControl4.Name = "labelControl4";
             this.labelControl4.Size = new System.Drawing.Size(138, 28);
@@ -151,17 +147,6 @@ namespace KHOD.GUI
             this.labelControl3.Size = new System.Drawing.Size(138, 28);
             this.labelControl3.TabIndex = 6;
             this.labelControl3.Text = "Mật khẩu cũ";
-            this.labelControl3.Click += new System.EventHandler(this.labelControl3_Click);
-            // 
-            // txtTTCT
-            // 
-            this.txtTTCT.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTTCT.Location = new System.Drawing.Point(210, 98);
-            this.txtTTCT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtTTCT.Multiline = true;
-            this.txtTTCT.Name = "txtTTCT";
-            this.txtTTCT.Size = new System.Drawing.Size(304, 96);
-            this.txtTTCT.TabIndex = 5;
             // 
             // labelControl2
             // 
@@ -191,59 +176,90 @@ namespace KHOD.GUI
             this.labelControl1.TabIndex = 1;
             this.labelControl1.Text = "Người dùng";
             // 
-            // labelMain
+            // txtTTCT
             // 
-            this.labelMain.Appearance.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.labelMain.Appearance.Options.UseBackColor = true;
-            this.labelMain.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.labelMain.LineVisible = true;
-            this.labelMain.Location = new System.Drawing.Point(183, 0);
-            this.labelMain.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.labelMain.Name = "labelMain";
-            this.labelMain.Size = new System.Drawing.Size(168, 28);
-            this.labelMain.TabIndex = 0;
-            this.labelMain.Text = "Thay đổi mật khẩu người dùng";
-            // 
-            // txtNhapLaiMK
-            // 
-            this.txtNhapLaiMK.Location = new System.Drawing.Point(210, 301);
-            this.txtNhapLaiMK.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtNhapLaiMK.Name = "txtNhapLaiMK";
-            this.txtNhapLaiMK.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNhapLaiMK.Properties.Appearance.Options.UseFont = true;
-            this.txtNhapLaiMK.Size = new System.Drawing.Size(303, 28);
-            this.txtNhapLaiMK.TabIndex = 11;
-            // 
-            // txtMKMoi
-            // 
-            this.txtMKMoi.Location = new System.Drawing.Point(210, 258);
-            this.txtMKMoi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtMKMoi.Name = "txtMKMoi";
-            this.txtMKMoi.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMKMoi.Properties.Appearance.Options.UseFont = true;
-            this.txtMKMoi.Size = new System.Drawing.Size(303, 28);
-            this.txtMKMoi.TabIndex = 10;
+            this.txtTTCT.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtTTCT.DefaultText = "";
+            this.txtTTCT.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtTTCT.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtTTCT.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtTTCT.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtTTCT.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtTTCT.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtTTCT.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtTTCT.Location = new System.Drawing.Point(210, 98);
+            this.txtTTCT.Name = "txtTTCT";
+            this.txtTTCT.PasswordChar = '\0';
+            this.txtTTCT.PlaceholderText = "";
+            this.txtTTCT.SelectedText = "";
+            this.txtTTCT.Size = new System.Drawing.Size(302, 96);
+            this.txtTTCT.TabIndex = 14;
             // 
             // txtMKCu
             // 
-            this.txtMKCu.Location = new System.Drawing.Point(210, 217);
-            this.txtMKCu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtMKCu.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtMKCu.DefaultText = "";
+            this.txtMKCu.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtMKCu.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtMKCu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtMKCu.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtMKCu.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtMKCu.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtMKCu.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtMKCu.Location = new System.Drawing.Point(210, 206);
             this.txtMKCu.Name = "txtMKCu";
-            this.txtMKCu.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMKCu.Properties.Appearance.Options.UseFont = true;
-            this.txtMKCu.Size = new System.Drawing.Size(303, 28);
-            this.txtMKCu.TabIndex = 9;
+            this.txtMKCu.PasswordChar = '\0';
+            this.txtMKCu.PlaceholderText = "";
+            this.txtMKCu.SelectedText = "";
+            this.txtMKCu.Size = new System.Drawing.Size(302, 38);
+            this.txtMKCu.TabIndex = 15;
+            // 
+            // txtNhapLaiMK
+            // 
+            this.txtNhapLaiMK.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtNhapLaiMK.DefaultText = "";
+            this.txtNhapLaiMK.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtNhapLaiMK.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtNhapLaiMK.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtNhapLaiMK.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtNhapLaiMK.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtNhapLaiMK.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtNhapLaiMK.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtNhapLaiMK.Location = new System.Drawing.Point(211, 314);
+            this.txtNhapLaiMK.Name = "txtNhapLaiMK";
+            this.txtNhapLaiMK.PasswordChar = '\0';
+            this.txtNhapLaiMK.PlaceholderText = "";
+            this.txtNhapLaiMK.SelectedText = "";
+            this.txtNhapLaiMK.Size = new System.Drawing.Size(302, 38);
+            this.txtNhapLaiMK.TabIndex = 16;
+            // 
+            // txtMKMoi
+            // 
+            this.txtMKMoi.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtMKMoi.DefaultText = "";
+            this.txtMKMoi.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtMKMoi.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtMKMoi.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtMKMoi.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtMKMoi.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtMKMoi.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtMKMoi.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtMKMoi.Location = new System.Drawing.Point(210, 259);
+            this.txtMKMoi.Name = "txtMKMoi";
+            this.txtMKMoi.PasswordChar = '\0';
+            this.txtMKMoi.PlaceholderText = "";
+            this.txtMKMoi.SelectedText = "";
+            this.txtMKMoi.Size = new System.Drawing.Size(302, 38);
+            this.txtMKMoi.TabIndex = 17;
             // 
             // txtUser
             // 
+            this.txtUser.BackColor = System.Drawing.Color.Transparent;
+            this.txtUser.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUser.Location = new System.Drawing.Point(210, 51);
-            this.txtUser.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtUser.Name = "txtUser";
-            this.txtUser.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUser.Properties.Appearance.Options.UseFont = true;
-            this.txtUser.Size = new System.Drawing.Size(303, 28);
-            this.txtUser.TabIndex = 2;
-            this.txtUser.Visible = false;
+            this.txtUser.Size = new System.Drawing.Size(3, 2);
+            this.txtUser.TabIndex = 18;
             // 
             // frmChangePass
             // 
@@ -254,14 +270,11 @@ namespace KHOD.GUI
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frmChangePass";
             this.Text = "Thay đổi mật khẩu";
+            this.Load += new System.EventHandler(this.frmChangePass_Load);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
             this.panelControl1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtNhapLaiMK.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtMKMoi.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtMKCu.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtUser.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -269,19 +282,18 @@ namespace KHOD.GUI
         #endregion
 
         private DevExpress.XtraEditors.PanelControl panelControl1;
-        private DevExpress.XtraEditors.LabelControl labelMain;
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private DevExpress.XtraEditors.LabelControl labelControl5;
         private DevExpress.XtraEditors.LabelControl labelControl4;
         private DevExpress.XtraEditors.LabelControl labelControl3;
-        private System.Windows.Forms.TextBox txtTTCT;
         private DevExpress.XtraEditors.LabelControl labelControl2;
-        private DevExpress.XtraEditors.TextEdit txtUser;
         private DevExpress.Utils.Behaviors.BehaviorManager behaviorManager1;
-        private DevExpress.XtraEditors.TextEdit txtNhapLaiMK;
-        private DevExpress.XtraEditors.TextEdit txtMKMoi;
-        private DevExpress.XtraEditors.TextEdit txtMKCu;
         private DevExpress.XtraEditors.SimpleButton btnThayDoi;
         private DevExpress.XtraEditors.SimpleButton btnThoat;
-    }
+		private Guna.UI2.WinForms.Guna2TextBox txtMKMoi;
+		private Guna.UI2.WinForms.Guna2TextBox txtNhapLaiMK;
+		private Guna.UI2.WinForms.Guna2TextBox txtMKCu;
+		private Guna.UI2.WinForms.Guna2TextBox txtTTCT;
+		private Guna.UI2.WinForms.Guna2HtmlLabel txtUser;
+	}
 }
