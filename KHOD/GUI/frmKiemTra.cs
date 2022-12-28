@@ -28,6 +28,7 @@ namespace KHOD.GUI
 			KhoF kho = new KhoF();
 			dataGridView1.DataSource = null;
 			dataGridView1.DataSource = kho.ListAll();
+			
 			//foreach (DataGridViewRow dgvr in dataGridView1.Rows)
 			//{
 			//	//if ((bool)dgvr.Cells["TrangThai"].Value)
@@ -54,7 +55,7 @@ namespace KHOD.GUI
 
 		private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
 		{
-
+			
 		}
 
 		private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)

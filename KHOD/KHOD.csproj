@@ -132,6 +132,10 @@
     <Compile Include="DAO\THANH_PHAN.cs" />
     <Compile Include="DAO\THONG_TIN.cs" />
     <Compile Include="DAO\XUAT_KHO.cs" />
+    <Compile Include="Func\KhoF.cs" />
+    <Compile Include="Func\KhoiLuong.cs" />
+    <Compile Include="Func\ThanhPhanF.cs" />
+    <Compile Include="Func\ThucDonF.cs" />
     <Compile Include="GUI\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
