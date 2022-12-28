@@ -139,6 +139,12 @@
     <Compile Include="GUI\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\frmLichSuTruyCap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmLichSuTruyCap.Designer.cs">
+      <DependentUpon>frmLichSuTruyCap.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\frmNhanVien.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -278,6 +284,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmChangeInfor.resx">
       <DependentUpon>frmChangeInfor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmLichSuTruyCap.resx">
+      <DependentUpon>frmLichSuTruyCap.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmListNL.resx">
       <DependentUpon>frmListNL.cs</DependentUpon>

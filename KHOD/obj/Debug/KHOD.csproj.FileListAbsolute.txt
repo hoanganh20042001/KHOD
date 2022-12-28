@@ -438,3 +438,5 @@ D:\Desktop\HTTT\KHOD\obj\Debug\KHOD.pdb
 D:\Desktop\HTTT\KHOD\obj\Debug\KHOD.GUI.frmChangeInfor.resources
 D:\Desktop\HTTT\KHOD\obj\Debug\KHOD.GUI.frmThongTinNguoiDung.resources
 D:\Desktop\HTTT\KHOD\obj\Debug\KHOD.GUI.frmThongTinNguoiDung_Sua.resources
+D:\Desktop\HTTT\KHOD\obj\Debug\KHOD.GUI.frmLichSuTruyCap.resources
+D:\Desktop\HTTT\KHOD\obj\Debug\KHOD.csproj.AssemblyReference.cache

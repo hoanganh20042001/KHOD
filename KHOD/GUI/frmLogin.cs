@@ -16,10 +16,11 @@ namespace KHOD.GUI
     public partial class frmLogin : DevExpress.XtraEditors.XtraForm
     {
 		public static string ID_NHANVIEN = "";
+		public static string MALS_DN ="";
 
 		SqlConnection connection;
 		SqlCommand command;
-		string str = @"Data Source=LINH-CHI;Initial Catalog=KHO_D;Integrated Security=True";
+		string str = @"Data Source=LINH-CHI;Initial Catalog=QLKHO;Integrated Security=True";
 		SqlDataAdapter adapter = new SqlDataAdapter();
 		DataTable table = new DataTable();
 		void loaddata()
@@ -49,9 +50,25 @@ namespace KHOD.GUI
 			ID_NHANVIEN = getID(txtDN.Text, txtMK.Text);
 			if (ID_NHANVIEN != "")
 			{
+				DateTime now = DateTime.Now;
+
+				SqlConnection sc = new SqlConnection();
+				SqlCommand com = new SqlCommand();
+				sc.ConnectionString = str;
+				sc.Open();
+				com.Connection = sc;
+				com.CommandText = @"INSERT INTO LICH_SU_DN (MaNV, ThoiGian) VALUES (@manv, @tg)";
+				com.Parameters.AddWithValue("@manv", ID_NHANVIEN);
+				com.Parameters.AddWithValue("@tg", now);
+				com.ExecuteNonQuery();
+				sc.Close();
+
 				frmNewMain fmain = new frmNewMain();
 				fmain.Show();
 				this.Hide();
+				connection.Close();
+				MALS_DN = getMALS(ID_NHANVIEN, now.ToString());
+
 			}
 			else
 			{
@@ -63,13 +80,9 @@ namespace KHOD.GUI
 		{
 			Application.Exit();
 		}
-
-
-
 		private string getID(string username, string pass)
 		{
 			string id = "";
-		
 			try
 			{
 				command.CommandText = "SELECT * FROM NHAN_VIEN WHERE TaiKhoan ='" + username + "' and MatKhau='" + pass + "' and TrangThai = '"+1+"'";
@@ -93,6 +106,34 @@ namespace KHOD.GUI
 				connection.Close();
 			}
 			return id;
+		}
+
+		private string getMALS(string id, string thoigianbd)
+		{
+			string mals ="";
+			try
+			{
+				command.CommandText = "SELECT * FROM LICH_SU_DN";
+				SqlDataAdapter da = new SqlDataAdapter(command);
+				DataTable dt = new DataTable();
+				da.Fill(dt);
+				if (dt != null)
+				{
+					foreach (DataRow dr in dt.Rows)
+					{
+						mals = dr["MaLS"].ToString();
+					}
+				}
+			}
+			catch (Exception)
+			{
+				MessageBox.Show("Lỗi xảy ra khi truy vấn dữ liệu hoặc kết nối với server thất bại !");
+			}
+			finally
+			{
+				connection.Close();
+			}
+			return mals;
 		}
 	}
 }

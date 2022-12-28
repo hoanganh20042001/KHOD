@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,6 +13,20 @@ namespace KHOD.GUI
 {
 	public partial class frmNewMain : DevExpress.XtraBars.FluentDesignSystem.FluentDesignForm
 	{
+		SqlConnection connection;
+		SqlCommand command;
+		string str = @"Data Source=LINH-CHI;Initial Catalog=QLKHO;Integrated Security=True";
+		SqlDataAdapter adapter = new SqlDataAdapter();
+		DataTable table = new DataTable();
+		void loaddata()
+		{
+
+			command = connection.CreateCommand();
+			command.CommandText = "SELECT * FROM LICH_SU_DN";
+			adapter.SelectCommand = command;
+			table.Clear();
+			adapter.Fill(table);
+		}
 		public frmNewMain()
 		{
 			InitializeComponent();
@@ -24,7 +39,9 @@ namespace KHOD.GUI
 
 		private void frmNewMain_Load(object sender, EventArgs e)
 		{
-
+			connection = new SqlConnection(str);
+			connection.Open();
+			loaddata();
 		}
 
 		private void accordionControlElement8_Click(object sender, EventArgs e)
@@ -102,6 +119,73 @@ namespace KHOD.GUI
 		private void accordionControlElement18_Click(object sender, EventArgs e)
 		{
 			frmThongTinNguoiDung form = new frmThongTinNguoiDung();
+
+			//frmChangePass.TopLevel = false;
+
+
+			panelMain.Controls.Clear();
+			//panelMain.Dock = DockStyle.Fill;
+
+			form.TopLevel = false;
+			form.Dock = DockStyle.Fill;
+			panelMain.Controls.Add(form);
+
+			form.Show();
+			form.BringToFront();
+		}
+
+		private void accordionControlElement19_Click(object sender, EventArgs e)
+		{
+			if (frmLogin.MALS_DN != "")
+			{
+				DateTime now = DateTime.Now;
+				SqlConnection sc = new SqlConnection();
+				SqlCommand com = new SqlCommand();
+				sc.ConnectionString = str;
+				sc.Open();
+				com.Connection = sc;
+				com.CommandText = @"update LICH_SU_DN set ThoiGianThoat= @tg where MaLS = '" + frmLogin.MALS_DN + "'";
+				com.Parameters.AddWithValue("@tg", now);
+				com.ExecuteNonQuery();
+				sc.Close();
+
+				frmLogin frm = new frmLogin();
+				frm.Show();
+				this.Close();
+				connection.Close();
+			}
+			else
+			{
+				MessageBox.Show("ERROR!");
+			}
+		}
+
+		private void frmNewMain_FormClosed(object sender, FormClosedEventArgs e)
+		{
+			if (frmLogin.MALS_DN != "")
+			{
+				DateTime now = DateTime.Now;
+				SqlConnection sc = new SqlConnection();
+				SqlCommand com = new SqlCommand();
+				sc.ConnectionString = str;
+				sc.Open();
+				com.Connection = sc;
+				com.CommandText = @"update LICH_SU_DN set ThoiGianThoat= @tg where MaLS = '" + frmLogin.MALS_DN + "'";
+				com.Parameters.AddWithValue("@tg", now);
+				com.ExecuteNonQuery();
+				sc.Close();
+				connection.Close();
+				Application.Exit();
+			}
+			else
+			{
+				MessageBox.Show("ERROR!");
+			}
+		}
+
+		private void accordionControlElement24_Click(object sender, EventArgs e)
+		{
+			frmLichSuTruyCap form = new frmLichSuTruyCap();
 
 			//frmChangePass.TopLevel = false;
 

@@ -53,17 +53,19 @@ namespace KHOD.GUI
             this.accordionControlElement5 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement13 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement14 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.accordionControlElement24 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlSeparator5 = new DevExpress.XtraBars.Navigation.AccordionControlSeparator();
             this.accordionControlElement6 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement15 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement16 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlSeparator6 = new DevExpress.XtraBars.Navigation.AccordionControlSeparator();
             this.accordionControlElement7 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.accordionControlElement17 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement18 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement19 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.fluentDesignFormControl1 = new DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormControl();
             this.fluentFormDefaultManager1 = new DevExpress.XtraBars.FluentDesignSystem.FluentFormDefaultManager(this.components);
+            this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
+            this.barLargeButtonItem1 = new DevExpress.XtraBars.BarLargeButtonItem();
             this.fluentDesignFormContainer1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelMain)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).BeginInit();
@@ -78,7 +80,7 @@ namespace KHOD.GUI
             this.fluentDesignFormContainer1.Location = new System.Drawing.Point(279, 31);
             this.fluentDesignFormContainer1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.fluentDesignFormContainer1.Name = "fluentDesignFormContainer1";
-            this.fluentDesignFormContainer1.Size = new System.Drawing.Size(913, 925);
+            this.fluentDesignFormContainer1.Size = new System.Drawing.Size(913, 964);
             this.fluentDesignFormContainer1.TabIndex = 0;
             // 
             // panelMain
@@ -87,7 +89,7 @@ namespace KHOD.GUI
             this.panelMain.Location = new System.Drawing.Point(0, 0);
             this.panelMain.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelMain.Name = "panelMain";
-            this.panelMain.Size = new System.Drawing.Size(913, 925);
+            this.panelMain.Size = new System.Drawing.Size(913, 964);
             this.panelMain.TabIndex = 1;
             // 
             // accordionControl1
@@ -111,7 +113,7 @@ namespace KHOD.GUI
             this.accordionControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.accordionControl1.Name = "accordionControl1";
             this.accordionControl1.ScrollBarMode = DevExpress.XtraBars.Navigation.ScrollBarMode.Touch;
-            this.accordionControl1.Size = new System.Drawing.Size(279, 925);
+            this.accordionControl1.Size = new System.Drawing.Size(279, 964);
             this.accordionControl1.TabIndex = 1;
             this.accordionControl1.ViewType = DevExpress.XtraBars.Navigation.AccordionControlViewType.HamburgerMenu;
             // 
@@ -229,7 +231,8 @@ namespace KHOD.GUI
             // 
             this.accordionControlElement5.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
             this.accordionControlElement13,
-            this.accordionControlElement14});
+            this.accordionControlElement14,
+            this.accordionControlElement24});
             this.accordionControlElement5.Expanded = true;
             this.accordionControlElement5.Name = "accordionControlElement5";
             this.accordionControlElement5.Text = "QUẢN LÝ NHÂN SỰ";
@@ -247,6 +250,13 @@ namespace KHOD.GUI
             this.accordionControlElement14.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.accordionControlElement14.Text = "Thêm người dùng";
             this.accordionControlElement14.Click += new System.EventHandler(this.accordionControlElement14_Click);
+            // 
+            // accordionControlElement24
+            // 
+            this.accordionControlElement24.Name = "accordionControlElement24";
+            this.accordionControlElement24.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.accordionControlElement24.Text = "Lịch sử truy cập";
+            this.accordionControlElement24.Click += new System.EventHandler(this.accordionControlElement24_Click);
             // 
             // accordionControlSeparator5
             // 
@@ -280,18 +290,11 @@ namespace KHOD.GUI
             // accordionControlElement7
             // 
             this.accordionControlElement7.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
-            this.accordionControlElement17,
             this.accordionControlElement18,
             this.accordionControlElement19});
             this.accordionControlElement7.Expanded = true;
             this.accordionControlElement7.Name = "accordionControlElement7";
             this.accordionControlElement7.Text = "NGƯỜI DÙNG";
-            // 
-            // accordionControlElement17
-            // 
-            this.accordionControlElement17.Name = "accordionControlElement17";
-            this.accordionControlElement17.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlElement17.Text = "Thay đổi mật khẩu";
             // 
             // accordionControlElement18
             // 
@@ -305,10 +308,14 @@ namespace KHOD.GUI
             this.accordionControlElement19.Name = "accordionControlElement19";
             this.accordionControlElement19.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.accordionControlElement19.Text = "Thoát";
+            this.accordionControlElement19.Click += new System.EventHandler(this.accordionControlElement19_Click);
             // 
             // fluentDesignFormControl1
             // 
             this.fluentDesignFormControl1.FluentDesignForm = this;
+            this.fluentDesignFormControl1.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
+            this.barButtonItem1,
+            this.barLargeButtonItem1});
             this.fluentDesignFormControl1.Location = new System.Drawing.Point(0, 0);
             this.fluentDesignFormControl1.Manager = this.fluentFormDefaultManager1;
             this.fluentDesignFormControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -316,16 +323,34 @@ namespace KHOD.GUI
             this.fluentDesignFormControl1.Size = new System.Drawing.Size(1192, 31);
             this.fluentDesignFormControl1.TabIndex = 2;
             this.fluentDesignFormControl1.TabStop = false;
+            this.fluentDesignFormControl1.TitleItemLinks.Add(this.barButtonItem1);
             // 
             // fluentFormDefaultManager1
             // 
             this.fluentFormDefaultManager1.Form = this;
+            this.fluentFormDefaultManager1.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
+            this.barButtonItem1,
+            this.barLargeButtonItem1});
+            this.fluentFormDefaultManager1.MaxItemId = 2;
+            // 
+            // barButtonItem1
+            // 
+            this.barButtonItem1.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right;
+            this.barButtonItem1.Id = 0;
+            this.barButtonItem1.Name = "barButtonItem1";
+            // 
+            // barLargeButtonItem1
+            // 
+            this.barLargeButtonItem1.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right;
+            this.barLargeButtonItem1.Caption = "barLargeButtonItem1";
+            this.barLargeButtonItem1.Id = 1;
+            this.barLargeButtonItem1.Name = "barLargeButtonItem1";
             // 
             // frmNewMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1192, 956);
+            this.ClientSize = new System.Drawing.Size(1192, 995);
             this.ControlContainer = this.fluentDesignFormContainer1;
             this.Controls.Add(this.fluentDesignFormContainer1);
             this.Controls.Add(this.accordionControl1);
@@ -336,6 +361,7 @@ namespace KHOD.GUI
             this.NavigationControl = this.accordionControl1;
             this.Text = "       ";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmNewMain_FormClosed);
             this.Load += new System.EventHandler(this.frmNewMain_Load);
             this.fluentDesignFormContainer1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.panelMain)).EndInit();
@@ -377,9 +403,11 @@ namespace KHOD.GUI
 		private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement23;
 		private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement20;
 		private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement21;
-		private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement17;
 		private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement18;
 		private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement19;
 		private DevExpress.XtraEditors.PanelControl panelMain;
+		private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement24;
+		private DevExpress.XtraBars.BarButtonItem barButtonItem1;
+		private DevExpress.XtraBars.BarLargeButtonItem barLargeButtonItem1;
 	}
 }
