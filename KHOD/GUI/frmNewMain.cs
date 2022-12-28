@@ -62,5 +62,59 @@ namespace KHOD.GUI
 			form.Show();
 			form.BringToFront();
 		}
+
+		private void accordionControlElement13_Click(object sender, EventArgs e)
+		{
+			frmNhanVien form = new frmNhanVien();
+
+			//frmChangePass.TopLevel = false;
+
+
+			panelMain.Controls.Clear();
+			//panelMain.Dock = DockStyle.Fill;
+
+			form.TopLevel = false;
+			form.Dock = DockStyle.Fill;
+			panelMain.Controls.Add(form);
+
+			form.Show();
+			form.BringToFront();
+		}
+
+		private void accordionControlElement14_Click(object sender, EventArgs e)
+		{
+			frmNhanVien_Themmoi form = new frmNhanVien_Themmoi();
+
+			//frmChangePass.TopLevel = false;
+
+
+			panelMain.Controls.Clear();
+			//panelMain.Dock = DockStyle.Fill;
+
+			form.TopLevel = false;
+			form.Dock = DockStyle.Fill;
+			panelMain.Controls.Add(form);
+
+			form.Show();
+			form.BringToFront();
+		}
+
+		private void accordionControlElement18_Click(object sender, EventArgs e)
+		{
+			frmThongTinNguoiDung form = new frmThongTinNguoiDung();
+
+			//frmChangePass.TopLevel = false;
+
+
+			panelMain.Controls.Clear();
+			//panelMain.Dock = DockStyle.Fill;
+
+			form.TopLevel = false;
+			form.Dock = DockStyle.Fill;
+			panelMain.Controls.Add(form);
+
+			form.Show();
+			form.BringToFront();
+		}
 	}
 }

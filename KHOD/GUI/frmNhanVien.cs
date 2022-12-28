@@ -103,5 +103,10 @@ namespace KHOD.GUI
 			command.ExecuteNonQuery();
 			loaddata();
 		}
+
+		private void panel1_Paint(object sender, PaintEventArgs e)
+		{
+
+		}
 	}
 }

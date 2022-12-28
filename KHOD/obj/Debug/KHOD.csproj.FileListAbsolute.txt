@@ -436,3 +436,6 @@ D:\Desktop\HTTT\KHOD\obj\Debug\KHOD.csproj.CoreCompileInputs.cache
 D:\Desktop\HTTT\KHOD\obj\Debug\KHOD.csproj.CopyComplete
 D:\Desktop\HTTT\KHOD\obj\Debug\KHOD.exe
 D:\Desktop\HTTT\KHOD\obj\Debug\KHOD.pdb
+D:\Desktop\HTTT\KHOD\obj\Debug\KHOD.GUI.frmChangeInfor.resources
+D:\Desktop\HTTT\KHOD\obj\Debug\KHOD.GUI.frmThongTinNguoiDung.resources
+D:\Desktop\HTTT\KHOD\obj\Debug\KHOD.GUI.frmThongTinNguoiDung_Sua.resources

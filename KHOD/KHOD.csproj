@@ -229,6 +229,18 @@
     <Compile Include="GUI\frmThongKe.Designer.cs">
       <DependentUpon>frmThongKe.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\frmThongTinNguoiDung.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmThongTinNguoiDung.Designer.cs">
+      <DependentUpon>frmThongTinNguoiDung.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmThongTinNguoiDung_Sua.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmThongTinNguoiDung_Sua.Designer.cs">
+      <DependentUpon>frmThongTinNguoiDung_Sua.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\frmThucDon.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -264,6 +276,9 @@
     <EmbeddedResource Include="GUI\frmBaoCao2.resx">
       <DependentUpon>frmBaoCao2.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmChangeInfor.resx">
+      <DependentUpon>frmChangeInfor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmListNL.resx">
       <DependentUpon>frmListNL.cs</DependentUpon>
     </EmbeddedResource>
@@ -293,6 +308,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmThongKe.resx">
       <DependentUpon>frmThongKe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmThongTinNguoiDung.resx">
+      <DependentUpon>frmThongTinNguoiDung.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmThongTinNguoiDung_Sua.resx">
+      <DependentUpon>frmThongTinNguoiDung_Sua.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmThucDon.resx">
       <DependentUpon>frmThucDon.cs</DependentUpon>

@@ -64,6 +64,7 @@ namespace KHOD.GUI
             this.accordionControlElement19 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.fluentDesignFormControl1 = new DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormControl();
             this.fluentFormDefaultManager1 = new DevExpress.XtraBars.FluentDesignSystem.FluentFormDefaultManager(this.components);
+            this.fluentDesignFormContainer1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelMain)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fluentDesignFormControl1)).BeginInit();
@@ -238,12 +239,14 @@ namespace KHOD.GUI
             this.accordionControlElement13.Name = "accordionControlElement13";
             this.accordionControlElement13.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.accordionControlElement13.Text = "Quản lý người dùng";
+            this.accordionControlElement13.Click += new System.EventHandler(this.accordionControlElement13_Click);
             // 
             // accordionControlElement14
             // 
             this.accordionControlElement14.Name = "accordionControlElement14";
             this.accordionControlElement14.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.accordionControlElement14.Text = "Thêm người dùng";
+            this.accordionControlElement14.Click += new System.EventHandler(this.accordionControlElement14_Click);
             // 
             // accordionControlSeparator5
             // 
@@ -295,6 +298,7 @@ namespace KHOD.GUI
             this.accordionControlElement18.Name = "accordionControlElement18";
             this.accordionControlElement18.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.accordionControlElement18.Text = "Thông tin người dùng";
+            this.accordionControlElement18.Click += new System.EventHandler(this.accordionControlElement18_Click);
             // 
             // accordionControlElement19
             // 
@@ -333,6 +337,7 @@ namespace KHOD.GUI
             this.Text = "frmNewMain";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmNewMain_Load);
+            this.fluentDesignFormContainer1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.panelMain)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fluentDesignFormControl1)).EndInit();

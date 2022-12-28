@@ -16,10 +16,10 @@ namespace KHOD.GUI
     public partial class frmLogin : DevExpress.XtraEditors.XtraForm
     {
 		public static string ID_NHANVIEN = "";
+
 		SqlConnection connection;
 		SqlCommand command;
 		string str = @"Data Source=LINH-CHI;Initial Catalog=KHO_D;Integrated Security=True";
-
 		SqlDataAdapter adapter = new SqlDataAdapter();
 		DataTable table = new DataTable();
 		void loaddata()
