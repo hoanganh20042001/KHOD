@@ -11,7 +11,7 @@ namespace KHOD.DAO
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public NHAP_KHO()
         {
-            PHIEU_NHAP_KHO = new HashSet<PHIEU_NHAP_KHO>();
+            NGUYEN_LIEU = new HashSet<NGUYEN_LIEU>();
         }
 
         [Key]
@@ -26,9 +26,9 @@ namespace KHOD.DAO
 
         public virtual HOA_DON HOA_DON { get; set; }
 
-        public virtual NHAN_VIEN NHAN_VIEN { get; set; }
-
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<PHIEU_NHAP_KHO> PHIEU_NHAP_KHO { get; set; }
+        public virtual ICollection<NGUYEN_LIEU> NGUYEN_LIEU { get; set; }
+
+        public virtual NHAN_VIEN NHAN_VIEN { get; set; }
     }
 }

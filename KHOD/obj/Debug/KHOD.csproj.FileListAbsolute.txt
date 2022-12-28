@@ -133,8 +133,6 @@ E:\WEB\KHOD\KHOD\bin\Debug\ja\DevExpress.XtraNavBar.v21.2.resources.dll
 E:\WEB\KHOD\KHOD\bin\Debug\ru\DevExpress.XtraNavBar.v21.2.resources.dll
 E:\WEB\KHOD\KHOD\obj\Debug\KHOD.GUI.frmThongKe.resources
 E:\WEB\KHOD\KHOD\obj\Debug\KHOD.GUI.Form1.resources
-E:\WEB\KHOD\KHOD\obj\Debug\KHOD.GUI.frmBaoCao1.resources
-E:\WEB\KHOD\KHOD\obj\Debug\KHOD.GUI.frmBaoCao2.resources
 E:\WEB\KHOD\KHOD\bin\Debug\DevExpress.Charts.v21.2.Core.dll
 E:\WEB\KHOD\KHOD\bin\Debug\DevExpress.CodeParser.v21.2.dll
 E:\WEB\KHOD\KHOD\bin\Debug\DevExpress.DataAccess.v21.2.dll
@@ -231,3 +229,4 @@ E:\WEB\KHOD\KHOD\obj\Debug\KHOD.report.rep.resources
 E:\WEB\KHOD\KHOD\bin\Debug\Microsoft.ReportViewer.WinForms.dll
 E:\WEB\KHOD\KHOD\obj\Debug\KHOD.GUI.frmNewMain.resources
 E:\WEB\KHOD\KHOD\obj\Debug\KHOD.csproj.AssemblyReference.cache
+E:\WEB\KHOD\KHOD\obj\Debug\KHOD.GUI.frmKiemTra.resources

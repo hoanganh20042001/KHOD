@@ -10,18 +10,31 @@ namespace KHOD.Func
 	class ThanhPhanF
 	{
 		MyDB db = new MyDB();
-		private int Buoi;
-		private DateTime Ngay;
-		private string ThanhPhan;
-		private float DinhLuong;
+		//public string Buoi { get; set; }
+		public DateTime Ngay { get; set; }
+		public string ThanhPhan { get; set; }
+		
+		public double DinhLuong { get; set; }
 		public ThanhPhanF()
 		{
 
 		}
-		/*public List<ThanhPhanF> ListAll()
+		public List<ThanhPhanF> ListAll()
 		{
 			List<ThanhPhanF> list = new List<ThanhPhanF>();
 			
-		}*/
+			list = db.Database.SqlQuery<ThanhPhanF>("select tentp as ThanhPhan ,ngay,sum(DinhLuong*quanso) as DinhLuong from mon_an ma join ds_ma ds on ds.mama=ma.mama join ds_tp on ds_tp.MaMA=ma.mama join THANH_PHAN tp on tp.matp=ds_tp.MaTP join THONG_TIN tt on tt.matt=ds.matt group by tentp, ngay").ToList();
+			return list;
+
+		}
+		public List<ThanhPhanF> ngay(DateTime d)
+		{
+
+			List<ThanhPhanF> list = new List<ThanhPhanF>();
+
+			list = db.Database.SqlQuery<ThanhPhanF>("select tentp as ThanhPhan ,ngay,sum(DinhLuong*quanso) as DinhLuong from mon_an ma join ds_ma ds on ds.mama=ma.mama join ds_tp on ds_tp.MaMA=ma.mama join THANH_PHAN tp on tp.matp=ds_tp.MaTP join THONG_TIN tt on tt.matt=ds.matt where ngay=@ngay group by tentp, ngay", new SqlParameter("@ngay", d)).ToList();
+			return list;
+		}
+		
 	}
 }

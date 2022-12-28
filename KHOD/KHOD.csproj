@@ -109,7 +109,6 @@
     <Compile Include="DAO\DAT_NL.cs" />
     <Compile Include="DAO\DON_DAT_NL.cs" />
     <Compile Include="DAO\DS_LOAI_BO_NL.cs" />
-    <Compile Include="DAO\DS_NGAY.cs" />
     <Compile Include="DAO\DS_TP.cs" />
     <Compile Include="DAO\HOA_DON.cs" />
     <Compile Include="DAO\KIEM_TRA.cs" />
@@ -121,12 +120,13 @@
     <Compile Include="DAO\NHAP_KHO.cs" />
     <Compile Include="DAO\NHA_CUNG_CAP.cs" />
     <Compile Include="DAO\PHAN_QUYEN.cs" />
-    <Compile Include="DAO\PHIEU_NHAP_KHO.cs" />
     <Compile Include="DAO\PHIEU_XUAT_KHO.cs" />
     <Compile Include="DAO\sysdiagram.cs" />
     <Compile Include="DAO\THANH_PHAN.cs" />
     <Compile Include="DAO\THONG_TIN.cs" />
     <Compile Include="DAO\XUAT_KHO.cs" />
+    <Compile Include="Func\KhoF.cs" />
+    <Compile Include="Func\KhoiLuong.cs" />
     <Compile Include="Func\ThanhPhanF.cs" />
     <Compile Include="Func\ThucDonF.cs" />
     <Compile Include="GUI\Form1.cs">
@@ -134,18 +134,6 @@
     </Compile>
     <Compile Include="GUI\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GUI\frmBaoCao1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\frmBaoCao1.Designer.cs">
-      <DependentUpon>frmBaoCao1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GUI\frmBaoCao2.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\frmBaoCao2.Designer.cs">
-      <DependentUpon>frmBaoCao2.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\frmChangeInfor.cs">
       <SubType>Form</SubType>
@@ -242,11 +230,8 @@
     <EmbeddedResource Include="GUI\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\frmBaoCao1.resx">
-      <DependentUpon>frmBaoCao1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GUI\frmBaoCao2.resx">
-      <DependentUpon>frmBaoCao2.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\frmKiemTra.resx">
+      <DependentUpon>frmKiemTra.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmListNL.resx">
       <DependentUpon>frmListNL.cs</DependentUpon>

@@ -11,10 +11,11 @@ namespace KHOD.DAO
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public THONG_TIN()
         {
-            DS_NGAY = new HashSet<DS_NGAY>();
+            MON_AN = new HashSet<MON_AN>();
         }
 
-        public int Buoi { get; set; }
+        [StringLength(10)]
+        public string Buoi { get; set; }
 
         [Column(TypeName = "date")]
         public DateTime Ngay { get; set; }
@@ -28,6 +29,6 @@ namespace KHOD.DAO
         public int MaTT { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<DS_NGAY> DS_NGAY { get; set; }
+        public virtual ICollection<MON_AN> MON_AN { get; set; }
     }
 }

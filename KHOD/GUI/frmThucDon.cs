@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using KHOD.DAO;
 using KHOD.Func;
+using KHOD.Bang;
 namespace KHOD.GUI
 {
     public partial class frmThucDon : DevExpress.XtraEditors.XtraForm
@@ -18,7 +19,7 @@ namespace KHOD.GUI
         {
             InitializeComponent();
         }
-
+		MyDB db =new MyDB();
         private void dateNavigator1_Click(object sender, EventArgs e)
         {
 
@@ -33,28 +34,39 @@ namespace KHOD.GUI
         {
 
         }
-
+		DataSet dataset = null;
 		private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
 		{
-
+			
 		}
 
 		private void frmThucDon_Load(object sender, EventArgs e)
 		{
 			ThucDonF td = new ThucDonF();
-			DataSet ds = new DataSet();
-			//DataTable dt = new DataTable();
-			//dataGridView1.DataSource = null;
-			//dataGridView1.DataSource = td.ListAll();
-			//dataGridView2.DataSource = null;
-			//dataGridView2.DataSource = td.ListAll();
-			//DataTable dt = (DataTable)dataGridView1.DataSource;
 
-			//dataGridView1.Refresh();
-			////for(int i = 0; i < dataGridView1.Rows.Count; i++)
-			////{
-			//	dataGridView1.Rows[i].Cells[1]=td.ListAll().
-			//}
+			dataGridView1.DataSource = td.ListAll();
+
+		}
+
+		private void date2_EditValueChanged(object sender, EventArgs e)
+		{
+			
+		}
+
+		private void date2_ValueChanged(object sender, EventArgs e)
+		{
+			ThucDonF td = new ThucDonF();
+			DateTime d1 = date1.Value;
+			DateTime d2 = date2.Value;
+			dataGridView1.DataSource = td.List(d1,d2);
+		}
+
+		private void date1_ValueChanged(object sender, EventArgs e)
+		{
+			ThucDonF td = new ThucDonF();
+			DateTime d1 = date1.Value;
+			DateTime d2 = date2.Value;
+			dataGridView1.DataSource = td.List(d1, d2);
 		}
 	}
 }

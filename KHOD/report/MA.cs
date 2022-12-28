@@ -38,7 +38,7 @@ namespace KHOD.report
 			foreach(var item in list)
 			{
 				string mama = item.MaMA.ToString();
-				string tenma = item.TeMA.ToString();
+				string tenma = item.TenMA.ToString();
 				Ds.MA.Rows.Add(new object[] { mama,tenma});
 			}
 			return true;

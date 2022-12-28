@@ -29,11 +29,47 @@ namespace KHOD.GUI
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.components = new System.ComponentModel.Container();
+			this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
+			this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
+			((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
+			this.panelControl1.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
+			this.SuspendLayout();
+			// 
+			// panelControl1
+			// 
+			this.panelControl1.Controls.Add(this.panelControl2);
+			this.panelControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.panelControl1.Location = new System.Drawing.Point(0, 0);
+			this.panelControl1.Name = "panelControl1";
+			this.panelControl1.Size = new System.Drawing.Size(957, 531);
+			this.panelControl1.TabIndex = 0;
+			// 
+			// panelControl2
+			// 
+			this.panelControl2.Location = new System.Drawing.Point(247, 149);
+			this.panelControl2.Name = "panelControl2";
+			this.panelControl2.Size = new System.Drawing.Size(635, 100);
+			this.panelControl2.TabIndex = 0;
+			// 
+			// frmKiemTra
+			// 
+			this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			this.ClientSize = new System.Drawing.Size(957, 531);
+			this.Controls.Add(this.panelControl1);
+			this.Name = "frmKiemTra";
 			this.Text = "frmKiemTra";
+			((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
+			this.panelControl1.ResumeLayout(false);
+			((System.ComponentModel.ISupportInitialize)(this.panelControl2)).EndInit();
+			this.ResumeLayout(false);
+
 		}
 
 		#endregion
+
+		private DevExpress.XtraEditors.PanelControl panelControl1;
+		private DevExpress.XtraEditors.PanelControl panelControl2;
 	}
 }
