@@ -90,7 +90,7 @@ namespace KHOD.GUI
 			command.CommandText = "update NHAN_VIEN set TenNV = '"+guna2TextBox2.Text+"', Ngaysinh = '"+datS+ "', DiaChi = '"+ guna2TextBox3.Text
 				+"',SDT = '"+ Decimal.Parse(guna2TextBox4.Text) + "', GhiChu = '"+ guna2TextBox11.Text + "', ChucVu = '"+ guna2TextBox6.Text + "', QuanHam = '"+ guna2TextBox5.Text
 				+ "',TaiKhoan = '"+ guna2TextBox13.Text + "',MatKhau = '"+ guna2TextBox12.Text + "',NgayCN= '"+ datS2 + "',MaBP= '"+ Convert.ToInt32(guna2TextBox8.Text)
-				+ "',MaPQ= '"+ Convert.ToInt32(guna2TextBox9.Text) + "',TrangThai= '"+ Convert.ToInt32(value) + "'";
+				+ "',MaPQ= '"+ Convert.ToInt32(guna2TextBox9.Text) + "',TrangThai= '"+ Convert.ToInt32(value) + "' where MaNV = '"+guna2TextBox1.Text+"' ";
 			command.ExecuteNonQuery();
 			loaddata();
 		}
