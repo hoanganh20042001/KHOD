@@ -53,9 +53,8 @@ namespace KHOD.GUI
 				+ guna2TextBox5.Text + "','" + guna2TextBox13.Text + "','" + guna2TextBox12.Text + "','" + datS2 + "','" + Convert.ToInt32(guna2TextBox8.Text) + "','" 
 				+ Convert.ToInt32(guna2TextBox9.Text) + "','" + Convert.ToInt32(value) + "')";
 			command.ExecuteNonQuery();
-			this.Close();
-			frmNhanVien reloadnv = new frmNhanVien();
-			reloadnv.Show();
+
+			MessageBox.Show("Thêm nhân viên thành công");
 		}
 
 		private void frmNhanVien_Themmoi_Load(object sender, EventArgs e)

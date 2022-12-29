@@ -60,17 +60,19 @@ namespace KHOD.GUI
             // 
             // comboBox1
             // 
+            this.comboBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
             "Hoạt động",
             "Ngừng hoạt động"});
             this.comboBox1.Location = new System.Drawing.Point(130, 255);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(203, 21);
+            this.comboBox1.Size = new System.Drawing.Size(334, 21);
             this.comboBox1.TabIndex = 58;
             // 
             // guna2DateTimePicker2
             // 
+            this.guna2DateTimePicker2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2DateTimePicker2.Checked = true;
             this.guna2DateTimePicker2.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2DateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Long;
@@ -78,12 +80,13 @@ namespace KHOD.GUI
             this.guna2DateTimePicker2.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.guna2DateTimePicker2.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.guna2DateTimePicker2.Name = "guna2DateTimePicker2";
-            this.guna2DateTimePicker2.Size = new System.Drawing.Size(215, 36);
+            this.guna2DateTimePicker2.Size = new System.Drawing.Size(334, 36);
             this.guna2DateTimePicker2.TabIndex = 57;
             this.guna2DateTimePicker2.Value = new System.DateTime(2022, 12, 27, 9, 38, 32, 241);
             // 
             // guna2DateTimePicker1
             // 
+            this.guna2DateTimePicker1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2DateTimePicker1.Checked = true;
             this.guna2DateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
@@ -91,12 +94,13 @@ namespace KHOD.GUI
             this.guna2DateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.guna2DateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
-            this.guna2DateTimePicker1.Size = new System.Drawing.Size(215, 36);
+            this.guna2DateTimePicker1.Size = new System.Drawing.Size(334, 36);
             this.guna2DateTimePicker1.TabIndex = 56;
             this.guna2DateTimePicker1.Value = new System.DateTime(2022, 12, 27, 9, 38, 32, 241);
             // 
             // guna2TextBox11
             // 
+            this.guna2TextBox11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2TextBox11.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.guna2TextBox11.DefaultText = "";
             this.guna2TextBox11.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -116,6 +120,7 @@ namespace KHOD.GUI
             // 
             // guna2TextBox12
             // 
+            this.guna2TextBox12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2TextBox12.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.guna2TextBox12.DefaultText = "";
             this.guna2TextBox12.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -135,6 +140,7 @@ namespace KHOD.GUI
             // 
             // guna2TextBox13
             // 
+            this.guna2TextBox13.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2TextBox13.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.guna2TextBox13.DefaultText = "";
             this.guna2TextBox13.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -154,6 +160,7 @@ namespace KHOD.GUI
             // 
             // guna2TextBox9
             // 
+            this.guna2TextBox9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2TextBox9.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.guna2TextBox9.DefaultText = "";
             this.guna2TextBox9.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -174,6 +181,7 @@ namespace KHOD.GUI
             // 
             // guna2TextBox8
             // 
+            this.guna2TextBox8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2TextBox8.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.guna2TextBox8.DefaultText = "";
             this.guna2TextBox8.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -194,6 +202,7 @@ namespace KHOD.GUI
             // 
             // guna2TextBox6
             // 
+            this.guna2TextBox6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2TextBox6.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.guna2TextBox6.DefaultText = "";
             this.guna2TextBox6.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -213,6 +222,7 @@ namespace KHOD.GUI
             // 
             // guna2TextBox5
             // 
+            this.guna2TextBox5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2TextBox5.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.guna2TextBox5.DefaultText = "";
             this.guna2TextBox5.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -232,6 +242,7 @@ namespace KHOD.GUI
             // 
             // guna2TextBox4
             // 
+            this.guna2TextBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2TextBox4.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.guna2TextBox4.DefaultText = "";
             this.guna2TextBox4.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -253,6 +264,7 @@ namespace KHOD.GUI
             // 
             // guna2TextBox3
             // 
+            this.guna2TextBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2TextBox3.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.guna2TextBox3.DefaultText = "";
             this.guna2TextBox3.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -272,6 +284,7 @@ namespace KHOD.GUI
             // 
             // guna2TextBox2
             // 
+            this.guna2TextBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2TextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.guna2TextBox2.DefaultText = "";
             this.guna2TextBox2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -291,6 +304,7 @@ namespace KHOD.GUI
             // 
             // guna2HtmlLabel14
             // 
+            this.guna2HtmlLabel14.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2HtmlLabel14.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel14.Location = new System.Drawing.Point(14, 44);
             this.guna2HtmlLabel14.Name = "guna2HtmlLabel14";
@@ -300,6 +314,7 @@ namespace KHOD.GUI
             // 
             // guna2HtmlLabel13
             // 
+            this.guna2HtmlLabel13.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2HtmlLabel13.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel13.Location = new System.Drawing.Point(14, 86);
             this.guna2HtmlLabel13.Name = "guna2HtmlLabel13";
@@ -309,6 +324,7 @@ namespace KHOD.GUI
             // 
             // guna2HtmlLabel12
             // 
+            this.guna2HtmlLabel12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2HtmlLabel12.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel12.Location = new System.Drawing.Point(14, 128);
             this.guna2HtmlLabel12.Name = "guna2HtmlLabel12";
@@ -318,6 +334,7 @@ namespace KHOD.GUI
             // 
             // guna2HtmlLabel11
             // 
+            this.guna2HtmlLabel11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2HtmlLabel11.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel11.Location = new System.Drawing.Point(14, 175);
             this.guna2HtmlLabel11.Name = "guna2HtmlLabel11";
@@ -327,6 +344,7 @@ namespace KHOD.GUI
             // 
             // guna2HtmlLabel10
             // 
+            this.guna2HtmlLabel10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2HtmlLabel10.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel10.Location = new System.Drawing.Point(554, 44);
             this.guna2HtmlLabel10.Name = "guna2HtmlLabel10";
@@ -336,6 +354,7 @@ namespace KHOD.GUI
             // 
             // guna2HtmlLabel9
             // 
+            this.guna2HtmlLabel9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2HtmlLabel9.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel9.Location = new System.Drawing.Point(554, 83);
             this.guna2HtmlLabel9.Name = "guna2HtmlLabel9";
@@ -345,6 +364,7 @@ namespace KHOD.GUI
             // 
             // guna2HtmlLabel8
             // 
+            this.guna2HtmlLabel8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2HtmlLabel8.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel8.Location = new System.Drawing.Point(554, 125);
             this.guna2HtmlLabel8.Name = "guna2HtmlLabel8";
@@ -354,6 +374,7 @@ namespace KHOD.GUI
             // 
             // guna2HtmlLabel7
             // 
+            this.guna2HtmlLabel7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2HtmlLabel7.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel7.Location = new System.Drawing.Point(554, 172);
             this.guna2HtmlLabel7.Name = "guna2HtmlLabel7";
@@ -363,6 +384,7 @@ namespace KHOD.GUI
             // 
             // guna2HtmlLabel6
             // 
+            this.guna2HtmlLabel6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2HtmlLabel6.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel6.Location = new System.Drawing.Point(555, 219);
             this.guna2HtmlLabel6.Name = "guna2HtmlLabel6";
@@ -372,6 +394,7 @@ namespace KHOD.GUI
             // 
             // guna2HtmlLabel5
             // 
+            this.guna2HtmlLabel5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel5.Location = new System.Drawing.Point(554, 258);
             this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
@@ -381,6 +404,7 @@ namespace KHOD.GUI
             // 
             // guna2HtmlLabel4
             // 
+            this.guna2HtmlLabel4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel4.Location = new System.Drawing.Point(554, 303);
             this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
@@ -390,6 +414,7 @@ namespace KHOD.GUI
             // 
             // guna2HtmlLabel3
             // 
+            this.guna2HtmlLabel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel3.Location = new System.Drawing.Point(13, 219);
             this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
@@ -399,6 +424,7 @@ namespace KHOD.GUI
             // 
             // guna2HtmlLabel2
             // 
+            this.guna2HtmlLabel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel2.Location = new System.Drawing.Point(13, 261);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
@@ -408,6 +434,7 @@ namespace KHOD.GUI
             // 
             // guna2Button4
             // 
+            this.guna2Button4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2Button4.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.guna2Button4.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.guna2Button4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
