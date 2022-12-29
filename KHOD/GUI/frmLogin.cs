@@ -112,7 +112,6 @@ namespace KHOD.GUI
 		private string getMALS(string id, string thoigianbd)
 		{
 			string mals ="";
-			string mapq = "";
 			try
 			{
 				command.CommandText = "SELECT * FROM LICH_SU_DN";
@@ -124,8 +123,6 @@ namespace KHOD.GUI
 					foreach (DataRow dr in dt.Rows)
 					{
 						mals = dr["MaLS"].ToString();
-						mapq = dr["MaPQ"].ToString();
-						MAPQ = mapq;
 					}
 				}
 			}
