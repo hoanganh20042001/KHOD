@@ -30,6 +30,8 @@ namespace KHOD.GUI
 		private void InitializeComponent()
 		{
 			this.panel1 = new System.Windows.Forms.Panel();
+			this.date2 = new System.Windows.Forms.DateTimePicker();
+			this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
 			this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
 			this.comboBox1 = new System.Windows.Forms.ComboBox();
 			this.lbGia = new DevExpress.XtraEditors.LabelControl();
@@ -61,8 +63,6 @@ namespace KHOD.GUI
 			this.Column11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
 			this.dataGridView1 = new System.Windows.Forms.DataGridView();
-			this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
-			this.date2 = new System.Windows.Forms.DateTimePicker();
 			this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -112,6 +112,22 @@ namespace KHOD.GUI
 			this.panel1.TabIndex = 1;
 			this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
 			// 
+			// date2
+			// 
+			this.date2.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.date2.Location = new System.Drawing.Point(403, 78);
+			this.date2.Name = "date2";
+			this.date2.Size = new System.Drawing.Size(182, 23);
+			this.date2.TabIndex = 21;
+			// 
+			// labelControl10
+			// 
+			this.labelControl10.Location = new System.Drawing.Point(333, 83);
+			this.labelControl10.Name = "labelControl10";
+			this.labelControl10.Size = new System.Drawing.Size(69, 17);
+			this.labelControl10.TabIndex = 20;
+			this.labelControl10.Text = "Đến ngày :";
+			// 
 			// simpleButton2
 			// 
 			this.simpleButton2.Appearance.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -130,6 +146,7 @@ namespace KHOD.GUI
 			this.comboBox1.Name = "comboBox1";
 			this.comboBox1.Size = new System.Drawing.Size(180, 24);
 			this.comboBox1.TabIndex = 18;
+			this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
 			// 
 			// lbGia
 			// 
@@ -416,22 +433,6 @@ namespace KHOD.GUI
 			this.dataGridView1.RowTemplate.Height = 24;
 			this.dataGridView1.Size = new System.Drawing.Size(552, 640);
 			this.dataGridView1.TabIndex = 0;
-			// 
-			// labelControl10
-			// 
-			this.labelControl10.Location = new System.Drawing.Point(333, 83);
-			this.labelControl10.Name = "labelControl10";
-			this.labelControl10.Size = new System.Drawing.Size(69, 17);
-			this.labelControl10.TabIndex = 20;
-			this.labelControl10.Text = "Đến ngày :";
-			// 
-			// date2
-			// 
-			this.date2.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.date2.Location = new System.Drawing.Point(403, 78);
-			this.date2.Name = "date2";
-			this.date2.Size = new System.Drawing.Size(182, 23);
-			this.date2.TabIndex = 21;
 			// 
 			// Column4
 			// 
