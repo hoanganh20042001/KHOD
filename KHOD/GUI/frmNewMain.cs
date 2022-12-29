@@ -133,5 +133,24 @@ namespace KHOD.GUI
 			form.Show();
 			form.BringToFront();
 		}
+
+		private void accordionControlElement22_Click(object sender, EventArgs e)
+		{
+			frmNhapKho form = new frmNhapKho();
+
+
+			//frmChangePass.TopLevel = false;
+
+
+			panelMain.Controls.Clear();
+			//panelMain.Dock = DockStyle.Fill;
+
+			form.TopLevel = false;
+			form.Dock = DockStyle.Fill;
+			panelMain.Controls.Add(form);
+
+			form.Show();
+			form.BringToFront();
+		}
 	}
 }

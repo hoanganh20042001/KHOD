@@ -35,10 +35,10 @@ namespace KHOD.DAO
 
 		protected override void OnModelCreating(DbModelBuilder modelBuilder)
 		{
-			modelBuilder.Entity<HOA_DON>()
-				.Property(e => e.MaGiaoDich)
-				.IsFixedLength()
-				.IsUnicode(false);
+			modelBuilder.Entity<DON_DAT_NL>()
+				.HasMany(e => e.DAT_NL)
+				.WithRequired(e => e.DON_DAT_NL)
+				.WillCascadeOnDelete(false);
 
 			modelBuilder.Entity<MON_AN>()
 				.HasMany(e => e.DS_TP)
@@ -74,6 +74,11 @@ namespace KHOD.DAO
 			modelBuilder.Entity<NHAN_VIEN>()
 				.Property(e => e.MatKhau)
 				.IsUnicode(false);
+
+			modelBuilder.Entity<THANH_PHAN>()
+				.HasMany(e => e.DAT_NL)
+				.WithRequired(e => e.THANH_PHAN)
+				.WillCascadeOnDelete(false);
 
 			modelBuilder.Entity<THANH_PHAN>()
 				.HasMany(e => e.DS_TP)

@@ -30,6 +30,10 @@ namespace KHOD.GUI
 		private void InitializeComponent()
 		{
 			this.panel1 = new System.Windows.Forms.Panel();
+			this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
+			this.comboBox1 = new System.Windows.Forms.ComboBox();
+			this.lbGia = new DevExpress.XtraEditors.LabelControl();
+			this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
 			this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
 			this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
 			this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
@@ -45,27 +49,26 @@ namespace KHOD.GUI
 			this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
 			this.panelControl4 = new DevExpress.XtraEditors.PanelControl();
 			this.dataGridView3 = new System.Windows.Forms.DataGridView();
-			this.panelControl3 = new DevExpress.XtraEditors.PanelControl();
-			this.dataGridView2 = new System.Windows.Forms.DataGridView();
-			this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
-			this.dataGridView1 = new System.Windows.Forms.DataGridView();
-			this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
-			this.lbGia = new DevExpress.XtraEditors.LabelControl();
-			this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.Column12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.Column14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.Column13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.panelControl3 = new DevExpress.XtraEditors.PanelControl();
+			this.dataGridView2 = new System.Windows.Forms.DataGridView();
 			this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.SoLuong = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.Gia = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.Column11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.comboBox1 = new System.Windows.Forms.ComboBox();
+			this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
+			this.dataGridView1 = new System.Windows.Forms.DataGridView();
+			this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
+			this.date2 = new System.Windows.Forms.DateTimePicker();
+			this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.panel1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
 			this.panelControl1.SuspendLayout();
@@ -83,6 +86,9 @@ namespace KHOD.GUI
 			// panel1
 			// 
 			this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+			this.panel1.Controls.Add(this.date2);
+			this.panel1.Controls.Add(this.labelControl10);
+			this.panel1.Controls.Add(this.simpleButton2);
 			this.panel1.Controls.Add(this.comboBox1);
 			this.panel1.Controls.Add(this.lbGia);
 			this.panel1.Controls.Add(this.labelControl5);
@@ -104,6 +110,43 @@ namespace KHOD.GUI
 			this.panel1.Name = "panel1";
 			this.panel1.Size = new System.Drawing.Size(1867, 217);
 			this.panel1.TabIndex = 1;
+			this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+			// 
+			// simpleButton2
+			// 
+			this.simpleButton2.Appearance.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.simpleButton2.Appearance.Options.UseFont = true;
+			this.simpleButton2.Location = new System.Drawing.Point(1396, 150);
+			this.simpleButton2.Name = "simpleButton2";
+			this.simpleButton2.Size = new System.Drawing.Size(261, 40);
+			this.simpleButton2.TabIndex = 19;
+			this.simpleButton2.Text = "Đặt nguyên liệu";
+			// 
+			// comboBox1
+			// 
+			this.comboBox1.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.comboBox1.FormattingEnabled = true;
+			this.comboBox1.Location = new System.Drawing.Point(1496, 95);
+			this.comboBox1.Name = "comboBox1";
+			this.comboBox1.Size = new System.Drawing.Size(180, 24);
+			this.comboBox1.TabIndex = 18;
+			// 
+			// lbGia
+			// 
+			this.lbGia.Location = new System.Drawing.Point(649, 118);
+			this.lbGia.Name = "lbGia";
+			this.lbGia.Size = new System.Drawing.Size(17, 16);
+			this.lbGia.TabIndex = 17;
+			this.lbGia.Text = "gia";
+			// 
+			// labelControl5
+			// 
+			this.labelControl5.Location = new System.Drawing.Point(333, 121);
+			this.labelControl5.Name = "labelControl5";
+			this.labelControl5.Size = new System.Drawing.Size(64, 17);
+			this.labelControl5.TabIndex = 16;
+			this.labelControl5.Text = "Số lượng :";
+			this.labelControl5.Click += new System.EventHandler(this.labelControl5_Click);
 			// 
 			// labelControl9
 			// 
@@ -132,7 +175,7 @@ namespace KHOD.GUI
 			// date1
 			// 
 			this.date1.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.date1.Location = new System.Drawing.Point(97, 78);
+			this.date1.Location = new System.Drawing.Point(121, 78);
 			this.date1.Name = "date1";
 			this.date1.Size = new System.Drawing.Size(182, 23);
 			this.date1.TabIndex = 12;
@@ -140,17 +183,18 @@ namespace KHOD.GUI
 			// 
 			// labelControl6
 			// 
-			this.labelControl6.Location = new System.Drawing.Point(656, 82);
+			this.labelControl6.Location = new System.Drawing.Point(1396, 98);
 			this.labelControl6.Name = "labelControl6";
 			this.labelControl6.Size = new System.Drawing.Size(94, 17);
 			this.labelControl6.TabIndex = 10;
 			this.labelControl6.Text = "Nhà cung cấp :";
+			this.labelControl6.Click += new System.EventHandler(this.labelControl6_Click);
 			// 
 			// simpleButton1
 			// 
 			this.simpleButton1.Appearance.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.simpleButton1.Appearance.Options.UseFont = true;
-			this.simpleButton1.Location = new System.Drawing.Point(1209, 98);
+			this.simpleButton1.Location = new System.Drawing.Point(788, 95);
 			this.simpleButton1.Name = "simpleButton1";
 			this.simpleButton1.Size = new System.Drawing.Size(146, 40);
 			this.simpleButton1.TabIndex = 9;
@@ -160,14 +204,15 @@ namespace KHOD.GUI
 			// txtSl
 			// 
 			this.txtSl.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.txtSl.Location = new System.Drawing.Point(482, 115);
+			this.txtSl.Location = new System.Drawing.Point(403, 115);
 			this.txtSl.Name = "txtSl";
 			this.txtSl.Size = new System.Drawing.Size(82, 23);
 			this.txtSl.TabIndex = 8;
+			this.txtSl.TextChanged += new System.EventHandler(this.txtSl_TextChanged);
 			// 
 			// labelControl4
 			// 
-			this.labelControl4.Location = new System.Drawing.Point(412, 85);
+			this.labelControl4.Location = new System.Drawing.Point(594, 118);
 			this.labelControl4.Name = "labelControl4";
 			this.labelControl4.Size = new System.Drawing.Size(49, 16);
 			this.labelControl4.TabIndex = 5;
@@ -203,9 +248,9 @@ namespace KHOD.GUI
 			// 
 			this.labelControl1.Location = new System.Drawing.Point(54, 83);
 			this.labelControl1.Name = "labelControl1";
-			this.labelControl1.Size = new System.Drawing.Size(37, 16);
+			this.labelControl1.Size = new System.Drawing.Size(61, 17);
 			this.labelControl1.TabIndex = 0;
-			this.labelControl1.Text = "Ngày :";
+			this.labelControl1.Text = "Từ ngày :";
 			// 
 			// panelControl1
 			// 
@@ -248,6 +293,30 @@ namespace KHOD.GUI
 			this.dataGridView3.UseWaitCursor = true;
 			this.dataGridView3.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView3_CellContentClick);
 			// 
+			// Column12
+			// 
+			this.Column12.DataPropertyName = "ThanhPhan";
+			this.Column12.HeaderText = "Thành Phần";
+			this.Column12.MinimumWidth = 6;
+			this.Column12.Name = "Column12";
+			this.Column12.Width = 125;
+			// 
+			// Column14
+			// 
+			this.Column14.DataPropertyName = "Gia";
+			this.Column14.HeaderText = "Giá";
+			this.Column14.MinimumWidth = 6;
+			this.Column14.Name = "Column14";
+			this.Column14.Width = 125;
+			// 
+			// Column13
+			// 
+			this.Column13.DataPropertyName = "SoLuong";
+			this.Column13.HeaderText = "Số lượng";
+			this.Column13.MinimumWidth = 6;
+			this.Column13.Name = "Column13";
+			this.Column13.Width = 125;
+			// 
 			// panelControl3
 			// 
 			this.panelControl3.Appearance.BackColor = System.Drawing.Color.White;
@@ -278,123 +347,6 @@ namespace KHOD.GUI
 			this.dataGridView2.Size = new System.Drawing.Size(1303, 640);
 			this.dataGridView2.TabIndex = 0;
 			this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
-			// 
-			// panelControl2
-			// 
-			this.panelControl2.Appearance.BackColor = System.Drawing.SystemColors.ActiveCaption;
-			this.panelControl2.Appearance.Options.UseBackColor = true;
-			this.panelControl2.Controls.Add(this.dataGridView1);
-			this.panelControl2.Dock = System.Windows.Forms.DockStyle.Left;
-			this.panelControl2.Location = new System.Drawing.Point(2, 2);
-			this.panelControl2.Name = "panelControl2";
-			this.panelControl2.Size = new System.Drawing.Size(556, 644);
-			this.panelControl2.TabIndex = 0;
-			// 
-			// dataGridView1
-			// 
-			this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-			this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2,
-            this.Column3,
-            this.Column4,
-            this.Column5,
-            this.Column6});
-			this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.dataGridView1.Location = new System.Drawing.Point(2, 2);
-			this.dataGridView1.Name = "dataGridView1";
-			this.dataGridView1.RowHeadersWidth = 51;
-			this.dataGridView1.RowTemplate.Height = 24;
-			this.dataGridView1.Size = new System.Drawing.Size(552, 640);
-			this.dataGridView1.TabIndex = 0;
-			// 
-			// labelControl5
-			// 
-			this.labelControl5.Location = new System.Drawing.Point(412, 121);
-			this.labelControl5.Name = "labelControl5";
-			this.labelControl5.Size = new System.Drawing.Size(64, 17);
-			this.labelControl5.TabIndex = 16;
-			this.labelControl5.Text = "Số lượng :";
-			// 
-			// lbGia
-			// 
-			this.lbGia.Location = new System.Drawing.Point(482, 85);
-			this.lbGia.Name = "lbGia";
-			this.lbGia.Size = new System.Drawing.Size(17, 16);
-			this.lbGia.TabIndex = 17;
-			this.lbGia.Text = "gia";
-			// 
-			// Column1
-			// 
-			this.Column1.DataPropertyName = "ThanhPhan";
-			this.Column1.HeaderText = "Thành Phần";
-			this.Column1.MinimumWidth = 6;
-			this.Column1.Name = "Column1";
-			this.Column1.Width = 125;
-			// 
-			// Column2
-			// 
-			this.Column2.DataPropertyName = "Gia";
-			this.Column2.HeaderText = "Giá";
-			this.Column2.MinimumWidth = 6;
-			this.Column2.Name = "Column2";
-			this.Column2.Width = 125;
-			// 
-			// Column3
-			// 
-			this.Column3.DataPropertyName = "DinhLuong";
-			this.Column3.HeaderText = "Định Lượng";
-			this.Column3.MinimumWidth = 6;
-			this.Column3.Name = "Column3";
-			this.Column3.Width = 125;
-			// 
-			// Column4
-			// 
-			this.Column4.DataPropertyName = "Ngay";
-			this.Column4.HeaderText = "Ngày";
-			this.Column4.MinimumWidth = 6;
-			this.Column4.Name = "Column4";
-			this.Column4.Width = 125;
-			// 
-			// Column5
-			// 
-			this.Column5.DataPropertyName = "maTP";
-			this.Column5.HeaderText = "Mã thành phần";
-			this.Column5.MinimumWidth = 6;
-			this.Column5.Name = "Column5";
-			this.Column5.Width = 125;
-			// 
-			// Column6
-			// 
-			this.Column6.DataPropertyName = "MaLoai";
-			this.Column6.HeaderText = "Loại nguyên liệu";
-			this.Column6.MinimumWidth = 6;
-			this.Column6.Name = "Column6";
-			this.Column6.Width = 125;
-			// 
-			// Column12
-			// 
-			this.Column12.DataPropertyName = "ThanhPhan";
-			this.Column12.HeaderText = "Thành Phần";
-			this.Column12.MinimumWidth = 6;
-			this.Column12.Name = "Column12";
-			this.Column12.Width = 125;
-			// 
-			// Column14
-			// 
-			this.Column14.DataPropertyName = "Gia";
-			this.Column14.HeaderText = "Giá";
-			this.Column14.MinimumWidth = 6;
-			this.Column14.Name = "Column14";
-			this.Column14.Width = 125;
-			// 
-			// Column13
-			// 
-			this.Column13.DataPropertyName = "SoLuong";
-			this.Column13.HeaderText = "Số lượng";
-			this.Column13.MinimumWidth = 6;
-			this.Column13.Name = "Column13";
-			this.Column13.Width = 125;
 			// 
 			// Column7
 			// 
@@ -436,14 +388,98 @@ namespace KHOD.GUI
 			this.Column11.Name = "Column11";
 			this.Column11.Width = 125;
 			// 
-			// comboBox1
+			// panelControl2
 			// 
-			this.comboBox1.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.comboBox1.FormattingEnabled = true;
-			this.comboBox1.Location = new System.Drawing.Point(756, 80);
-			this.comboBox1.Name = "comboBox1";
-			this.comboBox1.Size = new System.Drawing.Size(180, 24);
-			this.comboBox1.TabIndex = 18;
+			this.panelControl2.Appearance.BackColor = System.Drawing.SystemColors.ActiveCaption;
+			this.panelControl2.Appearance.Options.UseBackColor = true;
+			this.panelControl2.Controls.Add(this.dataGridView1);
+			this.panelControl2.Dock = System.Windows.Forms.DockStyle.Left;
+			this.panelControl2.Location = new System.Drawing.Point(2, 2);
+			this.panelControl2.Name = "panelControl2";
+			this.panelControl2.Size = new System.Drawing.Size(556, 644);
+			this.panelControl2.TabIndex = 0;
+			// 
+			// dataGridView1
+			// 
+			this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+			this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column4,
+            this.Column1,
+            this.Column2,
+            this.Column3,
+            this.Column5,
+            this.Column6});
+			this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.dataGridView1.Location = new System.Drawing.Point(2, 2);
+			this.dataGridView1.Name = "dataGridView1";
+			this.dataGridView1.RowHeadersWidth = 51;
+			this.dataGridView1.RowTemplate.Height = 24;
+			this.dataGridView1.Size = new System.Drawing.Size(552, 640);
+			this.dataGridView1.TabIndex = 0;
+			// 
+			// labelControl10
+			// 
+			this.labelControl10.Location = new System.Drawing.Point(333, 83);
+			this.labelControl10.Name = "labelControl10";
+			this.labelControl10.Size = new System.Drawing.Size(69, 17);
+			this.labelControl10.TabIndex = 20;
+			this.labelControl10.Text = "Đến ngày :";
+			// 
+			// date2
+			// 
+			this.date2.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.date2.Location = new System.Drawing.Point(403, 78);
+			this.date2.Name = "date2";
+			this.date2.Size = new System.Drawing.Size(182, 23);
+			this.date2.TabIndex = 21;
+			// 
+			// Column4
+			// 
+			this.Column4.DataPropertyName = "NgayD";
+			this.Column4.HeaderText = "Ngày";
+			this.Column4.MinimumWidth = 6;
+			this.Column4.Name = "Column4";
+			this.Column4.Width = 125;
+			// 
+			// Column1
+			// 
+			this.Column1.DataPropertyName = "ThanhPhan";
+			this.Column1.HeaderText = "Thành Phần";
+			this.Column1.MinimumWidth = 6;
+			this.Column1.Name = "Column1";
+			this.Column1.Width = 125;
+			// 
+			// Column2
+			// 
+			this.Column2.DataPropertyName = "Gia";
+			this.Column2.HeaderText = "Giá";
+			this.Column2.MinimumWidth = 6;
+			this.Column2.Name = "Column2";
+			this.Column2.Width = 125;
+			// 
+			// Column3
+			// 
+			this.Column3.DataPropertyName = "DinhLuong";
+			this.Column3.HeaderText = "Định Lượng";
+			this.Column3.MinimumWidth = 6;
+			this.Column3.Name = "Column3";
+			this.Column3.Width = 125;
+			// 
+			// Column5
+			// 
+			this.Column5.DataPropertyName = "maTP";
+			this.Column5.HeaderText = "Mã thành phần";
+			this.Column5.MinimumWidth = 6;
+			this.Column5.Name = "Column5";
+			this.Column5.Width = 125;
+			// 
+			// Column6
+			// 
+			this.Column6.DataPropertyName = "MaLoai";
+			this.Column6.HeaderText = "Loại nguyên liệu";
+			this.Column6.MinimumWidth = 6;
+			this.Column6.Name = "Column6";
+			this.Column6.Width = 125;
 			// 
 			// frmDatNL
 			// 
@@ -497,12 +533,6 @@ namespace KHOD.GUI
 		private System.Windows.Forms.DataGridView dataGridView1;
 		private DevExpress.XtraEditors.LabelControl lbGia;
 		private DevExpress.XtraEditors.LabelControl labelControl5;
-		private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-		private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-		private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-		private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-		private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
-		private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
 		private System.Windows.Forms.DataGridViewTextBoxColumn Column12;
 		private System.Windows.Forms.DataGridViewTextBoxColumn Column14;
 		private System.Windows.Forms.DataGridViewTextBoxColumn Column13;
@@ -512,5 +542,14 @@ namespace KHOD.GUI
 		private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
 		private System.Windows.Forms.DataGridViewTextBoxColumn Column11;
 		private System.Windows.Forms.ComboBox comboBox1;
+		private DevExpress.XtraEditors.SimpleButton simpleButton2;
+		private System.Windows.Forms.DateTimePicker date2;
+		private DevExpress.XtraEditors.LabelControl labelControl10;
+		private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+		private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+		private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+		private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+		private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+		private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
 	}
 }

@@ -20,11 +20,13 @@ namespace KHOD.DAO
 
         [Column(TypeName = "date")]
         public DateTime? NgayLap { get; set; }
-		public DateTime? NgaySD { get; set; }
 
-		public int? MaNV { get; set; }
+        public int? MaNV { get; set; }
 
         public int? MaNCC { get; set; }
+
+        [Column(TypeName = "date")]
+        public DateTime? NgaySD { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<DAT_NL> DAT_NL { get; set; }

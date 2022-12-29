@@ -78,7 +78,7 @@ namespace KHOD.GUI
 			this.fluentDesignFormContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.fluentDesignFormContainer1.Location = new System.Drawing.Point(489, 39);
 			this.fluentDesignFormContainer1.Name = "fluentDesignFormContainer1";
-			this.fluentDesignFormContainer1.Size = new System.Drawing.Size(202, 576);
+			this.fluentDesignFormContainer1.Size = new System.Drawing.Size(511, 576);
 			this.fluentDesignFormContainer1.TabIndex = 0;
 			// 
 			// panelMain
@@ -86,7 +86,7 @@ namespace KHOD.GUI
 			this.panelMain.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.panelMain.Location = new System.Drawing.Point(0, 0);
 			this.panelMain.Name = "panelMain";
-			this.panelMain.Size = new System.Drawing.Size(202, 576);
+			this.panelMain.Size = new System.Drawing.Size(511, 576);
 			this.panelMain.TabIndex = 1;
 			// 
 			// accordionControl1
@@ -202,12 +202,13 @@ namespace KHOD.GUI
 			this.accordionControlElement22.Name = "accordionControlElement22";
 			this.accordionControlElement22.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
 			this.accordionControlElement22.Text = "Nhập kho";
+			this.accordionControlElement22.Click += new System.EventHandler(this.accordionControlElement22_Click);
 			// 
 			// accordionControlElement23
 			// 
 			this.accordionControlElement23.Name = "accordionControlElement23";
 			this.accordionControlElement23.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-			this.accordionControlElement23.Text = "Element23";
+			this.accordionControlElement23.Text = "Thống kê nhập kho";
 			// 
 			// accordionControlSeparator3
 			// 
@@ -232,7 +233,7 @@ namespace KHOD.GUI
 			// 
 			this.accordionControlElement21.Name = "accordionControlElement21";
 			this.accordionControlElement21.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-			this.accordionControlElement21.Text = "Element21";
+			this.accordionControlElement21.Text = "Thống kê xuất kho";
 			// 
 			// accordionControlSeparator4
 			// 
@@ -322,7 +323,7 @@ namespace KHOD.GUI
 			this.fluentDesignFormControl1.Location = new System.Drawing.Point(0, 0);
 			this.fluentDesignFormControl1.Manager = this.fluentFormDefaultManager1;
 			this.fluentDesignFormControl1.Name = "fluentDesignFormControl1";
-			this.fluentDesignFormControl1.Size = new System.Drawing.Size(691, 39);
+			this.fluentDesignFormControl1.Size = new System.Drawing.Size(1000, 39);
 			this.fluentDesignFormControl1.TabIndex = 2;
 			this.fluentDesignFormControl1.TabStop = false;
 			// 
@@ -334,7 +335,7 @@ namespace KHOD.GUI
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(691, 615);
+			this.ClientSize = new System.Drawing.Size(1000, 615);
 			this.ControlContainer = this.fluentDesignFormContainer1;
 			this.Controls.Add(this.fluentDesignFormContainer1);
 			this.Controls.Add(this.accordionControl1);

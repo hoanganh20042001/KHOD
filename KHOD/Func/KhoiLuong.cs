@@ -12,6 +12,7 @@ namespace KHOD.Func
 	{
 		MyDB db = new MyDB();
 		public string ThanhPhan { get; set; }
+		//public DateTime Ngay { get; set; }
 		public int MaTP { get; set; }
 		public int MaLoai { get; set; }
 		public double Gia { get; set; }

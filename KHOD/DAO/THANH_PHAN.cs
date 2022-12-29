@@ -11,6 +11,7 @@ namespace KHOD.DAO
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public THANH_PHAN()
         {
+            DAT_NL = new HashSet<DAT_NL>();
             DS_TP = new HashSet<DS_TP>();
             NGUYEN_LIEU = new HashSet<NGUYEN_LIEU>();
         }
@@ -27,6 +28,9 @@ namespace KHOD.DAO
         public int? MaLoai { get; set; }
 
         public double? Gia { get; set; }
+
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<DAT_NL> DAT_NL { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<DS_TP> DS_TP { get; set; }

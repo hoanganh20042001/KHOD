@@ -22,9 +22,6 @@ namespace KHOD.DAO
         [StringLength(50)]
         public string HinhThucThanhToan { get; set; }
 
-        [StringLength(10)]
-        public string MaGiaoDich { get; set; }
-
         public double? Thanhtien { get; set; }
 
         public int? MaDon { get; set; }

@@ -9,6 +9,7 @@ namespace KHOD.DAO
     public partial class DAT_NL
     {
         [Key]
+        [Column(Order = 0)]
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int MaTP { get; set; }
 
@@ -16,8 +17,13 @@ namespace KHOD.DAO
 
         public double? DonGia { get; set; }
 
-        public int? MaDon { get; set; }
+        [Key]
+        [Column(Order = 1)]
+        [DatabaseGenerated(DatabaseGeneratedOption.None)]
+        public int MaDon { get; set; }
 
         public virtual DON_DAT_NL DON_DAT_NL { get; set; }
+
+        public virtual THANH_PHAN THANH_PHAN { get; set; }
     }
 }

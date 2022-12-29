@@ -11,7 +11,7 @@ namespace KHOD.Func
 	{
 		MyDB db = new MyDB();
 		//public string Buoi { get; set; }
-		public DateTime Ngay { get; set; }
+		public DateTime NgayD { get; set; }
 		public string ThanhPhan { get; set; }
 		public int maTP { get; set; }
 		public double Gia { get; set; }
@@ -25,16 +25,33 @@ namespace KHOD.Func
 		{
 			List<ThanhPhanF> list = new List<ThanhPhanF>();
 			
-			list = db.Database.SqlQuery<ThanhPhanF>("select tp.matp,tentp as ThanhPhan ,ngay,sum(DinhLuong*quanso) as DinhLuong,tp.maloai,gia from mon_an ma join ds_ma ds on ds.mama=ma.mama join ds_tp on ds_tp.MaMA=ma.mama join THANH_PHAN tp on tp.matp=ds_tp.MaTP join THONG_TIN tt on tt.matt=ds.matt join loainl on loainl.maloai=tp.maloai group by tp.matp,tentp, ngay,tp.maloai,gia").ToList();
+			list = db.Database.SqlQuery<ThanhPhanF>("select ngay,tp.matp,tentp as ThanhPhan ,sum(DinhLuong*quanso) as DinhLuong,tp.maloai,gia from mon_an ma join ds_ma ds on ds.mama=ma.mama join ds_tp on ds_tp.MaMA=ma.mama join THANH_PHAN tp on tp.matp=ds_tp.MaTP join THONG_TIN tt on tt.matt=ds.matt join loainl on loainl.maloai=tp.maloai group by tp.matp,tentp, ngay,tp.maloai,gia").ToList();
 			return list;
 
 		}
-		public List<ThanhPhanF> ngay(DateTime d)
+		public List<ThanhPhanF> ngay(DateTime d1, DateTime d2)
 		{
 
-			List<ThanhPhanF> list = new List<ThanhPhanF>();
+			List<ThanhPhanF> List = new List<ThanhPhanF>();//lay cac nguyen lieu ngan han trong tuan
+			List= db.Database.SqlQuery<ThanhPhanF>("select ngay ngayd,tp.matp,tentp as ThanhPhan ,sum(DinhLuong*quanso) as DinhLuong,tp.maloai,gia from mon_an ma join ds_ma ds on ds.mama=ma.mama join ds_tp on ds_tp.MaMA=ma.mama join THANH_PHAN tp on tp.matp=ds_tp.MaTP join THONG_TIN tt on tt.matt=ds.matt join loainl on loainl.maloai=tp.maloai where ngay>=@d1 and ngay<=@d2 and tp.maloai=0 group by ngay,tp.matp,tentp,tp.maloai,gia order by ngay", new SqlParameter("@d1", d1.Date), new SqlParameter("@d2", d2.Date)).ToList();
+			
 
-			list = db.Database.SqlQuery<ThanhPhanF>("select tp.matp,tentp as ThanhPhan ,ngay,sum(DinhLuong*quanso) as DinhLuong,tp.maloai,gia from mon_an ma join ds_ma ds on ds.mama=ma.mama join ds_tp on ds_tp.MaMA=ma.mama join THANH_PHAN tp on tp.matp=ds_tp.MaTP join THONG_TIN tt on tt.matt=ds.matt join loainl on loainl.maloai=tp.maloai where ngay=@ngay group by tp.matp,tentp, ngay,tp.maloai,gia", new SqlParameter("@ngay", d)).ToList();
+
+				var nldh = db.Database.SqlQuery<NlDaiHan>("select tp.matp,tentp as ThanhPhan ,sum(DinhLuong*quanso) as DinhLuong,tp.maloai,gia from mon_an ma join ds_ma ds on ds.mama=ma.mama join ds_tp on ds_tp.MaMA=ma.mama join THANH_PHAN tp on tp.matp=ds_tp.MaTP join THONG_TIN tt on tt.matt=ds.matt join loainl on loainl.maloai=tp.maloai where ngay>=@d1 and ngay<=@d2 and tp.maloai=1 group by tp.matp,tentp,tp.maloai,gia", new SqlParameter("@d1", d1.Date), new SqlParameter("@d2", d2.Date)).ToList();
+			foreach(var item in nldh)
+			{
+				ThanhPhanF tp = new ThanhPhanF();
+				tp.DinhLuong = item.DinhLuong;
+				tp.Gia = item.Gia;
+				tp.MaLoai = item.MaLoai;
+				tp.maTP = item.maTP;
+				tp.ThanhPhan = item.ThanhPhan;
+				tp.NgayD= d1.Date;
+				
+				List.Add(tp);
+				
+			}
+			var list= List.OrderBy(x => x.NgayD).ToList();
 			return list;
 		}
 		

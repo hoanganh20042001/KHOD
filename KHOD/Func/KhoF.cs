@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using KHOD.DAO;
+using System.Data.SqlClient;
 
 namespace KHOD.Func
 {
@@ -46,21 +47,21 @@ namespace KHOD.Func
 			//}
 			return kho;
 		}
-		
+
 		public void TuDong()
 		{
 			if (DateTime.Now.Hour <= 7 || (14 <= DateTime.Now.Hour && DateTime.Now.Hour <= 15))
 			{
-				foreach(var item in ListAll())
+				foreach (var item in ListAll())
 				{
 					var result = db.NGUYEN_LIEU.Find(item.MaNL);
 					result.TrangThai = false;
 					db.SaveChanges();
 				}
 			}
-			
+
 		}
-		public void KiemTra(int manl,int soLuongLoaiBo,string LyDo,int MaNV)
+		public void KiemTra(int manl, int soLuongLoaiBo, string LyDo, int MaNV)
 		{
 			var result = db.NGUYEN_LIEU.Find(manl);
 			KIEM_TRA kiemtra = new KIEM_TRA();
@@ -73,7 +74,7 @@ namespace KHOD.Func
 				lb.LyDo = LyDo;
 				lb.SoLuong = soLuongLoaiBo;
 				db.DS_LOAI_BO_NL.Add(lb);
-				
+
 				kiemtra.MaLB = lb.MaLB;
 
 			}
@@ -81,133 +82,107 @@ namespace KHOD.Func
 			kiemtra.ThoiGian = T;
 			kiemtra.MaNV = MaNV;
 			db.KIEM_TRA.Add(kiemtra);
-			
+
 			result.TrangThai = true;
 			db.SaveChanges();
-			
+
 		}
 		public void XuatKho()
 		{
 
 		}
-		public List<KhoiLuong> DuKien(DateTime Ngay)
+		public List<ThanhPhanF> DuKien(DateTime d1, DateTime d2)
 		{
-			List<KhoiLuong> list = new List<KhoiLuong>();
+			List<ThanhPhanF> list = new List<ThanhPhanF>();
 			ThanhPhanF tp = new ThanhPhanF();
 			KhoiLuong kho = new KhoiLuong();
-			List<ThanhPhanF> List = tp.ngay(Ngay);
+			List<ThanhPhanF> List = tp.ngay(d1, d2);
 			foreach (var item in List)// lay ra nguyen lieu CAN MUA
 			{
-				KhoiLuong dat = new KhoiLuong();
+				ThanhPhanF dat = new ThanhPhanF();
 				KhoiLuong khoiluong = kho.getNL(item.maTP);//lay ra nguyen lieu trong kho
 				if (khoiluong != null)
 				{
 					if (item.DinhLuong > khoiluong.SoLuong)
 					{
-						if (khoiluong.MaLoai == 1)
-						{
-							dat.SoLuong = (int)item.DinhLuong * 100;
-						}
-						else
-							dat.SoLuong = (int)item.DinhLuong - khoiluong.SoLuong;
+
+						dat.DinhLuong = (int)item.DinhLuong - khoiluong.SoLuong;
 					}
 					else
 					{
-						dat.SoLuong = 0;
+						dat.DinhLuong = khoiluong.SoLuong - (int)item.DinhLuong;
 					}
-					if (dat.SoLuong != 0)
+					if (dat.DinhLuong != 0)
 					{
-						dat.MaTP = khoiluong.MaTP;
+						dat.maTP = khoiluong.MaTP;
 						dat.ThanhPhan = khoiluong.ThanhPhan;
 						dat.Gia = khoiluong.Gia;
 						dat.MaLoai = khoiluong.MaLoai;
+						dat.NgayD = d1;
 					}
-					
+
 				}
 				else
 				{
-					
-						dat.SoLuong = (int)item.DinhLuong;
-					dat.MaTP = item.maTP;
+
+					dat.DinhLuong = (int)item.DinhLuong;
+					dat.maTP = item.maTP;
 					dat.ThanhPhan = item.ThanhPhan;
 					dat.Gia = item.Gia;
 					dat.MaLoai = item.MaLoai;
+					dat.NgayD = item.NgayD;
 				}
-				if (dat.SoLuong != 0)
+				if (dat.DinhLuong != 0)
 				{
 					list.Add(dat);
 				}
-				
+
 			}
 			return list;
 
 		}
-		public void DatNL(DateTime Ngay,int manv,int mancc)
+		public void DatNL(DateTime d1, DateTime d2, int manv, int mancc)
 		{
 			ThanhPhanF tp = new ThanhPhanF();
-			List<ThanhPhanF> List = tp.ngay(Ngay);
-			//var kq = from thanhphan in db.THANH_PHAN join nl in db.NGUYEN_LIEU on thanhphan.MaTP equals nl.MaTP where SoLuong > 0 group thanhphan by thanhphan.tenTP into thanhp select new {
-			//	ThanhPhan=thanhp.Key,
-			//	SoLuong=nl.So
+			List<ThanhPhanF> List = DuKien(d1, d2);
+
 			KhoiLuong kho = new KhoiLuong();
-			DON_DAT_NL don = new DON_DAT_NL();
-			don.NgayLap = DateTime.Now;
-			don.MaNV = manv;
-			don.MaNCC = mancc;
-			db.DON_DAT_NL.Add(don);
 
-			foreach (var item in List)// lay ra nguyen lieu CAN MUA
+			DateTime d = d1;
+			for (int i = 1; i <= 7; i++)
 			{
-				DAT_NL dat = new DAT_NL();
-				KhoiLuong khoiluong = kho.getNL(item.maTP);//lay ra nguyen lieu trong kho
-				if (khoiluong != null)
+				DON_DAT_NL don = new DON_DAT_NL();
+				don.NgayLap = DateTime.Now.Date;
+				don.NgaySD = d.Date;
+				don.MaNCC = mancc;
+				don.MaNV = manv;
+				db.DON_DAT_NL.Add(don);
+				db.SaveChanges();
+				foreach (var item in List)
 				{
-					if (item.DinhLuong > khoiluong.SoLuong)
+					if (item.NgayD.Date == d.Date)
 					{
-						if (khoiluong.MaLoai == 1)
-						{
-							dat.SoLuong = (int)item.DinhLuong * 100;
-						}
-						else
-							dat.SoLuong = (int)item.DinhLuong - khoiluong.SoLuong;
-					}
-					else
-					{
-						dat.SoLuong = 0;
-					}
-					if (dat.SoLuong != 0)
-					{
-						dat.MaTP = khoiluong.MaTP;
-
-						dat.DonGia = khoiluong.Gia;
+						DAT_NL dat = new DAT_NL();
+						dat.MaTP = item.maTP;
 						dat.MaDon = don.MaDON;
+						dat.SoLuong = (int)item.DinhLuong;
+						dat.DonGia = item.Gia;
+						db.DAT_NL.Add(dat);
+
 					}
-
-				}
-				else
-				{
-
-					dat.SoLuong = (int)item.DinhLuong;
-					dat.MaTP = item.maTP;
-
-					dat.DonGia = item.Gia;
-					dat.MaDon = don.MaDON;
-				}
-				if (dat.SoLuong != 0)
-				{
-					db.DAT_NL.Add(dat);
-					
-
 				}
 
+				d = d.AddDays(1);
 			}
+
+
+
 			db.SaveChanges();
 
-		}
-		public void NhapKho(DateTime Ngay,int manv)
-		{
+
+
 
 		}
-		
+
 	}
 }

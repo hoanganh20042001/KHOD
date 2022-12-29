@@ -134,6 +134,8 @@
     <Compile Include="DAO\XUAT_KHO.cs" />
     <Compile Include="Func\KhoF.cs" />
     <Compile Include="Func\KhoiLuong.cs" />
+    <Compile Include="Func\NhapF.cs" />
+    <Compile Include="Func\NlDaiHan.cs" />
     <Compile Include="Func\ThanhPhanF.cs" />
     <Compile Include="Func\ThucDonF.cs" />
     <Compile Include="GUI\Form1.cs">
@@ -189,6 +191,12 @@
     </Compile>
     <Compile Include="GUI\frmNewMain.Designer.cs">
       <DependentUpon>frmNewMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmNhapKho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmNhapKho.Designer.cs">
+      <DependentUpon>frmNhapKho.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\frmPhucHoi.cs">
       <SubType>Form</SubType>
@@ -257,6 +265,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmNewMain.resx">
       <DependentUpon>frmNewMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmNhapKho.resx">
+      <DependentUpon>frmNhapKho.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmPhucHoi.resx">
       <DependentUpon>frmPhucHoi.cs</DependentUpon>
