@@ -30,7 +30,6 @@ namespace KHOD.GUI
 		private void InitializeComponent()
 		{
 			this.panel1 = new System.Windows.Forms.Panel();
-			this.panel2 = new System.Windows.Forms.Panel();
 			this.lbGia = new DevExpress.XtraEditors.LabelControl();
 			this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
 			this.date1 = new System.Windows.Forms.DateTimePicker();
@@ -41,6 +40,7 @@ namespace KHOD.GUI
 			this.lbten = new DevExpress.XtraEditors.LabelControl();
 			this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
 			this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
+			this.panel2 = new System.Windows.Forms.Panel();
 			this.dataGridView1 = new System.Windows.Forms.DataGridView();
 			this.panel1.SuspendLayout();
 			this.panel2.SuspendLayout();
@@ -65,16 +65,7 @@ namespace KHOD.GUI
 			this.panel1.Name = "panel1";
 			this.panel1.Size = new System.Drawing.Size(946, 236);
 			this.panel1.TabIndex = 0;
-			// 
-			// panel2
-			// 
-			this.panel2.BackColor = System.Drawing.SystemColors.ButtonFace;
-			this.panel2.Controls.Add(this.dataGridView1);
-			this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.panel2.Location = new System.Drawing.Point(0, 236);
-			this.panel2.Name = "panel2";
-			this.panel2.Size = new System.Drawing.Size(946, 487);
-			this.panel2.TabIndex = 1;
+			this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
 			// 
 			// lbGia
 			// 
@@ -161,6 +152,16 @@ namespace KHOD.GUI
 			this.labelControl1.Size = new System.Drawing.Size(37, 16);
 			this.labelControl1.TabIndex = 18;
 			this.labelControl1.Text = "Ngày :";
+			// 
+			// panel2
+			// 
+			this.panel2.BackColor = System.Drawing.SystemColors.ButtonFace;
+			this.panel2.Controls.Add(this.dataGridView1);
+			this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.panel2.Location = new System.Drawing.Point(0, 236);
+			this.panel2.Name = "panel2";
+			this.panel2.Size = new System.Drawing.Size(946, 487);
+			this.panel2.TabIndex = 1;
 			// 
 			// dataGridView1
 			// 
