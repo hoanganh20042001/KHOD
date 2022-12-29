@@ -34,6 +34,19 @@ namespace KHOD.GUI
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.MaNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NgaySinh = new DevComponents.DotNetBar.Controls.DataGridViewDateTimeInputColumn();
+            this.DiaChi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SDT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ChucVu = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.QuanHam = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TaiKhoan = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MatKhau = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NgayCN = new DevComponents.DotNetBar.Controls.DataGridViewDateTimeInputColumn();
+            this.MaBP = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MaPQ = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TrangThai = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
@@ -50,7 +63,6 @@ namespace KHOD.GUI
             this.guna2TextBox3 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2HtmlLabel14 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel13 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel12 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -65,19 +77,6 @@ namespace KHOD.GUI
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.TrangThai = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.MaPQ = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MaBP = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NgayCN = new DevComponents.DotNetBar.Controls.DataGridViewDateTimeInputColumn();
-            this.MatKhau = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TaiKhoan = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.QuanHam = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ChucVu = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SDT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DiaChi = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NgaySinh = new DevComponents.DotNetBar.Controls.DataGridViewDateTimeInputColumn();
-            this.TenNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MaNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -164,6 +163,136 @@ namespace KHOD.GUI
             this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.guna2DataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.guna2DataGridView1_CellContentClick);
             // 
+            // MaNV
+            // 
+            this.MaNV.DataPropertyName = "MaNV";
+            this.MaNV.HeaderText = "Mã nhân viên";
+            this.MaNV.Name = "MaNV";
+            // 
+            // TenNV
+            // 
+            this.TenNV.DataPropertyName = "TenNV";
+            this.TenNV.HeaderText = "Tên nhân viên";
+            this.TenNV.Name = "TenNV";
+            // 
+            // NgaySinh
+            // 
+            // 
+            // 
+            // 
+            this.NgaySinh.BackgroundStyle.BackColor = System.Drawing.Color.White;
+            this.NgaySinh.BackgroundStyle.Class = "DataGridViewDateTimeBorder";
+            this.NgaySinh.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.NgaySinh.BackgroundStyle.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.NgaySinh.DataPropertyName = "NgaySinh";
+            this.NgaySinh.HeaderText = "Ngày Sinh";
+            this.NgaySinh.InputHorizontalAlignment = DevComponents.Editors.eHorizontalAlignment.Left;
+            // 
+            // 
+            // 
+            // 
+            // 
+            // 
+            this.NgaySinh.MonthCalendar.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.NgaySinh.MonthCalendar.CalendarDimensions = new System.Drawing.Size(1, 1);
+            // 
+            // 
+            // 
+            this.NgaySinh.MonthCalendar.CommandsBackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.NgaySinh.MonthCalendar.DisplayMonth = new System.DateTime(2022, 12, 1, 0, 0, 0, 0);
+            // 
+            // 
+            // 
+            this.NgaySinh.MonthCalendar.NavigationBackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.NgaySinh.Name = "NgaySinh";
+            this.NgaySinh.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            // 
+            // DiaChi
+            // 
+            this.DiaChi.DataPropertyName = "DiaChi";
+            this.DiaChi.HeaderText = "Địa chỉ";
+            this.DiaChi.Name = "DiaChi";
+            // 
+            // SDT
+            // 
+            this.SDT.DataPropertyName = "SDT";
+            this.SDT.HeaderText = "Số ĐT";
+            this.SDT.Name = "SDT";
+            // 
+            // ChucVu
+            // 
+            this.ChucVu.DataPropertyName = "ChucVu";
+            this.ChucVu.HeaderText = "Chức vụ";
+            this.ChucVu.Name = "ChucVu";
+            // 
+            // QuanHam
+            // 
+            this.QuanHam.DataPropertyName = "QuanHam";
+            this.QuanHam.HeaderText = "Quân hàm";
+            this.QuanHam.Name = "QuanHam";
+            // 
+            // TaiKhoan
+            // 
+            this.TaiKhoan.DataPropertyName = "TaiKhoan";
+            this.TaiKhoan.HeaderText = "Tài khoản";
+            this.TaiKhoan.Name = "TaiKhoan";
+            // 
+            // MatKhau
+            // 
+            this.MatKhau.DataPropertyName = "MatKhau";
+            this.MatKhau.HeaderText = "Mật khẩu";
+            this.MatKhau.Name = "MatKhau";
+            // 
+            // NgayCN
+            // 
+            // 
+            // 
+            // 
+            this.NgayCN.BackgroundStyle.BackColor = System.Drawing.Color.White;
+            this.NgayCN.BackgroundStyle.Class = "DataGridViewDateTimeBorder";
+            this.NgayCN.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.NgayCN.BackgroundStyle.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.NgayCN.DataPropertyName = "NgayCN";
+            this.NgayCN.HeaderText = "Ngày làm";
+            this.NgayCN.InputHorizontalAlignment = DevComponents.Editors.eHorizontalAlignment.Left;
+            // 
+            // 
+            // 
+            // 
+            // 
+            // 
+            this.NgayCN.MonthCalendar.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.NgayCN.MonthCalendar.CalendarDimensions = new System.Drawing.Size(1, 1);
+            // 
+            // 
+            // 
+            this.NgayCN.MonthCalendar.CommandsBackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.NgayCN.MonthCalendar.DisplayMonth = new System.DateTime(2022, 12, 1, 0, 0, 0, 0);
+            // 
+            // 
+            // 
+            this.NgayCN.MonthCalendar.NavigationBackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.NgayCN.Name = "NgayCN";
+            this.NgayCN.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            // 
+            // MaBP
+            // 
+            this.MaBP.DataPropertyName = "MaBP";
+            this.MaBP.HeaderText = "Mã bộ phận";
+            this.MaBP.Name = "MaBP";
+            // 
+            // MaPQ
+            // 
+            this.MaPQ.DataPropertyName = "MaPQ";
+            this.MaPQ.HeaderText = "Mã phân quyền";
+            this.MaPQ.Name = "MaPQ";
+            // 
+            // TrangThai
+            // 
+            this.TrangThai.DataPropertyName = "TrangThai";
+            this.TrangThai.HeaderText = "Trạng thái";
+            this.TrangThai.Name = "TrangThai";
+            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.guna2TextBox1);
@@ -181,7 +310,6 @@ namespace KHOD.GUI
             this.groupBox2.Controls.Add(this.guna2TextBox3);
             this.groupBox2.Controls.Add(this.guna2TextBox2);
             this.groupBox2.Controls.Add(this.guna2Button4);
-            this.groupBox2.Controls.Add(this.guna2Button3);
             this.groupBox2.Controls.Add(this.guna2HtmlLabel14);
             this.groupBox2.Controls.Add(this.guna2HtmlLabel13);
             this.groupBox2.Controls.Add(this.guna2HtmlLabel12);
@@ -454,28 +582,12 @@ namespace KHOD.GUI
             this.guna2Button4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.guna2Button4.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button4.ForeColor = System.Drawing.Color.White;
-            this.guna2Button4.Location = new System.Drawing.Point(735, 189);
+            this.guna2Button4.Location = new System.Drawing.Point(917, 189);
             this.guna2Button4.Name = "guna2Button4";
             this.guna2Button4.Size = new System.Drawing.Size(83, 36);
             this.guna2Button4.TabIndex = 17;
             this.guna2Button4.Text = "Cập nhật";
             this.guna2Button4.Click += new System.EventHandler(this.guna2Button4_Click);
-            // 
-            // guna2Button3
-            // 
-            this.guna2Button3.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button3.FillColor = System.Drawing.Color.Red;
-            this.guna2Button3.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button3.ForeColor = System.Drawing.Color.White;
-            this.guna2Button3.Location = new System.Drawing.Point(917, 189);
-            this.guna2Button3.Name = "guna2Button3";
-            this.guna2Button3.Size = new System.Drawing.Size(83, 36);
-            this.guna2Button3.TabIndex = 16;
-            this.guna2Button3.Text = "Xóa";
-            this.guna2Button3.Click += new System.EventHandler(this.guna2Button3_Click);
             // 
             // guna2HtmlLabel14
             // 
@@ -603,136 +715,6 @@ namespace KHOD.GUI
             this.guna2HtmlLabel1.TabIndex = 0;
             this.guna2HtmlLabel1.Text = "Mã nhân viên";
             // 
-            // TrangThai
-            // 
-            this.TrangThai.DataPropertyName = "TrangThai";
-            this.TrangThai.HeaderText = "Trạng thái";
-            this.TrangThai.Name = "TrangThai";
-            // 
-            // MaPQ
-            // 
-            this.MaPQ.DataPropertyName = "MaPQ";
-            this.MaPQ.HeaderText = "Mã phân quyền";
-            this.MaPQ.Name = "MaPQ";
-            // 
-            // MaBP
-            // 
-            this.MaBP.DataPropertyName = "MaBP";
-            this.MaBP.HeaderText = "Mã bộ phận";
-            this.MaBP.Name = "MaBP";
-            // 
-            // NgayCN
-            // 
-            // 
-            // 
-            // 
-            this.NgayCN.BackgroundStyle.BackColor = System.Drawing.Color.White;
-            this.NgayCN.BackgroundStyle.Class = "DataGridViewDateTimeBorder";
-            this.NgayCN.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.NgayCN.BackgroundStyle.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.NgayCN.DataPropertyName = "NgayCN";
-            this.NgayCN.HeaderText = "Ngày làm";
-            this.NgayCN.InputHorizontalAlignment = DevComponents.Editors.eHorizontalAlignment.Left;
-            // 
-            // 
-            // 
-            // 
-            // 
-            // 
-            this.NgayCN.MonthCalendar.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.NgayCN.MonthCalendar.CalendarDimensions = new System.Drawing.Size(1, 1);
-            // 
-            // 
-            // 
-            this.NgayCN.MonthCalendar.CommandsBackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.NgayCN.MonthCalendar.DisplayMonth = new System.DateTime(2022, 12, 1, 0, 0, 0, 0);
-            // 
-            // 
-            // 
-            this.NgayCN.MonthCalendar.NavigationBackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.NgayCN.Name = "NgayCN";
-            this.NgayCN.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            // 
-            // MatKhau
-            // 
-            this.MatKhau.DataPropertyName = "MatKhau";
-            this.MatKhau.HeaderText = "Mật khẩu";
-            this.MatKhau.Name = "MatKhau";
-            // 
-            // TaiKhoan
-            // 
-            this.TaiKhoan.DataPropertyName = "TaiKhoan";
-            this.TaiKhoan.HeaderText = "Tài khoản";
-            this.TaiKhoan.Name = "TaiKhoan";
-            // 
-            // QuanHam
-            // 
-            this.QuanHam.DataPropertyName = "QuanHam";
-            this.QuanHam.HeaderText = "Quân hàm";
-            this.QuanHam.Name = "QuanHam";
-            // 
-            // ChucVu
-            // 
-            this.ChucVu.DataPropertyName = "ChucVu";
-            this.ChucVu.HeaderText = "Chức vụ";
-            this.ChucVu.Name = "ChucVu";
-            // 
-            // SDT
-            // 
-            this.SDT.DataPropertyName = "SDT";
-            this.SDT.HeaderText = "Số ĐT";
-            this.SDT.Name = "SDT";
-            // 
-            // DiaChi
-            // 
-            this.DiaChi.DataPropertyName = "DiaChi";
-            this.DiaChi.HeaderText = "Địa chỉ";
-            this.DiaChi.Name = "DiaChi";
-            // 
-            // NgaySinh
-            // 
-            // 
-            // 
-            // 
-            this.NgaySinh.BackgroundStyle.BackColor = System.Drawing.Color.White;
-            this.NgaySinh.BackgroundStyle.Class = "DataGridViewDateTimeBorder";
-            this.NgaySinh.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.NgaySinh.BackgroundStyle.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.NgaySinh.DataPropertyName = "NgaySinh";
-            this.NgaySinh.HeaderText = "Ngày Sinh";
-            this.NgaySinh.InputHorizontalAlignment = DevComponents.Editors.eHorizontalAlignment.Left;
-            // 
-            // 
-            // 
-            // 
-            // 
-            // 
-            this.NgaySinh.MonthCalendar.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.NgaySinh.MonthCalendar.CalendarDimensions = new System.Drawing.Size(1, 1);
-            // 
-            // 
-            // 
-            this.NgaySinh.MonthCalendar.CommandsBackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.NgaySinh.MonthCalendar.DisplayMonth = new System.DateTime(2022, 12, 1, 0, 0, 0, 0);
-            // 
-            // 
-            // 
-            this.NgaySinh.MonthCalendar.NavigationBackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.NgaySinh.Name = "NgaySinh";
-            this.NgaySinh.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            // 
-            // TenNV
-            // 
-            this.TenNV.DataPropertyName = "TenNV";
-            this.TenNV.HeaderText = "Tên nhân viên";
-            this.TenNV.Name = "TenNV";
-            // 
-            // MaNV
-            // 
-            this.MaNV.DataPropertyName = "MaNV";
-            this.MaNV.HeaderText = "Mã nhân viên";
-            this.MaNV.Name = "MaNV";
-            // 
             // frmNhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -771,7 +753,6 @@ namespace KHOD.GUI
 		private Guna.UI2.WinForms.Guna2TextBox guna2TextBox3;
 		private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
 		private Guna.UI2.WinForms.Guna2Button guna2Button4;
-		private Guna.UI2.WinForms.Guna2Button guna2Button3;
 		private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel14;
 		private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel13;
 		private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel12;

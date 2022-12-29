@@ -114,7 +114,7 @@ namespace KHOD.GUI
 			string mals ="";
 			try
 			{
-				command.CommandText = "SELECT * FROM LICH_SU_DN where MaNV = '"+Convert.ToInt32(id)+"' and ThoiGian = '"+thoigianbd+"'";
+				command.CommandText = "SELECT * FROM LICH_SU_DN ";
 				SqlDataAdapter da = new SqlDataAdapter(command);
 				DataTable dt = new DataTable();
 				da.Fill(dt);

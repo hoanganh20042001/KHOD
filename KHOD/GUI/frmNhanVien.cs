@@ -95,14 +95,6 @@ namespace KHOD.GUI
 			loaddata();
 		}
 
-		private void guna2Button3_Click(object sender, EventArgs e)
-		{
-
-			command = connection.CreateCommand();
-			command.CommandText = "Delete from NHAN_VIEN where MaNV = '"+ guna2TextBox1.Text + "'";
-			command.ExecuteNonQuery();
-			loaddata();
-		}
 
 		private void panel1_Paint(object sender, PaintEventArgs e)
 		{
