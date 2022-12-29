@@ -13,7 +13,7 @@ namespace KHOD.GUI
 {
 	public partial class frmThongTinNguoiDung : Form
 	{
-		public string str = @"Data Source=DESKTOP-CB0GE4G;Initial Catalog=KHO_D;Integrated Security=True";
+		public string str = @"Data Source=LINH-CHI;Initial Catalog=KHO_D;Integrated Security=True";
 		SqlConnection connection;
 		SqlCommand command;
 		SqlDataAdapter adapter = new SqlDataAdapter();

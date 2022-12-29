@@ -14,7 +14,7 @@ namespace KHOD
 	public partial class frmSaoLuu : Form
 	{
 		SqlConnection connection;
-		string str = @"Data Source=DESKTOP-CB0GE4G;Initial Catalog=KHO_D;Integrated Security=True";
+		string str = @"Data Source=LINH-CHI;Initial Catalog=KHO_D;Integrated Security=True";
 
 		public frmSaoLuu()
 		{

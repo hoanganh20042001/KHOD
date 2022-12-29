@@ -14,7 +14,7 @@ namespace KHOD.GUI
 	public partial class frmPhucHoi : Form
 	{
 		SqlConnection connection;
-		string str = @"Data Source=DESKTOP-CB0GE4G;Initial Catalog=KHO_D;Integrated Security=True";
+		string str = @"Data Source=LINH-CHI;Initial Catalog=KHO_D;Integrated Security=True";
 		public frmPhucHoi()
 		{
 			InitializeComponent();

@@ -21,7 +21,7 @@ namespace KHOD.GUI
 
 		SqlConnection connection;
 		SqlCommand command;
-		string str = @"Data Source=DESKTOP-CB0GE4G;Initial Catalog=KHO_D;Integrated Security=True";
+		string str = @"Data Source=LINH-CHI;Initial Catalog=KHO_D;Integrated Security=True";
 		SqlDataAdapter adapter = new SqlDataAdapter();
 		DataTable table = new DataTable();
 		void loaddata()
@@ -114,7 +114,7 @@ namespace KHOD.GUI
 			string mals ="";
 			try
 			{
-				command.CommandText = "SELECT * FROM LICH_SU_DN";
+				command.CommandText = "SELECT * FROM LICH_SU_DN where MaNV = '"+Convert.ToInt32(id)+"' and ThoiGian = '"+thoigianbd+"'";
 				SqlDataAdapter da = new SqlDataAdapter(command);
 				DataTable dt = new DataTable();
 				da.Fill(dt);
@@ -141,7 +141,7 @@ namespace KHOD.GUI
 			string mapq = "";
 			try
 			{
-				command.CommandText = "SELECT * FROM NHAN_VIEN";
+				command.CommandText = "SELECT * FROM NHAN_VIEN where MaNV = '" + Convert.ToInt32(id) + "'";
 				SqlDataAdapter da = new SqlDataAdapter(command);
 				DataTable dt = new DataTable();
 				da.Fill(dt);
@@ -150,7 +150,6 @@ namespace KHOD.GUI
 					foreach (DataRow dr in dt.Rows)
 					{
 						mapq = dr["MaPQ"].ToString();
-						MAPQ = mapq;
 					}
 				}
 			}
