@@ -200,5 +200,33 @@ namespace KHOD.GUI
 			form.Show();
 			form.BringToFront();
 		}
+
+		private void accordionControlElement15_Click(object sender, EventArgs e)
+		{
+			frmSaoLuu form = new frmSaoLuu();
+			panelMain.Controls.Clear();
+			//panelMain.Dock = DockStyle.Fill;
+
+			form.TopLevel = false;
+			form.Dock = DockStyle.Fill;
+			panelMain.Controls.Add(form);
+
+			form.Show();
+			form.BringToFront();
+		}
+
+		private void accordionControlElement16_Click(object sender, EventArgs e)
+		{
+			frmPhucHoi form = new frmPhucHoi();
+			panelMain.Controls.Clear();
+			//panelMain.Dock = DockStyle.Fill;
+
+			form.TopLevel = false;
+			form.Dock = DockStyle.Fill;
+			panelMain.Controls.Add(form);
+
+			form.Show();
+			form.BringToFront();
+		}
 	}
 }

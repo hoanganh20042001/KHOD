@@ -131,6 +131,12 @@
     <Compile Include="DAO\THANH_PHAN.cs" />
     <Compile Include="DAO\THONG_TIN.cs" />
     <Compile Include="DAO\XUAT_KHO.cs" />
+    <Compile Include="frmSaoLuu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSaoLuu.Designer.cs">
+      <DependentUpon>frmSaoLuu.cs</DependentUpon>
+    </Compile>
     <Compile Include="Func\ThanhPhanF.cs" />
     <Compile Include="Func\ThucDonF.cs" />
     <Compile Include="GUI\Form1.cs">
@@ -223,12 +229,6 @@
     <Compile Include="GUI\frmPhucHoi.Designer.cs">
       <DependentUpon>frmPhucHoi.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\frmSaoLuu.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\frmSaoLuu.Designer.cs">
-      <DependentUpon>frmSaoLuu.cs</DependentUpon>
-    </Compile>
     <Compile Include="GUI\frmThongKe.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -273,6 +273,9 @@
     <Compile Include="report\rep.Designer.cs">
       <DependentUpon>rep.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="frmSaoLuu.resx">
+      <DependentUpon>frmSaoLuu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -311,9 +314,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmPhucHoi.resx">
       <DependentUpon>frmPhucHoi.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GUI\frmSaoLuu.resx">
-      <DependentUpon>frmSaoLuu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmThongKe.resx">
       <DependentUpon>frmThongKe.cs</DependentUpon>
@@ -388,7 +388,9 @@
   <ItemGroup>
     <Content Include="Icons.res" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Dulieu\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.

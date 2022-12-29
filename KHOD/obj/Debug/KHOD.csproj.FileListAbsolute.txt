@@ -423,7 +423,6 @@ D:\Desktop\HTTT\KHOD\obj\Debug\KHOD.GUI.frmNewMain.resources
 D:\Desktop\HTTT\KHOD\obj\Debug\KHOD.GUI.frmNhanVien.resources
 D:\Desktop\HTTT\KHOD\obj\Debug\KHOD.GUI.frmNhanVien_Themmoi.resources
 D:\Desktop\HTTT\KHOD\obj\Debug\KHOD.GUI.frmPhucHoi.resources
-D:\Desktop\HTTT\KHOD\obj\Debug\KHOD.GUI.frmSaoLuu.resources
 D:\Desktop\HTTT\KHOD\obj\Debug\KHOD.GUI.frmThongKe.resources
 D:\Desktop\HTTT\KHOD\obj\Debug\KHOD.GUI.frmThucDon.resources
 D:\Desktop\HTTT\KHOD\obj\Debug\KHOD.GUI.Print.resources
@@ -440,3 +439,4 @@ D:\Desktop\HTTT\KHOD\obj\Debug\KHOD.GUI.frmThongTinNguoiDung.resources
 D:\Desktop\HTTT\KHOD\obj\Debug\KHOD.GUI.frmThongTinNguoiDung_Sua.resources
 D:\Desktop\HTTT\KHOD\obj\Debug\KHOD.GUI.frmLichSuTruyCap.resources
 D:\Desktop\HTTT\KHOD\obj\Debug\KHOD.csproj.AssemblyReference.cache
+D:\Desktop\HTTT\KHOD\obj\Debug\KHOD.frmSaoLuu.resources

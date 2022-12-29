@@ -63,9 +63,9 @@ namespace KHOD.GUI
             this.accordionControlElement18 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement19 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.fluentDesignFormControl1 = new DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormControl();
-            this.fluentFormDefaultManager1 = new DevExpress.XtraBars.FluentDesignSystem.FluentFormDefaultManager(this.components);
             this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
             this.barLargeButtonItem1 = new DevExpress.XtraBars.BarLargeButtonItem();
+            this.fluentFormDefaultManager1 = new DevExpress.XtraBars.FluentDesignSystem.FluentFormDefaultManager(this.components);
             this.fluentDesignFormContainer1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelMain)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).BeginInit();
@@ -276,12 +276,14 @@ namespace KHOD.GUI
             this.accordionControlElement15.Name = "accordionControlElement15";
             this.accordionControlElement15.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.accordionControlElement15.Text = "Sao lưu dữ liệu";
+            this.accordionControlElement15.Click += new System.EventHandler(this.accordionControlElement15_Click);
             // 
             // accordionControlElement16
             // 
             this.accordionControlElement16.Name = "accordionControlElement16";
             this.accordionControlElement16.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.accordionControlElement16.Text = "Phục hồi dữ liệu";
+            this.accordionControlElement16.Click += new System.EventHandler(this.accordionControlElement16_Click);
             // 
             // accordionControlSeparator6
             // 
@@ -325,14 +327,6 @@ namespace KHOD.GUI
             this.fluentDesignFormControl1.TabStop = false;
             this.fluentDesignFormControl1.TitleItemLinks.Add(this.barButtonItem1);
             // 
-            // fluentFormDefaultManager1
-            // 
-            this.fluentFormDefaultManager1.Form = this;
-            this.fluentFormDefaultManager1.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
-            this.barButtonItem1,
-            this.barLargeButtonItem1});
-            this.fluentFormDefaultManager1.MaxItemId = 2;
-            // 
             // barButtonItem1
             // 
             this.barButtonItem1.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right;
@@ -345,6 +339,14 @@ namespace KHOD.GUI
             this.barLargeButtonItem1.Caption = "barLargeButtonItem1";
             this.barLargeButtonItem1.Id = 1;
             this.barLargeButtonItem1.Name = "barLargeButtonItem1";
+            // 
+            // fluentFormDefaultManager1
+            // 
+            this.fluentFormDefaultManager1.Form = this;
+            this.fluentFormDefaultManager1.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
+            this.barButtonItem1,
+            this.barLargeButtonItem1});
+            this.fluentFormDefaultManager1.MaxItemId = 2;
             // 
             // frmNewMain
             // 
