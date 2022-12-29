@@ -292,7 +292,7 @@ namespace KHOD.GUI
 
 				frmLogin frm = new frmLogin();
 				frm.Show();
-				this.Close();
+				this.Hide();
 				connection.Close();
 			}
 			else
