@@ -1,66 +1,68 @@
-﻿using DevExpress.XtraEditors;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.SqlClient;
-using KHOD.DAO;
+
 namespace KHOD.GUI
 {
-    public partial class frmPhucHoi : DevExpress.XtraEditors.XtraForm
-    {
-        public frmPhucHoi()
-        {
-            InitializeComponent();
-        }
-        MyDB db = new MyDB();
-
-        private void sidePanel2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void sidePanel3_Click(object sender, EventArgs e)
-        {
-
-        }
-        public string Restore(string filename)
+	public partial class frmPhucHoi : Form
+	{
+		SqlConnection connection;
+		string str = @"Data Source=DESKTOP-CB0GE4G;Initial Catalog=KHO_D;Integrated Security=True";
+		public frmPhucHoi()
 		{
-            
-            SqlParameter idParam = new SqlParameter { ParameterName = "filename", Value = filename };
-            int i = db.Database.ExecuteSqlCommand("USE MASTER ALTER DATABASE[CameraTrackingSystem] SET SINGLE_USER WITH ROLLBACK IMMEDIATE ALTER DATABASE[CameraTrackingSystem] SET MULTI_USER RESTORE DATABASE[CameraTrackingSystem] FROM DISK =@filename WITH REPLACE", idParam);
-            return filename;
-        }
-        private void getFiles()
-		{
-
+			InitializeComponent();
 		}
 
-		private void btnPhucHoi_Click(object sender, EventArgs e)
+		private void frmPhucHoi_Load(object sender, EventArgs e)
 		{
-            string file = @"D:\DatabaseBackup\" + txtDuongDan.Text;
-            try
-            {
-                Restore(file);
-                MessageBox.Show("Phục hồi dữ liệu thành công. ",
-                                     "Thong bao", MessageBoxButtons.OK, MessageBoxIcon.Information);
+			connection = new SqlConnection(str);
+		}
 
+		private void guna2Button1_Click(object sender, EventArgs e)
+		{
+			OpenFileDialog dlg = new OpenFileDialog();
+			dlg.Filter = "file dữ liệu| .bak";
+			dlg.Title = "Dữ liệu phục hồi";
+			if (dlg.ShowDialog() == DialogResult.OK)
+			{
+				guna2TextBox1.Text = dlg.FileName;
+				guna2Button2.Enabled = true;
+			}
+		}
 
-            }
-
-            catch (Exception ex)
-            {
-                MessageBox.Show("Phục hồi dữ liệu không thành công do lỗi : " + ex.ToString());
-            }
-            finally
-            {
-                this.Cursor = Cursors.Default;
-            }
-        }
+		private void guna2Button2_Click(object sender, EventArgs e)
+		{
+			string database = connection.Database.ToString();
+			connection.Open();
+			try
+			{
+				string str1 = string.Format("ALTER DATABASE [" + database + "] SET SINGLE_USER WITH ROLLBACK IMMEDIATE");
+				SqlCommand cmd = new SqlCommand(str1, connection);
+				cmd.ExecuteNonQuery();
+				string str2 = "USE MASTER RESTORE DATABASE [" + database + "] FROM DISK = '" + guna2TextBox1.Text + "' WITH REPLACE;";
+				SqlCommand cmd1 = new SqlCommand(str2, connection);
+				cmd1.ExecuteNonQuery();
+				string str3 = string.Format("ALTER DATABASE [" + database + "] SET MULTI_USER");
+				SqlCommand cmd2 = new SqlCommand(str3, connection);
+				cmd2.ExecuteNonQuery();
+				MessageBox.Show("Phục hồi dữ liệu thành công");
+				connection.Close();
+			}
+			catch (Exception)
+			{
+				MessageBox.Show("Lỗi xảy ra khi truy vấn dữ liệu hoặc kết nối với server thất bại !");
+			}
+			finally
+			{
+				connection.Close();
+			}
+		}
 	}
 }

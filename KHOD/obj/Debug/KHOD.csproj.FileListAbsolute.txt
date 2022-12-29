@@ -122,7 +122,6 @@ E:\WEB\KHOD\KHOD\bin\Debug\EntityFramework.xml
 E:\WEB\KHOD\KHOD\bin\Debug\EntityFramework.SqlServer.xml
 E:\WEB\KHOD\KHOD\obj\Debug\KHOD.GUI.frmListNL.resources
 E:\WEB\KHOD\KHOD\obj\Debug\KHOD.GUI.frmPhucHoi.resources
-E:\WEB\KHOD\KHOD\obj\Debug\KHOD.GUI.frmSaoLuu.resources
 E:\WEB\KHOD\KHOD\obj\Debug\KHOD.GUI.Print.resources
 E:\WEB\KHOD\KHOD\bin\Debug\DevComponents.DotNetBar2.dll
 E:\WEB\KHOD\KHOD\bin\Debug\DevExpress.XtraNavBar.v21.2.dll
@@ -232,4 +231,12 @@ E:\WEB\KHOD\KHOD\obj\Debug\KHOD.GUI.frmKiemTra.resources
 E:\WEB\KHOD\KHOD\bin\Debug\Guna.UI2.dll
 E:\WEB\KHOD\KHOD\obj\Debug\KHOD.GUI.frmDatNL.resources
 E:\WEB\KHOD\KHOD\obj\Debug\KHOD.GUI.frmNhapKho.resources
+E:\WEB\KHOD\KHOD\obj\Debug\KHOD.GUI.frmXK.resources
+E:\WEB\KHOD\KHOD\obj\Debug\KHOD.report.baoCaoNl.resources
+E:\WEB\KHOD\KHOD\obj\Debug\KHOD.GUI.frmNhanVien.resources
+E:\WEB\KHOD\KHOD\obj\Debug\KHOD.GUI.frmLichSuTruyCap.resources
+E:\WEB\KHOD\KHOD\obj\Debug\KHOD.GUI.frmNhanVien_Themmoi.resources
+E:\WEB\KHOD\KHOD\obj\Debug\KHOD.frmSaoLuu.resources
+E:\WEB\KHOD\KHOD\obj\Debug\KHOD.GUI.frmThongTinNguoiDung.resources
+E:\WEB\KHOD\KHOD\obj\Debug\KHOD.GUI.frmThongTinNguoiDung_Sua.resources
 E:\WEB\KHOD\KHOD\obj\Debug\KHOD.csproj.AssemblyReference.cache

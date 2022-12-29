@@ -41,18 +41,19 @@ namespace KHOD.GUI
 			this.TrangThai = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.panel1 = new System.Windows.Forms.Panel();
-			this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-			this.lbMa = new DevExpress.XtraEditors.LabelControl();
-			this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
-			this.lbten = new DevExpress.XtraEditors.LabelControl();
-			this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
-			this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
-			this.lbSoLuongBD = new DevExpress.XtraEditors.LabelControl();
-			this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
-			this.txtSl = new System.Windows.Forms.TextBox();
-			this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
-			this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
 			this.txtLyDO = new System.Windows.Forms.TextBox();
+			this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
+			this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
+			this.txtSl = new System.Windows.Forms.TextBox();
+			this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
+			this.lbSoLuongBD = new DevExpress.XtraEditors.LabelControl();
+			this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
+			this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
+			this.lbten = new DevExpress.XtraEditors.LabelControl();
+			this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
+			this.lbMa = new DevExpress.XtraEditors.LabelControl();
+			this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
+			this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
 			((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
 			this.panelControl1.SuspendLayout();
 			this.panel2.SuspendLayout();
@@ -166,6 +167,7 @@ namespace KHOD.GUI
 			// panel1
 			// 
 			this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+			this.panel1.Controls.Add(this.simpleButton2);
 			this.panel1.Controls.Add(this.txtLyDO);
 			this.panel1.Controls.Add(this.labelControl6);
 			this.panel1.Controls.Add(this.simpleButton1);
@@ -185,73 +187,32 @@ namespace KHOD.GUI
 			this.panel1.Size = new System.Drawing.Size(1499, 219);
 			this.panel1.TabIndex = 0;
 			// 
-			// labelControl1
+			// txtLyDO
 			// 
-			this.labelControl1.Location = new System.Drawing.Point(54, 83);
-			this.labelControl1.Name = "labelControl1";
-			this.labelControl1.Size = new System.Drawing.Size(106, 17);
-			this.labelControl1.TabIndex = 0;
-			this.labelControl1.Text = "Mã Nguyên Liệu :";
-			this.labelControl1.Click += new System.EventHandler(this.labelControl1_Click);
+			this.txtLyDO.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txtLyDO.Location = new System.Drawing.Point(879, 77);
+			this.txtLyDO.Name = "txtLyDO";
+			this.txtLyDO.Size = new System.Drawing.Size(213, 23);
+			this.txtLyDO.TabIndex = 11;
 			// 
-			// lbMa
+			// labelControl6
 			// 
-			this.lbMa.Location = new System.Drawing.Point(163, 83);
-			this.lbMa.Name = "lbMa";
-			this.lbMa.Size = new System.Drawing.Size(91, 17);
-			this.lbMa.TabIndex = 1;
-			this.lbMa.Text = "Mã nguyên liệu";
-			this.lbMa.Click += new System.EventHandler(this.lbMa_Click);
+			this.labelControl6.Location = new System.Drawing.Point(793, 83);
+			this.labelControl6.Name = "labelControl6";
+			this.labelControl6.Size = new System.Drawing.Size(80, 17);
+			this.labelControl6.TabIndex = 10;
+			this.labelControl6.Text = "Lý do hỏng :";
 			// 
-			// labelControl3
+			// simpleButton1
 			// 
-			this.labelControl3.Location = new System.Drawing.Point(54, 121);
-			this.labelControl3.Name = "labelControl3";
-			this.labelControl3.Size = new System.Drawing.Size(112, 17);
-			this.labelControl3.TabIndex = 2;
-			this.labelControl3.Text = "Tên Nguyên Liệu :";
-			// 
-			// lbten
-			// 
-			this.lbten.Location = new System.Drawing.Point(163, 121);
-			this.lbten.Name = "lbten";
-			this.lbten.Size = new System.Drawing.Size(97, 17);
-			this.lbten.TabIndex = 3;
-			this.lbten.Text = "Tên nguyên liệu";
-			// 
-			// labelControl2
-			// 
-			this.labelControl2.Appearance.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.labelControl2.Appearance.Options.UseFont = true;
-			this.labelControl2.Location = new System.Drawing.Point(542, 10);
-			this.labelControl2.Name = "labelControl2";
-			this.labelControl2.Size = new System.Drawing.Size(310, 34);
-			this.labelControl2.TabIndex = 4;
-			this.labelControl2.Text = "Kiểm Tra Nguyên Liệu";
-			// 
-			// labelControl4
-			// 
-			this.labelControl4.Location = new System.Drawing.Point(412, 83);
-			this.labelControl4.Name = "labelControl4";
-			this.labelControl4.Size = new System.Drawing.Size(114, 17);
-			this.labelControl4.TabIndex = 5;
-			this.labelControl4.Text = "Số lượng ban đầu:";
-			// 
-			// lbSoLuongBD
-			// 
-			this.lbSoLuongBD.Location = new System.Drawing.Point(532, 83);
-			this.lbSoLuongBD.Name = "lbSoLuongBD";
-			this.lbSoLuongBD.Size = new System.Drawing.Size(109, 17);
-			this.lbSoLuongBD.TabIndex = 6;
-			this.lbSoLuongBD.Text = "Số lượng ban đầu";
-			// 
-			// labelControl5
-			// 
-			this.labelControl5.Location = new System.Drawing.Point(412, 121);
-			this.labelControl5.Name = "labelControl5";
-			this.labelControl5.Size = new System.Drawing.Size(96, 17);
-			this.labelControl5.TabIndex = 7;
-			this.labelControl5.Text = "Số lượng hỏng:";
+			this.simpleButton1.Appearance.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.simpleButton1.Appearance.Options.UseFont = true;
+			this.simpleButton1.Location = new System.Drawing.Point(793, 147);
+			this.simpleButton1.Name = "simpleButton1";
+			this.simpleButton1.Size = new System.Drawing.Size(146, 40);
+			this.simpleButton1.TabIndex = 9;
+			this.simpleButton1.Text = "Kiểm tra";
+			this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
 			// 
 			// txtSl
 			// 
@@ -263,32 +224,84 @@ namespace KHOD.GUI
 			this.txtSl.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
 			this.txtSl.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
 			// 
-			// simpleButton1
+			// labelControl5
 			// 
-			this.simpleButton1.Appearance.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.simpleButton1.Appearance.Options.UseFont = true;
-			this.simpleButton1.Location = new System.Drawing.Point(1292, 98);
-			this.simpleButton1.Name = "simpleButton1";
-			this.simpleButton1.Size = new System.Drawing.Size(146, 40);
-			this.simpleButton1.TabIndex = 9;
-			this.simpleButton1.Text = "Kiểm tra";
-			this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
+			this.labelControl5.Location = new System.Drawing.Point(412, 121);
+			this.labelControl5.Name = "labelControl5";
+			this.labelControl5.Size = new System.Drawing.Size(96, 17);
+			this.labelControl5.TabIndex = 7;
+			this.labelControl5.Text = "Số lượng hỏng:";
 			// 
-			// labelControl6
+			// lbSoLuongBD
 			// 
-			this.labelControl6.Location = new System.Drawing.Point(793, 83);
-			this.labelControl6.Name = "labelControl6";
-			this.labelControl6.Size = new System.Drawing.Size(80, 17);
-			this.labelControl6.TabIndex = 10;
-			this.labelControl6.Text = "Lý do hỏng :";
+			this.lbSoLuongBD.Location = new System.Drawing.Point(532, 83);
+			this.lbSoLuongBD.Name = "lbSoLuongBD";
+			this.lbSoLuongBD.Size = new System.Drawing.Size(109, 17);
+			this.lbSoLuongBD.TabIndex = 6;
+			this.lbSoLuongBD.Text = "Số lượng ban đầu";
 			// 
-			// txtLyDO
+			// labelControl4
 			// 
-			this.txtLyDO.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.txtLyDO.Location = new System.Drawing.Point(879, 77);
-			this.txtLyDO.Name = "txtLyDO";
-			this.txtLyDO.Size = new System.Drawing.Size(213, 23);
-			this.txtLyDO.TabIndex = 11;
+			this.labelControl4.Location = new System.Drawing.Point(412, 83);
+			this.labelControl4.Name = "labelControl4";
+			this.labelControl4.Size = new System.Drawing.Size(114, 17);
+			this.labelControl4.TabIndex = 5;
+			this.labelControl4.Text = "Số lượng ban đầu:";
+			// 
+			// labelControl2
+			// 
+			this.labelControl2.Appearance.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.labelControl2.Appearance.Options.UseFont = true;
+			this.labelControl2.Location = new System.Drawing.Point(542, 10);
+			this.labelControl2.Name = "labelControl2";
+			this.labelControl2.Size = new System.Drawing.Size(310, 34);
+			this.labelControl2.TabIndex = 4;
+			this.labelControl2.Text = "Kiểm Tra Nguyên Liệu";
+			// 
+			// lbten
+			// 
+			this.lbten.Location = new System.Drawing.Point(163, 121);
+			this.lbten.Name = "lbten";
+			this.lbten.Size = new System.Drawing.Size(97, 17);
+			this.lbten.TabIndex = 3;
+			this.lbten.Text = "Tên nguyên liệu";
+			// 
+			// labelControl3
+			// 
+			this.labelControl3.Location = new System.Drawing.Point(54, 121);
+			this.labelControl3.Name = "labelControl3";
+			this.labelControl3.Size = new System.Drawing.Size(112, 17);
+			this.labelControl3.TabIndex = 2;
+			this.labelControl3.Text = "Tên Nguyên Liệu :";
+			// 
+			// lbMa
+			// 
+			this.lbMa.Location = new System.Drawing.Point(163, 83);
+			this.lbMa.Name = "lbMa";
+			this.lbMa.Size = new System.Drawing.Size(91, 17);
+			this.lbMa.TabIndex = 1;
+			this.lbMa.Text = "Mã nguyên liệu";
+			this.lbMa.Click += new System.EventHandler(this.lbMa_Click);
+			// 
+			// labelControl1
+			// 
+			this.labelControl1.Location = new System.Drawing.Point(54, 83);
+			this.labelControl1.Name = "labelControl1";
+			this.labelControl1.Size = new System.Drawing.Size(106, 17);
+			this.labelControl1.TabIndex = 0;
+			this.labelControl1.Text = "Mã Nguyên Liệu :";
+			this.labelControl1.Click += new System.EventHandler(this.labelControl1_Click);
+			// 
+			// simpleButton2
+			// 
+			this.simpleButton2.Appearance.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.simpleButton2.Appearance.Options.UseFont = true;
+			this.simpleButton2.Location = new System.Drawing.Point(1113, 147);
+			this.simpleButton2.Name = "simpleButton2";
+			this.simpleButton2.Size = new System.Drawing.Size(188, 40);
+			this.simpleButton2.TabIndex = 12;
+			this.simpleButton2.Text = "Xuất báo cáo";
+			this.simpleButton2.Click += new System.EventHandler(this.simpleButton2_Click);
 			// 
 			// frmKiemTra
 			// 
@@ -335,5 +348,6 @@ namespace KHOD.GUI
 		private DevExpress.XtraEditors.SimpleButton simpleButton1;
 		private System.Windows.Forms.TextBox txtLyDO;
 		private DevExpress.XtraEditors.LabelControl labelControl6;
+		private DevExpress.XtraEditors.SimpleButton simpleButton2;
 	}
 }

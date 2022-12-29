@@ -30,6 +30,8 @@ namespace KHOD.GUI
 		private void InitializeComponent()
 		{
 			this.panel1 = new System.Windows.Forms.Panel();
+			this.thanhtoan = new System.Windows.Forms.ComboBox();
+			this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
 			this.lbGia = new DevExpress.XtraEditors.LabelControl();
 			this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
 			this.date1 = new System.Windows.Forms.DateTimePicker();
@@ -42,8 +44,6 @@ namespace KHOD.GUI
 			this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
 			this.panel2 = new System.Windows.Forms.Panel();
 			this.dataGridView1 = new System.Windows.Forms.DataGridView();
-			this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
-			this.thanhtoan = new System.Windows.Forms.ComboBox();
 			this.panel1.SuspendLayout();
 			this.panel2.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -70,6 +70,22 @@ namespace KHOD.GUI
 			this.panel1.Size = new System.Drawing.Size(946, 236);
 			this.panel1.TabIndex = 0;
 			this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+			// 
+			// thanhtoan
+			// 
+			this.thanhtoan.FormattingEnabled = true;
+			this.thanhtoan.Location = new System.Drawing.Point(674, 80);
+			this.thanhtoan.Name = "thanhtoan";
+			this.thanhtoan.Size = new System.Drawing.Size(121, 24);
+			this.thanhtoan.TabIndex = 29;
+			// 
+			// labelControl6
+			// 
+			this.labelControl6.Location = new System.Drawing.Point(580, 84);
+			this.labelControl6.Name = "labelControl6";
+			this.labelControl6.Size = new System.Drawing.Size(141, 17);
+			this.labelControl6.TabIndex = 28;
+			this.labelControl6.Text = "Hình thức thanh toán :";
 			// 
 			// lbGia
 			// 
@@ -101,7 +117,7 @@ namespace KHOD.GUI
 			// 
 			this.simpleButton1.Appearance.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.simpleButton1.Appearance.Options.UseFont = true;
-			this.simpleButton1.Location = new System.Drawing.Point(800, 190);
+			this.simpleButton1.Location = new System.Drawing.Point(788, 178);
 			this.simpleButton1.Name = "simpleButton1";
 			this.simpleButton1.Size = new System.Drawing.Size(146, 40);
 			this.simpleButton1.TabIndex = 24;
@@ -133,7 +149,7 @@ namespace KHOD.GUI
 			this.labelControl2.Name = "labelControl2";
 			this.labelControl2.Size = new System.Drawing.Size(138, 34);
 			this.labelControl2.TabIndex = 21;
-			this.labelControl2.Text = "Nhạp Kho";
+			this.labelControl2.Text = "Nhập Kho";
 			// 
 			// lbten
 			// 
@@ -180,22 +196,6 @@ namespace KHOD.GUI
 			this.dataGridView1.RowTemplate.Height = 24;
 			this.dataGridView1.Size = new System.Drawing.Size(946, 487);
 			this.dataGridView1.TabIndex = 0;
-			// 
-			// labelControl6
-			// 
-			this.labelControl6.Location = new System.Drawing.Point(604, 85);
-			this.labelControl6.Name = "labelControl6";
-			this.labelControl6.Size = new System.Drawing.Size(141, 17);
-			this.labelControl6.TabIndex = 28;
-			this.labelControl6.Text = "Hình thức thanh toán :";
-			// 
-			// thanhtoan
-			// 
-			this.thanhtoan.FormattingEnabled = true;
-			this.thanhtoan.Location = new System.Drawing.Point(674, 80);
-			this.thanhtoan.Name = "thanhtoan";
-			this.thanhtoan.Size = new System.Drawing.Size(121, 24);
-			this.thanhtoan.TabIndex = 29;
 			// 
 			// frmNhapKho
 			// 

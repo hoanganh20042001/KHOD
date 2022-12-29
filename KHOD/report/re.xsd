@@ -12,11 +12,22 @@
   <xs:element name="re" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="re" msprop:Generator_UserDSName="re">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="MA" msprop:Generator_TableClassName="MADataTable" msprop:Generator_TableVarName="tableMA" msprop:Generator_TablePropName="MA" msprop:Generator_RowDeletingName="MARowDeleting" msprop:Generator_RowChangingName="MARowChanging" msprop:Generator_RowEvHandlerName="MARowChangeEventHandler" msprop:Generator_RowDeletedName="MARowDeleted" msprop:Generator_UserTableName="MA" msprop:Generator_RowChangedName="MARowChanged" msprop:Generator_RowEvArgName="MARowChangeEvent" msprop:Generator_RowClassName="MARow">
+        <xs:element name="MA" msprop:Generator_TableClassName="MADataTable" msprop:Generator_TableVarName="tableMA" msprop:Generator_RowChangedName="MARowChanged" msprop:Generator_TablePropName="MA" msprop:Generator_RowDeletingName="MARowDeleting" msprop:Generator_RowChangingName="MARowChanging" msprop:Generator_RowEvHandlerName="MARowChangeEventHandler" msprop:Generator_RowDeletedName="MARowDeleted" msprop:Generator_RowClassName="MARow" msprop:Generator_UserTableName="MA" msprop:Generator_RowEvArgName="MARowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="MaMA" msprop:Generator_ColumnVarNameInTable="columnMaMA" msprop:Generator_ColumnPropNameInRow="MaMA" msprop:Generator_ColumnPropNameInTable="MaMAColumn" msprop:Generator_UserColumnName="MaMA" type="xs:string" minOccurs="0" />
               <xs:element name="TenMA" msprop:Generator_ColumnVarNameInTable="columnTenMA" msprop:Generator_ColumnPropNameInRow="TenMA" msprop:Generator_ColumnPropNameInTable="TenMAColumn" msprop:Generator_UserColumnName="TenMA" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="NLhong" msprop:Generator_TableClassName="NLhongDataTable" msprop:Generator_TableVarName="tableNLhong" msprop:Generator_TablePropName="NLhong" msprop:Generator_RowDeletingName="NLhongRowDeleting" msprop:Generator_RowChangingName="NLhongRowChanging" msprop:Generator_RowEvHandlerName="NLhongRowChangeEventHandler" msprop:Generator_RowDeletedName="NLhongRowDeleted" msprop:Generator_UserTableName="NLhong" msprop:Generator_RowChangedName="NLhongRowChanged" msprop:Generator_RowEvArgName="NLhongRowChangeEvent" msprop:Generator_RowClassName="NLhongRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="STT" msprop:Generator_ColumnVarNameInTable="columnSTT" msprop:Generator_ColumnPropNameInRow="STT" msprop:Generator_ColumnPropNameInTable="STTColumn" msprop:Generator_UserColumnName="STT" type="xs:string" minOccurs="0" />
+              <xs:element name="NguyenLieu" msprop:Generator_ColumnVarNameInTable="columnNguyenLieu" msprop:Generator_ColumnPropNameInRow="NguyenLieu" msprop:Generator_ColumnPropNameInTable="NguyenLieuColumn" msprop:Generator_UserColumnName="NguyenLieu" type="xs:string" minOccurs="0" />
+              <xs:element name="Soluong" msprop:Generator_ColumnVarNameInTable="columnSoluong" msprop:Generator_ColumnPropNameInRow="Soluong" msprop:Generator_ColumnPropNameInTable="SoluongColumn" msprop:Generator_UserColumnName="Soluong" type="xs:string" minOccurs="0" />
+              <xs:element name="Lydo" msprop:Generator_ColumnVarNameInTable="columnLydo" msprop:Generator_ColumnPropNameInRow="Lydo" msprop:Generator_ColumnPropNameInTable="LydoColumn" msprop:Generator_UserColumnName="Lydo" type="xs:string" minOccurs="0" />
+              <xs:element name="Gia" msprop:Generator_ColumnVarNameInTable="columnGia" msprop:Generator_ColumnPropNameInRow="Gia" msprop:Generator_ColumnPropNameInTable="GiaColumn" msprop:Generator_UserColumnName="Gia" type="xs:string" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>

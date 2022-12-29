@@ -90,20 +90,20 @@ namespace KHOD
 
 		private void accordionControlElement12_Click(object sender, EventArgs e)
 		{
-            frmChangeInfor form = new frmChangeInfor();
+            //frmChangeInfor form = new frmChangeInfor();
 
-            //frmChangePass.TopLevel = false;
+            ////frmChangePass.TopLevel = false;
 
 
-            panelMain.Controls.Clear();
-            //panelMain.Dock = DockStyle.Fill;
+            //panelMain.Controls.Clear();
+            ////panelMain.Dock = DockStyle.Fill;
 
-            form.TopLevel = false;
-            form.Dock = DockStyle.Fill;
-            panelMain.Controls.Add(form);
+            //form.TopLevel = false;
+            //form.Dock = DockStyle.Fill;
+            //panelMain.Controls.Add(form);
 
-            form.Show();
-            form.BringToFront();
+            //form.Show();
+            //form.BringToFront();
         }
 
 		private void accordionControlElement15_Click(object sender, EventArgs e)
@@ -187,7 +187,7 @@ namespace KHOD
 		private void accordionControlElement19_Click(object sender, EventArgs e)
 		{
 			MA ma = new MA();
-			ma.Show();
+			
 		}
 	}
 }

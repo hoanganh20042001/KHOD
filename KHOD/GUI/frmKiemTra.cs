@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using KHOD.Func;
+using KHOD.report;
 namespace KHOD.GUI
 {
 	public partial class frmKiemTra : DevExpress.XtraEditors.XtraForm
@@ -111,7 +112,14 @@ namespace KHOD.GUI
 			}
 
 
-		}	
+		}
+
+		private void simpleButton2_Click(object sender, EventArgs e)
+		{
+			baoCaoNl bc = new baoCaoNl();
+			bc.ShowDialog();
+
+		}
 	}
 	
 }

@@ -144,11 +144,11 @@
     <Compile Include="GUI\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\frmChangeInfor.cs">
+    <Compile Include="GUI\frmChangePass.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\frmChangeInfor.Designer.cs">
-      <DependentUpon>frmChangeInfor.cs</DependentUpon>
+    <Compile Include="GUI\frmChangePass.designer.cs">
+      <DependentUpon>frmChangePass.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\frmDatNL.cs">
       <SubType>Form</SubType>
@@ -162,11 +162,23 @@
     <Compile Include="GUI\frmKiemTra.Designer.cs">
       <DependentUpon>frmKiemTra.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\frmLichSuTruyCap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmLichSuTruyCap.designer.cs">
+      <DependentUpon>frmLichSuTruyCap.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\frmListNL.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GUI\frmListNL.Designer.cs">
       <DependentUpon>frmListNL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmLogin.designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\frmMain.cs">
       <SubType>Form</SubType>
@@ -174,23 +186,23 @@
     <Compile Include="GUI\frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\frmChangePass.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\frmChangePass.Designer.cs">
-      <DependentUpon>frmChangePass.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GUI\frmLogin.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\frmLogin.Designer.cs">
-      <DependentUpon>frmLogin.cs</DependentUpon>
-    </Compile>
     <Compile Include="GUI\frmNewMain.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GUI\frmNewMain.Designer.cs">
       <DependentUpon>frmNewMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmNhanVien.designer.cs">
+      <DependentUpon>frmNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmNhanVien_Themmoi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmNhanVien_Themmoi.designer.cs">
+      <DependentUpon>frmNhanVien_Themmoi.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\frmNhapKho.cs">
       <SubType>Form</SubType>
@@ -201,13 +213,13 @@
     <Compile Include="GUI\frmPhucHoi.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\frmPhucHoi.Designer.cs">
+    <Compile Include="GUI\frmPhucHoi.designer.cs">
       <DependentUpon>frmPhucHoi.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\frmSaoLuu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\frmSaoLuu.Designer.cs">
+    <Compile Include="GUI\frmSaoLuu.designer.cs">
       <DependentUpon>frmSaoLuu.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\frmThongKe.cs">
@@ -215,6 +227,18 @@
     </Compile>
     <Compile Include="GUI\frmThongKe.Designer.cs">
       <DependentUpon>frmThongKe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmThongTinNguoiDung.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmThongTinNguoiDung.designer.cs">
+      <DependentUpon>frmThongTinNguoiDung.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmThongTinNguoiDung_Sua.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmThongTinNguoiDung_Sua.designer.cs">
+      <DependentUpon>frmThongTinNguoiDung_Sua.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\frmThucDon.cs">
       <SubType>Form</SubType>
@@ -228,7 +252,20 @@
     <Compile Include="GUI\Print.Designer.cs">
       <DependentUpon>Print.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\frmXK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmXK.Designer.cs">
+      <DependentUpon>frmXK.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
+    <Compile Include="report\baoCaoNl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="report\baoCaoNl.Designer.cs">
+      <DependentUpon>baoCaoNl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="report\NLhong.cs" />
     <Compile Include="report\MA.cs" />
     <Compile Include="report\re.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -242,8 +279,17 @@
     <Compile Include="report\rep.Designer.cs">
       <DependentUpon>rep.cs</DependentUpon>
     </Compile>
+    <Compile Include="report\XtraForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="report\XtraForm1.Designer.cs">
+      <DependentUpon>XtraForm1.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="GUI\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmChangePass.resx">
+      <DependentUpon>frmChangePass.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmDatNL.resx">
       <DependentUpon>frmDatNL.cs</DependentUpon>
@@ -251,20 +297,26 @@
     <EmbeddedResource Include="GUI\frmKiemTra.resx">
       <DependentUpon>frmKiemTra.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmLichSuTruyCap.resx">
+      <DependentUpon>frmLichSuTruyCap.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmListNL.resx">
       <DependentUpon>frmListNL.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GUI\frmMain.resx">
-      <DependentUpon>frmMain.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GUI\frmChangePass.resx">
-      <DependentUpon>frmChangePass.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmNewMain.resx">
       <DependentUpon>frmNewMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmNhanVien.resx">
+      <DependentUpon>frmNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmNhanVien_Themmoi.resx">
+      <DependentUpon>frmNhanVien_Themmoi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmNhapKho.resx">
       <DependentUpon>frmNhapKho.cs</DependentUpon>
@@ -278,8 +330,17 @@
     <EmbeddedResource Include="GUI\frmThongKe.resx">
       <DependentUpon>frmThongKe.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmThongTinNguoiDung.resx">
+      <DependentUpon>frmThongTinNguoiDung.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmThongTinNguoiDung_Sua.resx">
+      <DependentUpon>frmThongTinNguoiDung_Sua.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmThucDon.resx">
       <DependentUpon>frmThucDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmXK.resx">
+      <DependentUpon>frmXK.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\Print.resx">
       <DependentUpon>Print.cs</DependentUpon>
@@ -295,6 +356,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="report\baoCaoNl.resx">
+      <DependentUpon>baoCaoNl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="report\rep.resx">
       <DependentUpon>rep.cs</DependentUpon>
     </EmbeddedResource>

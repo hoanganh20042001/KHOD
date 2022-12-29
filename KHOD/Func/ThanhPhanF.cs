@@ -29,6 +29,11 @@ namespace KHOD.Func
 			return list;
 
 		}
+		public List<ThanhPhanF> ListNgay(DateTime d)
+		{
+			var List = db.Database.SqlQuery<ThanhPhanF>("select ngay ngayd,tp.matp,tentp as ThanhPhan ,sum(DinhLuong*quanso) as DinhLuong,tp.maloai,gia from mon_an ma join ds_ma ds on ds.mama=ma.mama join ds_tp on ds_tp.MaMA=ma.mama join THANH_PHAN tp on tp.matp=ds_tp.MaTP join THONG_TIN tt on tt.matt=ds.matt join loainl on loainl.maloai=tp.maloai where ngay=@ngay  group by ngay,tp.matp,tentp,tp.maloai,gia order by ngay", new SqlParameter("@ngay", d.Date)).ToList();
+			return List;
+		}
 		public List<ThanhPhanF> ngay(DateTime d1, DateTime d2)
 		{
 

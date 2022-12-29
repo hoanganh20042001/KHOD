@@ -1,81 +1,62 @@
-﻿using DevExpress.XtraEditors;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using KHOD.DAO;
-using System.Data.SqlClient;
-namespace KHOD.GUI
+
+namespace KHOD
 {
-	public partial class frmSaoLuu : DevExpress.XtraEditors.XtraForm
+	public partial class frmSaoLuu : Form
 	{
-		MyDB db = new MyDB();
+		SqlConnection connection;
+		string str = @"Data Source=DESKTOP-CB0GE4G;Initial Catalog=KHO_D;Integrated Security=True";
+
 		public frmSaoLuu()
 		{
 			InitializeComponent();
 		}
 
-		private void labelControl1_Click(object sender, EventArgs e)
-		{
-
-		}
-		public string backup(string filename)
-		{
-			string filenameout = filename;
-			SqlParameter idParam = new SqlParameter { ParameterName = "filenameout", Value = filenameout };
-			int i = db.Database.ExecuteSqlCommand("Backup database CameraTrackingSystem to disk = @filrnamout",idParam);
-			return filename;
-		}
-
-		private void simpleButton1_Click(object sender, EventArgs e)
-		{
-
-			try
-			{
-				backup(txtDuongDan.Text);
-				MessageBox.Show("Sao lưu dữ liệu thành công. ",
-								"Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-
-			}
-			catch (Exception ex)
-			{
-				MessageBox.Show("Sao lưu không thành công do : " + ex.Message.ToString());
-			}
-			finally
-			{
-				this.Cursor = Cursors.Default;
-			}
-		}
 		private void frmSaoLuu_Load(object sender, EventArgs e)
 		{
-			//CheckPermissions();
-			//txtDBName.Text = GlobalParams.DBName;
-			//txtDuongDan.Text = QuiUocMacDinh.DuongDanLuuDuLieu + @"\" + DateTime.Now.ToString("ddMMyyyy") + "_" + DateTime.Now.ToString("HH_mm_ss") + ".bak";
-			txtDuongDan.Text = @"D:\DatabaseBackup\" + DateTime.Now.ToString("ddMMyyyy") + "_" + DateTime.Now.ToString("HH_mm_ss") + ".bak";
+			connection = new SqlConnection(str);
+			
 		}
-		private void btnChon_Click(object sender, EventArgs e)
-		{
-			SaveFileDialog save = new SaveFileDialog();
-			save.InitialDirectory = @"D:\QLTG\SAOLUU";
 
-			save.Filter = "Bak files (*.bak)|*.bak|All files (*.*)|*.*";
-			save.FileName = DateTime.Now.ToString("ddMMyyyy") + "_" +
-							DateTime.Now.ToString("HH_mm_ss") + ".bak";
-			save.RestoreDirectory = true;
-			if (save.ShowDialog() == DialogResult.OK)
+		private void guna2Button1_Click(object sender, EventArgs e)
+		{
+			FolderBrowserDialog dlg = new FolderBrowserDialog();
+			if (dlg.ShowDialog() == DialogResult.OK)
 			{
-				txtDuongDan.Text = save.FileName;
+				guna2TextBox1.Text = dlg.SelectedPath;
+				guna2Button2.Enabled = true;
 			}
 		}
-		private void panelControl2_Paint(object sender, PaintEventArgs e)
-		{
 
+		private void guna2Button2_Click(object sender, EventArgs e)
+		{
+			string databse = connection.Database.ToString();
+			if (guna2TextBox1.Text == string.Empty)
+			{
+				MessageBox.Show("Chọn nơi để lưu!!");
+			}
+			else
+			{
+				if (guna2TextBox2.Text == "") { 
+					guna2TextBox2.Text = "database"; 
+				}
+				string cm = "BACKUP DATABASE [" + databse + "] TO DISK = '" + guna2TextBox1.Text + "\\"+ guna2TextBox2.Text+ "-" + DateTime.Now.ToString("yyyy-MM-dd--HH-mm-ss") + ".bak'";
+				SqlCommand command = new SqlCommand(cm, connection);
+				connection.Open();
+				command.ExecuteNonQuery();
+				MessageBox.Show("Sao lưu thành công");
+				connection.Close();
+				guna2Button2.Enabled = false;
+			}
 		}
 	}
 }
