@@ -450,4 +450,3 @@ D:\Desktop\HTTT\KHOD\bin\Debug\de\DevExpress.Diagram.v22.1.Core.resources.dll
 D:\Desktop\HTTT\KHOD\bin\Debug\es\DevExpress.Diagram.v22.1.Core.resources.dll
 D:\Desktop\HTTT\KHOD\bin\Debug\ja\DevExpress.Diagram.v22.1.Core.resources.dll
 D:\Desktop\HTTT\KHOD\obj\Debug\KHOD.csproj.CopyComplete
-D:\Desktop\HTTT\KHOD\obj\Debug\KHOD.csproj.AssemblyReference.cache

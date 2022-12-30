@@ -41,9 +41,9 @@ namespace KHOD.GUI
 		{
 			if (frmLogin.MAPQ == "0") {
 				accordionControlElement10.Enabled = false;
-				accordionControlElement11.Enabled = false;
+				//accordionControlElement11.Enabled = false;
 				accordionControlElement20.Enabled = false;
-				accordionControlElement21.Enabled = false;
+				//accordionControlElement21.Enabled = false;
 				accordionControlElement13.Enabled = false;
 				accordionControlElement14.Enabled = false;
 			}
@@ -51,16 +51,16 @@ namespace KHOD.GUI
 			{
 				accordionControlElement12.Enabled = false;
 				accordionControlElement22.Enabled = false;
-				accordionControlElement23.Enabled = false;
+				//accordionControlElement23.Enabled = false;
 				accordionControlElement20.Enabled = false;
-				accordionControlElement21.Enabled = false;
+				//accordionControlElement21.Enabled = false;
 				accordionControlElement13.Enabled = false;
 				accordionControlElement14.Enabled = false;
 			}
 			else if(frmLogin.MAPQ == "2")
 			{
 				accordionControlElement10.Enabled = false;
-				accordionControlElement11.Enabled = false;
+				//accordionControlElement11.Enabled = false;
 				accordionControlElement12.Enabled = false;
 				accordionControlElement22.Enabled = false;
 				accordionControlElement13.Enabled = false;
@@ -368,6 +368,11 @@ namespace KHOD.GUI
 
 			form.Show();
 			form.BringToFront();
+		}
+
+		private void accordionControlElement2_Click(object sender, EventArgs e)
+		{
+
 		}
 	}
 }
